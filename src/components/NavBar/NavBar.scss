@@ -1,0 +1,81 @@
+@import '../../styles/variables';
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.navDesktopMenu {
+  display: block;
+}
+.navMobileMenu {
+  display: none;
+}
+.navMenu {
+  float: right;
+  display: flex;
+  flex-flow: row;
+}
+.navMenuItem {
+  color: $headerTextColor;
+  padding: 17px $defaultIndent;
+  text-decoration: none;
+  font-size: 16px;
+  user-select: none;
+  white-space: nowrap;
+  &.navMenuItemActive {
+    background: $navActiveBackground;
+  }
+  i, .navMenuItemText {
+    margin: 0 3px;
+  }
+}
+
+.navMobile {
+  display: none;
+  font-size: 22px;
+  line-height: 22px;
+  color: $headerTextColor;
+  padding: 15px 20px 4px;
+  cursor: pointer;
+}
+.navMobileActive {
+  color: #555;
+}
+.show {
+  display: block;
+}
+@media (min-width: $widthScreenTabletPortrait) {
+  .nav {
+    .navMobileMenu {
+      display: none;
+    }
+  }
+}
+@media (max-width: $widthScreenTabletPortrait) {
+  .navMobile {
+    display: block;
+  }
+  .navDesktopMenu {
+    display: none;
+  }
+  .navMobileMenu {
+    position: absolute;
+    top: 53px;
+    right: 0;
+    z-index: 99;
+    .navMenu {
+      flex-flow: column;
+      background: #fff;
+      box-shadow: -1px 1px 3px $headerBorderColor;
+      .navMenuItem {
+        border: 1px solid #e4eaec;
+        padding: $defaultIndent $defaultIndent*2;
+        color: #555555;
+        &.navMenuItemActive {
+          background: #eaebec;
+        }
+      }
+    }
+  }
+}
