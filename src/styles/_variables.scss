@@ -1,0 +1,26 @@
+// Screen sizes - for media queries use: @media (min-width: $widthScreenMobileSmall) {}
+$widthScreenMobileSmall:      320px;    // iPhone 5, SE
+$widthScreenMobileMedium:     375px;    // iPhone 6,7,8,X
+$widthScreenMobileLarge:      480px;    // iPhone (6,7,8) Plus, Xr, Xs Max, X Pro
+$widthScreenTabletSmall:      600px;
+$widthScreenTabletPortrait:   768px;    // iPad vertical
+$widthScreenTabletDefault:    1024px;   // iPad horizontal
+$widthScreenLaptopSmall:      1200px;
+$widthScreenLaptopDefault:    1376px;
+$widthScreenDisplayDefault:   1440px;
+$widthScreenDisplayLarge:     1920px;
+
+// Main settings
+$bodyFont:          14px/18px Roboto, Arial, Tahoma, Verdana, sans-serif;
+$bodyFontSize:      14px;
+$defaultIndent:     15px;
+$logoColor:         #3D5E61;
+
+// Header
+$headerBackground:      #8CBBB2;
+$headerBorderColor:     rgba(0,0,0,.2);
+$headerTextColor:       #f2f2f2;
+$headerIndent:          15px;
+$headerHeight:          53px;
+$navActiveBackground:   #3D5E61;
+

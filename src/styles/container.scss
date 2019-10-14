@@ -1,0 +1,16 @@
+@import './variables';
+
+.wrapper {
+  width: 100%;
+  min-width: $widthScreenMobileSmall;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: $defaultIndent;
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+.content {
+}
