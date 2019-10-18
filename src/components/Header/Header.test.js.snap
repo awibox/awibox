@@ -18,7 +18,7 @@ exports[`Header should render correctly 1`] = `
     <span
       className="name"
     >
-      React Redux App
+      Andrei Arkhipov
     </span>
   </Link>
   <NavBar />

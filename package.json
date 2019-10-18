@@ -1,10 +1,10 @@
 {
-  "name": "react-redux-app-boilerplate",
+  "name": "awp-pw",
   "version": "1.0.0",
-  "description": "The boilerplate that will help you quickly start developing your project using React.",
+  "description": "Personal site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/awibox/react-redux-app-boilerplate.git"
+    "url": "https://github.com/awibox/awb-pw.git"
   },
   "keywords": [
     "react",
