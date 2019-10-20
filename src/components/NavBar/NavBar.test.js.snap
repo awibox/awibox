@@ -26,36 +26,6 @@ exports[`NavBar should render correctly 1`] = `
           Home page
         </span>
       </NavLink>
-      <NavLink
-        activeClassName="navMenuItemActive"
-        className="navMenuItem"
-        onClick={[Function]}
-        to="/repos"
-      >
-        <i
-          className="fa fa-database"
-        />
-        <span
-          className="navMenuItemText"
-        >
-          Repositories
-        </span>
-      </NavLink>
-      <NavLink
-        activeClassName="navMenuItemActive"
-        className="navMenuItem"
-        onClick={[Function]}
-        to="/author"
-      >
-        <i
-          className="fa fa-address-card"
-        />
-        <span
-          className="navMenuItemText"
-        >
-          Author
-        </span>
-      </NavLink>
     </div>
   </div>
   <div
@@ -86,36 +56,6 @@ exports[`NavBar should render correctly 1`] = `
           className="navMenuItemText"
         >
           Home page
-        </span>
-      </NavLink>
-      <NavLink
-        activeClassName="navMenuItemActive"
-        className="navMenuItem"
-        onClick={[Function]}
-        to="/repos"
-      >
-        <i
-          className="fa fa-database"
-        />
-        <span
-          className="navMenuItemText"
-        >
-          Repositories
-        </span>
-      </NavLink>
-      <NavLink
-        activeClassName="navMenuItemActive"
-        className="navMenuItem"
-        onClick={[Function]}
-        to="/author"
-      >
-        <i
-          className="fa fa-address-card"
-        />
-        <span
-          className="navMenuItemText"
-        >
-          Author
         </span>
       </NavLink>
     </div>

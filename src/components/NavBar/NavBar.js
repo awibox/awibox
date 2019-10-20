@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { routes } from 'router';
 import classNames from 'classnames';
 // Styles
 import styles from './NavBar.scss';
@@ -27,20 +26,6 @@ export default class NavBar extends Component {
                  to="/">
           <i className="fa fa-home"/>
           <span className={styles.navMenuItemText}>Home page</span>
-        </NavLink>
-        <NavLink className={styles.navMenuItem}
-                 activeClassName={styles.navMenuItemActive}
-                 onClick={() => this.closeMenu()}
-                 to={routes.repos}>
-          <i className="fa fa-database"/>
-          <span className={styles.navMenuItemText}>Repositories</span>
-        </NavLink>
-        <NavLink className={styles.navMenuItem}
-                 activeClassName={styles.navMenuItemActive}
-                 onClick={() => this.closeMenu()}
-                 to={routes.author}>
-          <i className="fa fa-address-card"/>
-          <span className={styles.navMenuItemText}>Author</span>
         </NavLink>
       </div>
     );
