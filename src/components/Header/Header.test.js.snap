@@ -10,11 +10,7 @@ exports[`Header should render correctly 1`] = `
   >
     <span
       className="logo"
-    >
-      <i
-        className="fa fa-gears"
-      />
-    </span>
+    />
     <span
       className="name"
     >
