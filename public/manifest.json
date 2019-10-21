@@ -1,5 +1,5 @@
 {
- "name": "React Redux App",
+ "name": "awibox",
  "icons": [
   {
    "src": "\/icons/android-icon-36x36.png",
@@ -70,5 +70,5 @@
  ],
  "display": "standalone",
  "theme_color": "#FFFFFF",
- "background_color": "#8CBBB2"
+ "background_color": "#23282d"
 }
