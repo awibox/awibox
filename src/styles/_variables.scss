@@ -1,3 +1,11 @@
+// Colors
+$gray: #f2f2f2;
+$darkGray: #23282d;
+$darkBlue: #161b20;
+$orange: #fba51a;
+$blue: #0079c1;
+$green: #40bea9;
+
 // Screen sizes - for media queries use: @media (min-width: $widthScreenMobileSmall) {}
 $widthScreenMobileSmall:      320px;    // iPhone 5, SE
 $widthScreenMobileMedium:     375px;    // iPhone 6,7,8,X
@@ -11,16 +19,17 @@ $widthScreenDisplayDefault:   1440px;
 $widthScreenDisplayLarge:     1920px;
 
 // Main settings
-$bodyFont:          14px/18px Roboto, Arial, Tahoma, Verdana, sans-serif;
+$bodyFont:          14px/18px 'Open Sans', Roboto, Arial, Tahoma, Verdana, sans-serif;
 $bodyFontSize:      14px;
 $defaultIndent:     10px;
-$logoColor:         #161b20;
 
 // Header
-$headerBackground:      #23282d;
+$headerBackground:      $darkGray;
 $headerBorderColor:     rgba(0,0,0,.2);
 $headerTextColor:       #ffffff;
 $headerIndent:          15px;
 $headerHeight:          53px;
-$navActiveBackground:   #161b20;
+$navActiveBackground:   $darkBlue;
 
+// Card
+$cardIndent:            15px;

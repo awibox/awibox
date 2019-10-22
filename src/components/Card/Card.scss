@@ -1,11 +1,32 @@
 @import '../../styles/variables';
 
 .card {
-  padding: $defaultIndent;
+  padding: $cardIndent;
+  border-top: 3px solid rgba($darkGray, .5);
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-sizing: border-box;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   border-radius: 3px;
-  margin-bottom: $defaultIndent;
+  margin-bottom: $cardIndent;
+  &.green {
+    border-color: $green;
+  }
+  &.blue {
+    border-color: $blue;
+  }
+  &.orange {
+    border-color: $orange;
+  }
 }
+.title {
+  border-bottom: 2px solid #e7eaec;
+  width: 100%;
+  margin-left: -$cardIndent;
+  padding: 0 $cardIndent $cardIndent;
+  margin-bottom: $cardIndent;
+  font-size: 14px;
+  height: 14px;
+  font-weight: 600;
+}
+
