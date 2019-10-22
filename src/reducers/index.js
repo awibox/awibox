@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 // Reducers
 import errorReducer from './errorReducer';
-import homeReducer from './homeReducer';
+import profileReducer from './profileReducer';
 
 export default combineReducers({
   errors: errorReducer,
-  homeState: homeReducer,
+  profile: profileReducer,
 });
