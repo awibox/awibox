@@ -7,6 +7,8 @@
 }
 .workPartItem {
   width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 @media (max-width: $widthScreenTabletDefault) {

@@ -1,8 +1,15 @@
 @import '../../styles/variables';
 
+$titleIndent: $defaultIndent*2;
+
 .title {
-  font-size: 22px;
-  line-height: 26px;
-  padding-bottom: $defaultIndent;
+  font-size: 26px;
+  font-weight: 100;
+  line-height: 30px;
+  padding: $defaultIndent $titleIndent;
   text-align: left;
+  background: #fff;
+  margin-top: $defaultIndent;
+  margin-bottom: $defaultIndent;
+  border-bottom: 1px solid #e7eaec;
 }
