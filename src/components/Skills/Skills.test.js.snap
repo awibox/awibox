@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render correctly 1`] = `
+<div>
+  <div
+    className="skillItem"
+    key="react"
+  >
+    react
+  </div>
+  <div
+    className="skillItem"
+    key="js"
+  >
+    js
+  </div>
+  <div
+    className="skillItem"
+    key="css"
+  >
+    css
+  </div>
+</div>
+`;

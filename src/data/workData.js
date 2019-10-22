@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WorkData = () => [
+export const workData = () => [
   {
     year: 2018,
     type: 'work',
@@ -80,5 +80,31 @@ const WorkData = () => [
     },
   },
 ];
-
-export default WorkData;
+export const workSkills = [
+  'JavaScript',
+  'CSS',
+  'Git',
+  'HTML5',
+  'React',
+  'Redux',
+  'Immutable.js',
+  'Angular',
+  'TypeScript',
+  'Webpack',
+  'Babel.js',
+  'Reselect',
+  'Jest',
+  'Karma',
+  'Enzyme',
+  'Node.js',
+  'MongoDB',
+  'Photoshop',
+  'SketchUp',
+  'Docker',
+  'SCSS',
+  'LESS',
+  'Css-modules',
+  'PropTypes',
+  'Async/Await',
+  'EventLoop',
+];
