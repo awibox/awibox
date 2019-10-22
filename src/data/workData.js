@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WorkTimelineData = () => [
+const WorkData = () => [
   {
     year: 2018,
     type: 'work',
@@ -81,4 +81,4 @@ const WorkTimelineData = () => [
   },
 ];
 
-export default WorkTimelineData;
+export default WorkData;
