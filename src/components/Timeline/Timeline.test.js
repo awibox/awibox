@@ -5,17 +5,13 @@ import Timeline from './Timeline';
 const mockData = [
   {
     year: 2018,
-    type:
-      'work',
+    type: 'work',
     content:
       {
         position: 'Engineer',
-        company:
-          'Company',
-        location:
-          'Moscow',
-        description:
-          'Description',
+        company: 'Company',
+        location: 'Moscow',
+        description: 'Description',
       },
   },
 ];
