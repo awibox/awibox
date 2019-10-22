@@ -103,7 +103,7 @@ export const workSkills = [
   'Docker',
   'SCSS',
   'LESS',
-  'Css-modules',
+  'CSS-modules',
   'PropTypes',
   'Async/Await',
   'EventLoop',
