@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
-import { getWorkDataAction } from 'actions/profileActions';
+import { getWorkDataAction, getWorkSkillsAction } from 'actions/profileActions';
 import { List } from 'immutable';
 // Components
 import Alert from 'components/Alert/Alert';
 import Loader from 'components/Loader/Loader';
 import Timeline from 'components/Timeline/Timeline';
 import Title from 'components/Title/Title';
+import Card from 'components/Card/Card';
+import Skills from 'components/Skills/Skills';
 // Selectors
-import { getWorkDataSelector } from 'selectors/profileSelectors';
+import { getWorkDataSelector, getWorkSkillsSelector } from 'selectors/profileSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
 // Styles
 import styles from './Profile.scss';
@@ -18,7 +20,9 @@ import styles from './Profile.scss';
 class ProfileContainer extends Component {
   static propTypes = {
     getWorkDataAction: PropTypes.func.isRequired,
+    getWorkSkillsAction: PropTypes.func.isRequired,
     workData: ImmutablePropTypes.any,
+    workSkills: PropTypes.array,
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
@@ -26,14 +30,16 @@ class ProfileContainer extends Component {
 
   static defaultProps = {
     workData: List([]),
+    workSkills: [],
   };
 
   componentDidMount() {
     this.props.getWorkDataAction();
+    this.props.getWorkSkillsAction();
   }
 
   render() {
-    const { workData, errors } = this.props;
+    const { workData, workSkills, errors } = this.props;
     return (
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
@@ -41,6 +47,12 @@ class ProfileContainer extends Component {
         <div className={styles.workPart}>
           <div className={styles.workPartItem}>
             <Timeline title='WORK HISTORY' data={workData} />
+          </div>
+          <div className={styles.workPartItem}>
+            <Card>
+              <Skills data={workSkills} />
+            </Card>
+
           </div>
         </div>
         <Loader/>
@@ -51,7 +63,13 @@ class ProfileContainer extends Component {
 
 const mapStateToProps = (state) => ({
   workData: getWorkDataSelector(state),
+  workSkills: getWorkSkillsSelector(state),
   errors: getErrorsSelector(state),
 });
 
-export default connect(mapStateToProps, { getWorkDataAction })(ProfileContainer);
+const mapDispatchToProps = {
+  getWorkDataAction,
+  getWorkSkillsAction,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProfileContainer);
