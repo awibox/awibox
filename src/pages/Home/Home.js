@@ -12,6 +12,9 @@ import Loader from 'components/Loader/Loader';
 import { getHomeSelector } from 'selectors/homeSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
 
+import WorkTimelineData from 'data/workTimelineData';
+import Timeline from 'components/Timeline/Timeline';
+
 class HomeContainer extends Component {
   static propTypes = {
     getHomeAction: PropTypes.func.isRequired,
@@ -42,6 +45,7 @@ class HomeContainer extends Component {
     return (
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
+        <Timeline title='Work Timeline' data={WorkTimelineData()} />
         <HomeInfo home={home}/>
         <Loader/>
       </div>
