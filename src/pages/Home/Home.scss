@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.workPart {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.workPartItem {
+  width: 50%;
+}
+
+@media (max-width: $widthScreenLaptopDefault) {
+  .workPart {
+    flex-flow: column;
+  }
+  .workPartItem {
+    width: 100%;
+  }
+}

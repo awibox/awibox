@@ -14,6 +14,9 @@ import { getErrorsSelector } from 'selectors/errorSelectors';
 
 import WorkTimelineData from 'data/workTimelineData';
 import Timeline from 'components/Timeline/Timeline';
+import Title from 'components/Title/Title';
+
+import styles from './Home.scss';
 
 class HomeContainer extends Component {
   static propTypes = {
@@ -45,7 +48,13 @@ class HomeContainer extends Component {
     return (
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
-        <Timeline title='Work Timeline' data={WorkTimelineData()} />
+        <Title>Work experience</Title>
+        <div className={styles.workPart}>
+          <div className={styles.workPartItem}>
+            <Timeline title='WORK HISTORY' data={WorkTimelineData()} />
+          </div>
+        </div>
+
         <HomeInfo home={home}/>
         <Loader/>
       </div>
