@@ -7,7 +7,6 @@ $yearRadius: 50px;
   background: #f3f3f4;
   position: relative;
   overflow: hidden;
-  margin: $timelineIndent*2 $timelineIndent;
   &:before {
     content: '';
     position: absolute;
