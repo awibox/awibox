@@ -49,10 +49,9 @@ class ProfileContainer extends Component {
             <Timeline title='WORK HISTORY' data={workData} />
           </div>
           <div className={styles.workPartItem}>
-            <Card>
+            <Card title="Work Skills" color="green">
               <Skills data={workSkills} />
             </Card>
-
           </div>
         </div>
         <Loader/>
