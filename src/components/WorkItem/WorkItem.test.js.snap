@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline should render correctly 1`] = `
+<div>
+  <div>
+    Engineer
+  </div>
+  <div>
+    Company
+  </div>
+  <div
+    className="description"
+  >
+    Description
+  </div>
+</div>
+`;

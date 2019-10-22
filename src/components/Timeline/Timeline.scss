@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+$timelineIndent: 10px;
+$yearRadius: 50px;
+
+.timeline {
+  background: #f3f3f4;
+  position: relative;
+  overflow: hidden;
+  margin: $timelineIndent*2 $timelineIndent;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 34px;
+    height: 100%;
+    width: 4px;
+    background: #e7eaec;
+  }
+}
+.title {
+
+}
+.event {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  z-index: 2;
+}
+.year {
+  width: $yearRadius;
+  min-width: $yearRadius;
+  height: $yearRadius;
+  min-height: $yearRadius;
+  text-align: center;
+  line-height: $yearRadius;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  margin: $timelineIndent;
+}
+.content {
+  position: relative;
+  margin: $timelineIndent;
+  background: white;
+  border-radius: $timelineIndent/4;
+  padding: $timelineIndent;
+  &:before {
+    content: '';
+    position: absolute;
+    top: $yearRadius/3;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;
+  }
+}
