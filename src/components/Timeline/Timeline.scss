@@ -57,3 +57,23 @@ $yearRadius: 50px;
     border-right: 7px solid white;
   }
 }
+@media (max-width: $widthScreenMobileLarge) {
+  .timeline {
+    &:before {
+      left:50%;
+      margin-left: -2px;
+    }
+  }
+  .title {
+    text-align: center;
+  }
+  .event {
+    flex-flow: column;
+    align-items: center;
+    .content {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
