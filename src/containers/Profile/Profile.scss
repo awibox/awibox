@@ -9,7 +9,7 @@
   width: 50%;
 }
 
-@media (max-width: $widthScreenLaptopDefault) {
+@media (max-width: $widthScreenTabletDefault) {
   .workPart {
     flex-flow: column;
   }
