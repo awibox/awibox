@@ -4,6 +4,7 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 import { getWorkDataAction, getWorkSkillsAction } from 'actions/profileActions';
 import { List } from 'immutable';
+import classNames from 'classnames';
 // Components
 import Alert from 'components/Alert/Alert';
 import Loader from 'components/Loader/Loader';
@@ -46,10 +47,10 @@ class ProfileContainer extends Component {
         <Title>Profile</Title>
         <div className={styles.workPart}>
           <div className={styles.workPartItem}>
-            <Timeline title='WORK HISTORY' data={workData} />
+            <Timeline title='WORK HISTORY' icon='briefcase' data={workData} />
           </div>
-          <div className={styles.workPartItem}>
-            <Card title="Work Skills" color="green">
+          <div className={classNames(styles.workPartItem, styles.blocksIndent)}>
+            <Card title="Work Skills" color="orange">
               <Skills data={workSkills} />
             </Card>
           </div>

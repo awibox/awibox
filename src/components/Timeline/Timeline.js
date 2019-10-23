@@ -6,10 +6,16 @@ import WorkItem from 'components/WorkItem/WorkItem';
 import styles from './Timeline.scss';
 
 const Timeline = (props) => {
-  const { title, data } = props;
+  const { title, icon, data } = props;
   return (
     <div className={styles.timeline}>
-      <div className={styles.title}>{title}</div>
+      <div className={styles.title}>
+        {icon && <div className={styles.icon}>
+          <i className={`fa fa-${icon}`} />
+        </div>
+        }
+        <span>{title}</span>
+      </div>
       {
         data.map((item) => (
           <div key={item.year} className={styles.event}>
@@ -27,6 +33,7 @@ const Timeline = (props) => {
 
 Timeline.propTypes = {
   title: PropTypes.string,
+  icon: PropTypes.string,
   data: PropTypes.any,
 };
 

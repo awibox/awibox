@@ -2,6 +2,7 @@
 
 $timelineIndent: 10px;
 $yearRadius: 50px;
+$iconRadius: 60px;
 
 .timeline {
   background: #f3f3f4;
@@ -10,7 +11,7 @@ $yearRadius: 50px;
   &:before {
     content: '';
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 34px;
     height: 100%;
     width: 4px;
@@ -18,7 +19,31 @@ $yearRadius: 50px;
   }
 }
 .title {
-
+  min-height: 40px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  margin: 0 1px;
+  padding-bottom: 10px;
+  span {
+    padding: 10px 0;
+    font-size: 22px;
+    margin: 0 20px;
+  }
+}
+.icon {
+  width: $iconRadius;
+  background-color: #fff;
+  min-width: $iconRadius;
+  height: $iconRadius;
+  min-height: $iconRadius;
+  text-align: center;
+  line-height: $iconRadius;
+  font-size: 24px;
+  border-radius: 50%;
+  border: 4px solid #e7eaec;
 }
 .event {
   width: 100%;
@@ -44,7 +69,8 @@ $yearRadius: 50px;
   margin: $timelineIndent;
   background: white;
   border-radius: $timelineIndent/4;
-  padding: $timelineIndent;
+  padding: $timelineIndent*2;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.05);
   &:before {
     content: '';
     position: absolute;
@@ -61,15 +87,21 @@ $yearRadius: 50px;
     &:before {
       left:50%;
       margin-left: -2px;
+      top:50px;
     }
   }
   .title {
     text-align: center;
+    flex-flow: column;
+    span {
+      display: none;
+    }
   }
   .event {
-    flex-flow: column;
+    flex-flow: column-reverse;
     align-items: center;
     .content {
+      margin: 10px 0;
       &:before {
         display: none;
       }

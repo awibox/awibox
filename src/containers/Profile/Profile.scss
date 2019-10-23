@@ -10,6 +10,9 @@
   padding: 10px;
   box-sizing: border-box;
 }
+.blocksIndent {
+  padding-top: 98px;
+}
 
 @media (max-width: $widthScreenTabletDefault) {
   .workPart {
@@ -17,5 +20,8 @@
   }
   .workPartItem {
     width: 100%;
+  }
+  .blocksIndent {
+    padding-top: 30px;
   }
 }
