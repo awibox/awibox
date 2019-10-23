@@ -10,7 +10,7 @@ export const workData = () => [
       location: 'Moscow (Russia)',
       description: (
         <div>
-          <div>Worked on high-load (with more than 6 millions users per month)
+          <div>I worked on high-load (with more than 6 millions users per month)
             travel site system.</div>
           <div>I developed bus selling section (single page application with React)</div>
           <ul>
@@ -36,8 +36,8 @@ export const workData = () => [
       location: 'Moscow (Russia)',
       description: (
         <div>
-          <div>I led a front-end development team of 10 people on the education project
-            Modeus (Angular 5):</div>
+          <div>I led a front-end development team of 10 people on the education project -
+            Modeus:</div>
           <ul>
             <li>Planning the work of frontend teams</li>
             <li>Communicated with project manager and analysts</li>
@@ -51,8 +51,8 @@ export const workData = () => [
               in the development of a complex authentication system for Modeus</li>
           </ul>
           <div>Contributed to the development of UI Kit for the company.</div>
-          <div>Updated from Angular 2 to Angular 5</div>
-          <div>Wrote unit tests (Jasmine)</div>
+          <div>Updated from Angular 2 to Angular 5.</div>
+          <div>Wrote unit tests (Jasmine).</div>
         </div>),
     },
   },
@@ -76,6 +76,35 @@ export const workData = () => [
             cut highlights from the live broadcast (Angular 2, D3.js).</div>
           <div>Made content management system for NTV Plus
             (single-page application using Angular 2).</div>
+        </div>),
+    },
+  },
+  {
+    year: 2012,
+    type: 'work',
+    content: {
+      position: 'Web Developer',
+      company: 'BARS GROUP',
+      location: 'Kazan (Russia)',
+      description: (
+        <div>
+          <div>Developed project for monitoring Cultural Heritage.</div>
+          <div>Developed front-end part of project BARS.Accessible Environment.</div>
+        </div>),
+    },
+  },
+  {
+    year: 2007,
+    type: 'work',
+    content: {
+      position: 'Web Developer',
+      company: 'Freelance',
+      location: 'Kazan (Russia)',
+      description: (
+        <div>
+          <div>It was my hobby.</div>
+          <div>I created different websites using CMS such as Wordpress,
+            Joomla, NetCat, 1C Bitrix.</div>
         </div>),
     },
   },
