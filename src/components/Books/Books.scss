@@ -1,29 +1,26 @@
 @import '../../styles/variables';
 
-.workItem {
+.books {
+}
 
-}
-.company {
-  font-weight: bold;
-  color: $orange;
-}
-.position {
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 5px;
-}
-.location {
-  margin-bottom: 5px;
-  font-size: 13px;
-  color: rgba(0,0,0,0.4);
-}
-.description {
-  line-height: 19px;
-  font-size: 13px;
-  color: rgba(0,0,0,0.6);
-  ul {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
+.bookItem {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e7eaec;
+  &:last-child {
+    border-bottom: none;
   }
+}
+
+.bookName {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  margin-right: 10px;
+  color: $green;
+  &:hover {
+    color: $darkGreen;
+  }
+}
+.author {
+  font-size: 12px;
 }
