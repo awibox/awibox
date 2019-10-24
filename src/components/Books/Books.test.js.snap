@@ -5,15 +5,13 @@ exports[`Books should render correctly 1`] = `
   <div
     className="bookItem"
     key="Name"
+    onClick={[Function]}
   >
-    <a
+    <div
       className="bookName"
-      href="link"
-      rel="noopener noreferrer"
-      target="_blank"
     >
       Name
-    </a>
+    </div>
     <div
       className="author"
     >
