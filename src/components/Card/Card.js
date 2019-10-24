@@ -10,13 +10,17 @@ const Card = (props) => (
     [styles[props.color]]: props.color,
   })}>
     {props.title && <div className={styles.title}>{props.title}</div>}
-    {props.children}
+    {!props.withoutContainer
+      ? <div className={styles.content}>{props.children}</div>
+      : props.children
+    }
   </div>
 );
 
 Card.propTypes = {
   children: PropTypes.any.isRequired,
   className: PropTypes.string,
+  withoutContainer: PropTypes.bool,
   title: PropTypes.string,
   color: PropTypes.string,
 };
