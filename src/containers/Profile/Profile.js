@@ -75,11 +75,14 @@ class ProfileContainer extends Component {
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <Title>Profile</Title>
         <div className={styles.workPart}>
+          <Card className={styles.personalCardMobile} title='Andrei Arkhipov' color='blue' icon='id-card'>
+            <PersonalCard data={workProfile}/>
+          </Card>
           <div className={styles.workPartHistory}>
             <Timeline title='WORK HISTORY' icon='briefcase' color='blue' data={workData}/>
           </div>
           <div className={styles.workPartBlocks}>
-            <Card title='Andrei Arkhipov' color='blue' icon='id-card'>
+            <Card className={styles.personalCardDesktop} title='Andrei Arkhipov' color='blue' icon='id-card'>
               <PersonalCard data={workProfile}/>
             </Card>
             <Card title='DEVELOPMENT SKILLS' color='blue' icon='magic'>
