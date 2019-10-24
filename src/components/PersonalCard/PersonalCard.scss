@@ -30,9 +30,17 @@ $avatarSize: 150px;
     margin-right: 10px;
   }
   .name {
-    white-space: nowrap;
   }
   a {
     color: $blue;
+  }
+}
+
+@media (max-width: $widthScreenMobileSmall) {
+  .profile {
+    flex-flow: column;
+  }
+  .avatar {
+    width: 100%;
   }
 }
