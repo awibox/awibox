@@ -10,12 +10,21 @@
   margin-bottom: $cardIndent;
   &.green {
     border-color: $green;
+    .title i {
+      color: $green;
+    }
   }
   &.blue {
     border-color: $blue;
+    .title i {
+      color: $blue;
+    }
   }
   &.orange {
     border-color: $orange;
+    .title i {
+      color: $orange;
+    }
   }
 }
 .title {
@@ -25,6 +34,9 @@
   padding: $cardIndent;
   font-size: 14px;
   font-weight: 600;
+  i {
+    margin-right: 10px;
+  }
 }
 
 .content {
