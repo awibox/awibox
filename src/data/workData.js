@@ -131,6 +131,21 @@ export const workBooks = () => [
     author: 'Michael Feathers',
     link: 'https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052',
   },
+  {
+    name: 'Code Complete: A Practical Handbook of Software Construction',
+    author: 'Steve McConnell',
+    link: 'https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670',
+  },
+  {
+    name: 'Extreme Programming Explained: Embrace Change',
+    author: 'Kent Beck, Cynthia Andres',
+    link: 'https://www.amazon.com/dp/B00N1ZN6C0/',
+  },
+  {
+    name: 'Introduction to Algorithms',
+    author: 'Thomas H. Corman, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein',
+    link: 'https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670',
+  },
 ];
 export const workSkills = () => [
   'JavaScript',
