@@ -175,3 +175,12 @@ export const workSkills = () => [
   'Async/Await',
   'EventLoop',
 ];
+
+export const workProfile = () => ({
+  avatar: 'https://avatars1.githubusercontent.com/u/1931010?s=460&v=4',
+  location: 'Saint Petersburg (Russia)',
+  email: 'andrei@awb.pw',
+  github: 'https://github.com/awibox',
+  linkedIn: 'https://www.linkedin.com/in/awibox',
+  facebook: 'https://www.facebook.com/awiboxpw',
+});
