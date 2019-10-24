@@ -9,7 +9,7 @@ const mockData = {
   description: 'Description',
 };
 
-describe('Timeline', () => {
+describe('WorkItem', () => {
   it('should render correctly', () => {
     const component = shallow(<WorkItem title='Test timeline' data={mockData} />);
     expect(component).toMatchSnapshot();

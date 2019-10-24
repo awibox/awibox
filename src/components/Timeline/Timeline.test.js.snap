@@ -4,8 +4,12 @@ exports[`Timeline should render correctly 1`] = `
 <div
   className="timeline"
 >
-  <div>
-    Test timeline
+  <div
+    className="title"
+  >
+    <span>
+      Test timeline
+    </span>
   </div>
   <div
     className="event"

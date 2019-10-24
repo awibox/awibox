@@ -4,18 +4,38 @@
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: $defaultIndent;
 }
-.workPartItem {
-  width: 50%;
+%workPartItem {
   padding: 10px;
   box-sizing: border-box;
 }
+.workPartHistory {
+  @extend %workPartItem;
+  width: 60%;
+}
+.workPartBlocks {
+  @extend %workPartItem;
+  width: 40%;
+  padding-top: 98px;
+}
 
-@media (max-width: $widthScreenTabletDefault) {
+@media (max-width: $widthScreenTabletPortrait) {
   .workPart {
     flex-flow: column;
   }
-  .workPartItem {
+  .workPartHistory {
     width: 100%;
+  }
+  .workPartBlocks {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+@media (max-width: $widthScreenMobileLarge) {
+  .workPart {
+    flex-flow: column;
+    padding: 0;
   }
 }
