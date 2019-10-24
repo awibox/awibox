@@ -17,6 +17,30 @@ $iconRadius: 60px;
     width: 4px;
     background: #e7eaec;
   }
+  &.green {
+    .title i {
+      color: $green;
+    }
+    .year {
+      background: $green;
+    }
+  }
+  &.blue {
+    .title i {
+      color: $blue;
+    }
+    .year {
+      background: $blue;
+    }
+  }
+  &.orange {
+    .title i {
+      color: $orange;
+    }
+    .year {
+      background: $orange;
+    }
+  }
 }
 .title {
   min-height: 40px;

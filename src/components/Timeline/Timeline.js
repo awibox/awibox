@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 // Components
 import WorkItem from 'components/WorkItem/WorkItem';
 // Styles
@@ -8,7 +9,9 @@ import styles from './Timeline.scss';
 const Timeline = (props) => {
   const { title, icon, data } = props;
   return (
-    <div className={styles.timeline}>
+    <div className={classNames(styles.timeline, {
+      [styles[props.color]]: props.color,
+    })}>
       <div className={styles.title}>
         {icon && <div className={styles.icon}>
           <i className={`fa fa-${icon}`} />
@@ -34,6 +37,7 @@ const Timeline = (props) => {
 Timeline.propTypes = {
   title: PropTypes.string,
   icon: PropTypes.string,
+  color: PropTypes.string,
   data: PropTypes.any,
 };
 
