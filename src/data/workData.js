@@ -109,7 +109,22 @@ export const workData = () => [
     },
   },
 ];
-export const workSkills = [
+export const workBooks = () => [
+  {
+    name: 'Eloquent JavaScript',
+    link: 'https://eloquentjavascript.net/',
+  },
+  {
+    // eslint-disable-next-line no-script-url
+    name: 'JavaScript: The Good Parts',
+    link: 'https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742',
+  },
+  {
+    name: 'Refactoring: Improving the Design of Existing Code',
+    link: 'https://martinfowler.com/books/refactoring.html',
+  },
+];
+export const workSkills = () => [
   'JavaScript',
   'CSS',
   'Git',
