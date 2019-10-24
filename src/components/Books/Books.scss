@@ -6,6 +6,10 @@
 .bookItem {
   padding: 10px 15px;
   border-bottom: 1px solid #e7eaec;
+  cursor: pointer;
+  &:hover {
+    background: $gray;
+  }
   &:last-child {
     border-bottom: none;
   }
@@ -16,10 +20,7 @@
   line-height: 24px;
   text-decoration: none;
   margin-right: 10px;
-  color: $green;
-  &:hover {
-    color: $darkGreen;
-  }
+  color: $blue;
 }
 .author {
   font-size: 12px;

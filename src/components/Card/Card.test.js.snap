@@ -4,9 +4,13 @@ exports[`Card should render correctly 1`] = `
 <div
   className="card"
 >
-  <div>
+  <div
+    className="content"
+  >
     <div>
-      Test Card
+      <div>
+        Test Card
+      </div>
     </div>
   </div>
 </div>
