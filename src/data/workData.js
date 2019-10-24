@@ -112,16 +112,24 @@ export const workData = () => [
 export const workBooks = () => [
   {
     name: 'Eloquent JavaScript',
+    author: 'Marijn Haverbeke',
     link: 'https://eloquentjavascript.net/',
   },
   {
     // eslint-disable-next-line no-script-url
     name: 'JavaScript: The Good Parts',
+    author: 'Douglas Crockford',
     link: 'https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742',
   },
   {
     name: 'Refactoring: Improving the Design of Existing Code',
+    author: 'Martin Fowler',
     link: 'https://martinfowler.com/books/refactoring.html',
+  },
+  {
+    name: 'Working Effectively with Legacy Code',
+    author: 'Michael Feathers',
+    link: 'https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052',
   },
 ];
 export const workSkills = () => [

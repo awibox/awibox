@@ -1,10 +1,11 @@
 // Colors
 $gray: #f2f2f2;
 $darkGray: #23282d;
-$darkBlue: #161b20;
+$darkGrayActive: #161b20;
 $orange: #fba51a;
 $blue: #0079c1;
 $green: #40bea9;
+$darkGreen: #179d82;
 
 // Screen sizes - for media queries use: @media (min-width: $widthScreenMobileSmall) {}
 $widthScreenMobileSmall:      320px;    // iPhone 5, SE
@@ -29,7 +30,7 @@ $headerBorderColor:     rgba(0,0,0,.2);
 $headerTextColor:       #ffffff;
 $headerIndent:          15px;
 $headerHeight:          53px;
-$navActiveBackground:   $darkBlue;
+$navActiveBackground:   $darkGrayActive;
 
 // Card
 $cardIndent:            15px;

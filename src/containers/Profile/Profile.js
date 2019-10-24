@@ -71,7 +71,7 @@ class ProfileContainer extends Component {
             <Card title="DEVELOPMENT SKILLS" color="orange">
               <Skills data={workSkills}/>
             </Card>
-            <Card title="DEVELOPMENT BOOKS" color="orange">
+            <Card title="DEVELOPMENT BOOKS" color="green">
               <Books data={workBooks}/>
             </Card>
           </div>
