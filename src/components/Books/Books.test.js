@@ -5,6 +5,7 @@ import Books from './Books';
 const mockData = [
   {
     name: 'Name',
+    author: 'Author',
     link: 'link',
   },
 ];

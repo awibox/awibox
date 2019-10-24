@@ -3,15 +3,25 @@
 exports[`Books should render correctly 1`] = `
 <div>
   <div
+    className="bookItem"
     key="Name"
   >
     <a
+      className="bookName"
       href="link"
       rel="noopener noreferrer"
       target="_blank"
     >
       Name
     </a>
+    <div
+      className="author"
+    >
+      Author: 
+      <b>
+        Author
+      </b>
+    </div>
   </div>
 </div>
 `;
