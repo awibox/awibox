@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+$avatarSize: 150px;
+
+.profile {
+  display: flex;
+  flex-flow: row;
+}
+.avatar {
+  width: $avatarSize;
+  min-width: $avatarSize/2;
+  height: $avatarSize;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.profileItems {
+  display: flex;
+  flex-flow: column;
+}
+.profileItem {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 5px 0 5px 15px;
+  .icon {
+    font-size: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  .name {
+    white-space: nowrap;
+  }
+  a {
+    color: $blue;
+  }
+}

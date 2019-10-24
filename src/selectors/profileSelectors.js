@@ -3,6 +3,7 @@ import { createSelector } from 'reselect';
 const getWorkDateState = (state) => state.profile.workData;
 const getWorkSkillsState = (state) => state.profile.workSkills;
 const getWorkBooksState = (state) => state.profile.workBooks;
+const getWorkProfileState = (state) => state.profile.workProfile;
 // reselect function
 export const getWorkDataSelector = createSelector(
   [getWorkDateState],
@@ -15,4 +16,8 @@ export const getWorkSkillsSelector = createSelector(
 export const getWorkBooksSelector = createSelector(
   [getWorkBooksState],
   (workBooks) => (workBooks),
+);
+export const getWorkProfileSelector = createSelector(
+  [getWorkProfileState],
+  (workProfile) => (workProfile),
 );
