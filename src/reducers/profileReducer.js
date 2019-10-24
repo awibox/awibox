@@ -1,5 +1,10 @@
-import { GET_WORK_DATA, GET_WORK_SKILLS, GET_WORK_BOOKS } from 'actions/types';
-import { List } from 'immutable';
+import {
+  GET_WORK_DATA,
+  GET_WORK_SKILLS,
+  GET_WORK_BOOKS,
+  GET_WORK_PROFILE,
+} from 'actions/types';
+import { List, Map } from 'immutable';
 
 const initialState = {};
 
@@ -19,6 +24,11 @@ const profileReducer = (state = initialState, action) => {
       return {
         ...state,
         workBooks: List(action.payload),
+      };
+    case GET_WORK_PROFILE:
+      return {
+        ...state,
+        workProfile: Map(action.payload),
       };
     default:
       return state;
