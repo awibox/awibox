@@ -20,8 +20,15 @@
   width: 40%;
   padding-top: 98px;
 }
+.personalCardMobile {
+  display: none;
+  margin: $defaultIndent;
+}
+.personalCardDesktop {
+  display: block;
+}
 
-@media (max-width: $widthScreenTabletPortrait) {
+@media (max-width: $widthScreenTabletDefault) {
   .workPart {
     flex-flow: column;
   }
@@ -31,6 +38,12 @@
   .workPartBlocks {
     padding-top: 30px;
     width: 100%;
+  }
+  .personalCardMobile {
+    display: block;
+  }
+  .personalCardDesktop {
+    display: none;
   }
 }
 @media (max-width: $widthScreenMobileLarge) {
