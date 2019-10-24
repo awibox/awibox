@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Books should render correctly 1`] = `
+<div>
+  <div
+    key="Name"
+  >
+    <a
+      href="link"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Name
+    </a>
+  </div>
+</div>
+`;

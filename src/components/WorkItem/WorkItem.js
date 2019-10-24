@@ -9,6 +9,7 @@ const WorkItem = (props) => {
     <div className={styles.workItem}>
       <div className={styles.position}>{data.position}</div>
       <div className={styles.company}>{data.company}</div>
+      <div className={styles.location}>{data.location}</div>
       <div className={styles.description}>{data.description}</div>
     </div>
   );

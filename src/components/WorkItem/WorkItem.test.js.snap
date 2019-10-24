@@ -1,12 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Timeline should render correctly 1`] = `
+exports[`WorkItem should render correctly 1`] = `
 <div>
-  <div>
+  <div
+    className="position"
+  >
     Engineer
   </div>
-  <div>
+  <div
+    className="company"
+  >
     Company
+  </div>
+  <div
+    className="location"
+  >
+    Moscow
   </div>
   <div
     className="description"
