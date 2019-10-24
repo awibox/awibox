@@ -138,13 +138,13 @@ export const workBooks = () => [
   },
   {
     name: 'Extreme Programming Explained: Embrace Change',
-    author: 'Kent Beck, Cynthia Andres',
+    author: 'Kent Beck',
     link: 'https://www.amazon.com/dp/B00N1ZN6C0/',
   },
   {
     name: 'Introduction to Algorithms',
-    author: 'Thomas H. Corman, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein',
-    link: 'https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670',
+    author: 'Thomas H. Corman...',
+    link: 'https://www.amazon.com/dp/0262033844/',
   },
 ];
 export const workSkills = () => [

@@ -65,13 +65,13 @@ class ProfileContainer extends Component {
         <Title>Profile</Title>
         <div className={styles.workPart}>
           <div className={styles.workPartHistory}>
-            <Timeline title='WORK HISTORY' icon='briefcase' data={workData}/>
+            <Timeline title='WORK HISTORY' icon='briefcase' color='blue' data={workData}/>
           </div>
           <div className={styles.workPartBlocks}>
-            <Card title="DEVELOPMENT SKILLS" color="orange">
+            <Card title='DEVELOPMENT SKILLS' color='blue' icon='magic'>
               <Skills data={workSkills}/>
             </Card>
-            <Card title="DEVELOPMENT BOOKS" color="blue" withoutContainer>
+            <Card title='DEVELOPMENT BOOKS' color='blue' icon='book' withoutContainer>
               <Books data={workBooks}/>
             </Card>
           </div>
