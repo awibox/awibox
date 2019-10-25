@@ -88,7 +88,7 @@ class ProfileContainer extends Component {
             <Card title='DEVELOPMENT SKILLS' color='blue' icon='magic'>
               <Skills data={workSkills}/>
             </Card>
-            <Card title='DEVELOPMENT BOOKS' color='blue' icon='book' withoutContainer>
+            <Card title='my favorite books' color='blue' icon='book' withoutContainer>
               <Books data={workBooks}/>
             </Card>
           </div>
