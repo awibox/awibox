@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Components
 import Header from 'components/Header/Header';
+import Footer from 'components/Footer/Footer';
 // Pages
 import ProfileContainer from 'containers/Profile/Profile';
 import NotFound from 'pages/NotFound/NotFound';
@@ -12,7 +13,7 @@ export const routes = {};
 
 const RouterComponent = () => (
   <Router>
-    <div className="app">
+    <div className={styles.app}>
       <Header/>
       <main className={styles.content}>
         <div className={styles.wrapper}>
@@ -22,6 +23,7 @@ const RouterComponent = () => (
           </Switch>
         </div>
       </main>
+      <Footer/>
     </div>
   </Router>
 );
