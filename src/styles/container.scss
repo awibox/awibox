@@ -1,5 +1,9 @@
 @import './variables';
 
+.app {
+  position: relative;
+  padding-bottom: $footerHeight + $defaultIndent;
+}
 .wrapper {
   width: 100%;
   min-width: $widthScreenMobileSmall;
