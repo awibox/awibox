@@ -2,7 +2,6 @@
 
 .books {
 }
-
 .bookItem {
   padding: 10px 15px;
   border-bottom: 1px solid #e7eaec;
@@ -22,6 +21,9 @@
   text-decoration: none;
   margin-right: 10px;
   color: $blue;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .author {
   font-size: 12px;

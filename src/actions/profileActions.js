@@ -1,12 +1,5 @@
-import {
-  GET_WORK_DATA,
-  GET_WORK_SKILLS,
-  GET_WORK_BOOKS,
-  GET_WORK_PROFILE,
-} from 'actions/types';
-import {
-  workData, workSkills, workBooks, workProfile,
-} from 'data/workData';
+import { GET_WORK_DATA, GET_WORK_SKILLS, GET_WORK_BOOKS } from 'actions/types';
+import { workData, workSkills, workBooks } from 'data/workData';
 import { getError } from './errorActions';
 
 export const getWorkData = (data) => ({
@@ -21,11 +14,6 @@ export const getWorkSkills = (data) => ({
 
 export const getWorkBooks = (data) => ({
   type: GET_WORK_BOOKS,
-  payload: data,
-});
-
-export const getWorkProfile = (data) => ({
-  type: GET_WORK_PROFILE,
   payload: data,
 });
 
@@ -58,17 +46,6 @@ export const getWorkBooksAction = () => (dispatch) => {
   } catch (err) {
     dispatch(getError({
       message: 'Work books not found',
-    }));
-  }
-};
-
-export const getWorkProfileAction = () => (dispatch) => {
-  try {
-    const profile = workProfile();
-    dispatch(getWorkProfile(profile));
-  } catch (err) {
-    dispatch(getError({
-      message: 'Work profile not found',
     }));
   }
 };

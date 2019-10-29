@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 
-$avatarSize: 150px;
+$avatarSize: 124px;
 
 .profile {
   display: flex;
@@ -17,7 +17,6 @@ $avatarSize: 150px;
 .profileItems {
   display: flex;
   flex-flow: column;
-  padding-top: 15px;
 }
 .profileItem {
   display: flex;
@@ -33,7 +32,17 @@ $avatarSize: 150px;
     color: $blue;
   }
 }
-
+.profileServices {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 5px 0 5px 20px;
+  .icon {
+    font-size: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }
+}
 @media (max-width: $widthScreenMobileSmall) {
   .profile {
     flex-flow: column;

@@ -10,37 +10,31 @@ const PersonalCard = (props) => {
       <div className={styles.avatar} style={{ backgroundImage: `url(${data.get('avatar')})` }}/>
       <div className={styles.profileItems}>
         <div className={styles.profileItem}>
-          <div className={styles.icon}><i className='fa fa-building'/></div>
-          <div className={styles.name}>{data.get('location')}</div>
+          <div className={styles.icon}><i className='fa fa-user'/></div>
+          <div>{data.get('position')}</div>
         </div>
-        {data.get('github') && <div className={styles.profileItem}>
-          <div className={styles.icon}><i className='fa fa-github'/></div>
-          <div className={styles.name}>
-            <a href={data.get('github')}
-               target='_blank'
-               rel='noopener noreferrer'>{data.get('github').split('/').reverse()[0]}</a>
-          </div>
-        </div>}
-        {data.get('linkedIn') && <div className={styles.profileItem}>
-          <div className={styles.icon}>
-            <i className='fa fa-linkedin-square' style={{ color: '#0077B5' }}/>
-          </div>
-          <div className={styles.name}>
-            <a href={data.get('linkedIn')}
-               target='_blank'
-               rel='noopener noreferrer'>{data.get('linkedIn').split('/').reverse()[0]}</a>
-          </div>
+        <div className={styles.profileItem}>
+          <div className={styles.icon}><i className='fa fa-location-arrow'/></div>
+          <div>{data.get('location')}</div>
         </div>
-        }
         <div className={styles.profileItem}>
           <div className={styles.icon}>
             <i className='fa fa-envelope-open-o'/>
           </div>
-          <div className={styles.name}>
-          <a href={`mailto:${data.get('email')}`}
-             target='_blank'
-             rel='noopener noreferrer'>{data.get('email')}</a>
+          <div>
+            <a href={`mailto:${data.get('email')}`}
+               target='_blank'
+               rel='noopener noreferrer'>{data.get('email')}</a>
           </div>
+        </div>
+        <div className={styles.profileServices}>
+        {data.get('services') && data.get('services').map((item) => (
+          <div key={item.name} className={styles.icon}>
+            <a href={item.link} target='_blank' rel='noopener noreferrer'>
+              <i className={`fa fa-${item.icon}`} style={{ color: item.color && item.color }}/>
+            </a>
+          </div>
+        ))}
         </div>
       </div>
     </div>
