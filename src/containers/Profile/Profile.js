@@ -7,8 +7,8 @@ import {
   getWorkDataAction,
   getWorkSkillsAction,
   getWorkBooksAction,
-  getWorkProfileAction,
 } from 'actions/profileActions';
+import { getAuthorDataAction } from 'actions/authorActions';
 // Components
 import Alert from 'components/Alert/Alert';
 import Books from 'components/Books/Books';
@@ -23,9 +23,9 @@ import {
   getWorkDataSelector,
   getWorkSkillsSelector,
   getWorkBooksSelector,
-  getWorkProfileSelector,
 } from 'selectors/profileSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
+import { getAuthorInfoSelector } from 'selectors/authorSelectors';
 // Styles
 import styles from './Profile.scss';
 
@@ -35,11 +35,11 @@ class ProfileContainer extends Component {
     getWorkDataAction: PropTypes.func.isRequired,
     getWorkSkillsAction: PropTypes.func.isRequired,
     getWorkBooksAction: PropTypes.func.isRequired,
-    getWorkProfileAction: PropTypes.func.isRequired,
+    getAuthorDataAction: PropTypes.func.isRequired,
+    AuthorInfo: ImmutablePropTypes.any,
     workData: ImmutablePropTypes.any,
     workSkills: PropTypes.array,
     workBooks: PropTypes.array,
-    workProfile: ImmutablePropTypes.map,
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
@@ -49,8 +49,8 @@ class ProfileContainer extends Component {
     workData: List([]),
     workSkills: [],
     workBooks: [],
-    workProfile: Map({
-      github: '',
+    AuthorInfo: Map({
+      avatar: '',
     }),
   };
 
@@ -58,15 +58,15 @@ class ProfileContainer extends Component {
     this.props.getWorkDataAction();
     this.props.getWorkSkillsAction();
     this.props.getWorkBooksAction();
-    this.props.getWorkProfileAction();
+    this.props.getAuthorDataAction();
   }
 
   render() {
     const {
+      AuthorInfo,
       workData,
       workSkills,
       workBooks,
-      workProfile,
       errors,
     } = this.props;
 
@@ -76,14 +76,14 @@ class ProfileContainer extends Component {
         <Title>Profile</Title>
         <div className={styles.workPart}>
           <Card className={styles.personalCardMobile} title='Andrei Arkhipov' color='blue' icon='id-card'>
-            <PersonalCard data={workProfile}/>
+            <PersonalCard data={AuthorInfo}/>
           </Card>
           <div className={styles.workPartHistory}>
             <Timeline title='WORK HISTORY' icon='briefcase' color='blue' data={workData}/>
           </div>
           <div className={styles.workPartBlocks}>
             <Card className={styles.personalCardDesktop} title='Andrei Arkhipov' color='blue' icon='id-card'>
-              <PersonalCard data={workProfile}/>
+              <PersonalCard data={AuthorInfo}/>
             </Card>
             <Card title='DEVELOPMENT SKILLS' color='blue' icon='magic'>
               <Skills data={workSkills}/>
@@ -103,7 +103,7 @@ const mapStateToProps = (state) => ({
   workData: getWorkDataSelector(state),
   workSkills: getWorkSkillsSelector(state),
   workBooks: getWorkBooksSelector(state),
-  workProfile: getWorkProfileSelector(state),
+  AuthorInfo: getAuthorInfoSelector(state),
   errors: getErrorsSelector(state),
 });
 
@@ -111,7 +111,7 @@ const mapDispatchToProps = {
   getWorkDataAction,
   getWorkSkillsAction,
   getWorkBooksAction,
-  getWorkProfileAction,
+  getAuthorDataAction,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProfileContainer);
