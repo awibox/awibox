@@ -109,6 +109,7 @@ export const workData = () => [
     },
   },
 ];
+
 export const workBooks = () => [
   {
     name: 'Eloquent JavaScript',
@@ -141,12 +142,8 @@ export const workBooks = () => [
     author: 'Kent Beck',
     link: 'https://www.amazon.com/dp/B00N1ZN6C0/',
   },
-  {
-    name: 'Introduction to Algorithms',
-    author: 'Thomas H. Corman...',
-    link: 'https://www.amazon.com/dp/0262033844/',
-  },
 ];
+
 export const workSkills = () => [
   'JavaScript',
   'CSS',
