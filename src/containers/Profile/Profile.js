@@ -36,10 +36,10 @@ class ProfileContainer extends Component {
     getWorkSkillsAction: PropTypes.func.isRequired,
     getWorkBooksAction: PropTypes.func.isRequired,
     getAuthorDataAction: PropTypes.func.isRequired,
-    AuthorInfo: ImmutablePropTypes.any,
-    workData: ImmutablePropTypes.any,
+    AuthorInfo: ImmutablePropTypes.map,
+    workData: ImmutablePropTypes.list,
     workSkills: PropTypes.array,
-    workBooks: PropTypes.array,
+    workBooks: ImmutablePropTypes.list,
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
@@ -48,7 +48,7 @@ class ProfileContainer extends Component {
   static defaultProps = {
     workData: List([]),
     workSkills: [],
-    workBooks: [],
+    workBooks: List([]),
     AuthorInfo: Map({
       avatar: '',
     }),
