@@ -43,11 +43,21 @@ $avatarSize: 124px;
     margin-right: 10px;
   }
 }
-@media (max-width: $widthScreenMobileSmall) {
+@media (max-width: $widthScreenMobileMedium) {
   .profile {
     flex-flow: column;
   }
   .avatar {
     width: 100%;
+    margin-bottom: 15px;
+  }
+  .profileItems {
+    align-items: center;
+  }
+  .profileItem {
+    padding: 5px 20px;
+  }
+  .profileServices {
+    padding: 5px 10px 5px 20px;
   }
 }
