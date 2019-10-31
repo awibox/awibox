@@ -4,6 +4,8 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const postcssFlexbugsFixes = require('postcss-flexbugs-fixes');
+const postcssModulesValues = require('postcss-modules-values');
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const devMode = NODE_ENV === 'development';
@@ -18,7 +20,7 @@ module.exports = {
   mode: devMode ? 'development' : 'production',
   entry: './index.js',
   output: {
-    path: __dirname + '/public',
+    path: path.resolve(__dirname, 'public'),
     filename: './js/main.js',
     publicPath: '/',
     chunkFilename: './js/[name].js',
@@ -71,11 +73,11 @@ module.exports = {
             options: {
               ident: 'postcss',
               plugins: () => [
-                require('postcss-flexbugs-fixes'),
+                postcssFlexbugsFixes,
                 autoprefixer({
                   flexbox: 'no-2009',
                 }),
-                require('postcss-modules-values'),
+                postcssModulesValues,
               ],
             },
           },
