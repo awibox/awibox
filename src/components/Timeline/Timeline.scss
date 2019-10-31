@@ -90,6 +90,7 @@ $iconRadius: 60px;
 .content {
   position: relative;
   margin: $timelineIndent;
+  width: 100%;
   background: white;
   border-radius: $timelineIndent/4;
   padding: $timelineIndent*2;
@@ -125,6 +126,7 @@ $iconRadius: 60px;
     flex-flow: column-reverse;
     align-items: center;
     .content {
+      width: auto;
       margin: 10px 0;
       &:before {
         display: none;

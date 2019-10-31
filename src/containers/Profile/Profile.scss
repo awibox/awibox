@@ -14,6 +14,7 @@
 .workPartHistory {
   @extend %workPartItem;
   width: 60%;
+  overflow-y: hidden;
 }
 .workPartBlocks {
   @extend %workPartItem;
