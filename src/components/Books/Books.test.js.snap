@@ -6,6 +6,7 @@ exports[`Books should render correctly 1`] = `
     className="bookItem"
     key="Name"
     onClick={[Function]}
+    title="Name"
   >
     <div
       className="bookName"
