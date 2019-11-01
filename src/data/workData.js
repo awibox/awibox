@@ -11,14 +11,17 @@ export const workData = () => [
       description: (
         <div>
           <div>I worked on high-load (with more than 6 millions users per month)
-            travel site system.</div>
+            travel site system.
+          </div>
           <div>I developed bus selling section (single page application with React)</div>
           <ul>
             <li>Optimized page loading speed on high-load pages</li>
             <li>Refactoring the search form (an important part of the product)
-              due to a large number of inherited and global logical errors</li>
+              due to a large number of inherited and global logical errors
+            </li>
             <li>Increased javascript unit tests coverage up to 60
-              per cent (karma, chai, enzyme, sinon)</li>
+              per cent (karma, chai, enzyme, sinon)
+            </li>
             <li>Developed new pages for product</li>
             <li>Performed Сode Reviews</li>
             <li>Had experience in Scrum team</li>
@@ -37,7 +40,8 @@ export const workData = () => [
       description: (
         <div>
           <div>I led a front-end development team of 10 people on the education project -
-            Modeus:</div>
+            Modeus:
+          </div>
           <ul>
             <li>Planning the work of frontend teams</li>
             <li>Communicated with project manager and analysts</li>
@@ -48,7 +52,8 @@ export const workData = () => [
             <li>Performed Code Reviews</li>
             <li>Conducted 1-on-1 meetings with developers</li>
             <li>Interviewed candidates for developer position Participated
-              in the development of a complex authentication system for Modeus</li>
+              in the development of a complex authentication system for Modeus
+            </li>
           </ul>
           <div>Contributed to the development of UI Kit for the company.</div>
           <div>Updated from Angular 2 to Angular 5.</div>
@@ -73,9 +78,11 @@ export const workData = () => [
           </ul>
           <div>Developed the interface part of the online video
             editor for NTV Plus which makes it possible to
-            cut highlights from the live broadcast (Angular 2, D3.js).</div>
+            cut highlights from the live broadcast (Angular 2, D3.js).
+          </div>
           <div>Made content management system for NTV Plus
-            (single-page application using Angular 2).</div>
+            (single-page application using Angular 2).
+          </div>
         </div>),
     },
   },
@@ -104,7 +111,8 @@ export const workData = () => [
         <div>
           <div>It was my hobby.</div>
           <div>I created different websites using CMS such as Wordpress,
-            Joomla, NetCat, 1C Bitrix.</div>
+            Joomla, NetCat, 1C Bitrix.
+          </div>
         </div>),
     },
   },
@@ -145,30 +153,75 @@ export const workBooks = () => [
 ];
 
 export const workSkills = () => [
-  'JavaScript',
-  'CSS',
-  'Git',
-  'HTML5',
-  'React',
-  'Redux',
-  'Immutable.js',
-  'Angular',
-  'TypeScript',
-  'Webpack',
-  'Babel.js',
-  'Reselect',
-  'Jest',
-  'Karma',
-  'Enzyme',
-  'Node.js',
-  'MongoDB',
-  'Photoshop',
-  'SketchUp',
-  'Docker',
-  'SCSS',
-  'LESS',
-  'CSS-modules',
-  'PropTypes',
-  'Async/Await',
-  'EventLoop',
+  {
+    name: 'JavaScript',
+    key: true,
+  },
+  {
+    name: 'CSS',
+  },
+  {
+    name: 'Git',
+    key: true,
+  },
+  {
+    name: 'HTML5',
+  },
+  {
+    name: 'React',
+    key: true,
+  },
+  {
+    name: 'Redux',
+    key: true,
+  },
+  { name: 'Immutable.js' },
+  { name: 'Angular' },
+  { name: 'Backbone' },
+  { name: 'Knockout' },
+  { name: 'Sencha Touch' },
+  { name: 'TypeScript' },
+  {
+    name: 'Webpack',
+    key: true,
+  },
+  { name: 'Babel.js' },
+  {
+    name: 'Reselect',
+    key: true,
+  },
+  {
+    name: 'Jest',
+    key: true,
+  },
+  { name: 'Karma' },
+  {
+    name: 'Enzyme',
+    key: true,
+  },
+  { name: 'Node.js' },
+  { name: 'Express' },
+  { name: 'MongoDB' },
+  { name: 'Photoshop' },
+  { name: 'Handlebars' },
+  { name: 'Mustache' },
+  { name: 'Twig' },
+  { name: 'SketchUp' },
+  { name: 'Docker' },
+  {
+    name: 'SCSS',
+    key: true,
+  },
+  { name: 'LESS' },
+  { name: 'Stylus' },
+  {
+    name: 'CSS-modules',
+    key: true,
+  },
+  { name: 'PropTypes' },
+  {
+    name: 'Async/Await',
+    key: true,
+  },
+  { name: 'EventLoop' },
 ];

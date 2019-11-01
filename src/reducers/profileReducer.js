@@ -17,7 +17,7 @@ const profileReducer = (state = initialState, action) => {
     case GET_WORK_SKILLS:
       return {
         ...state,
-        workSkills: action.payload,
+        workSkills: List(action.payload),
       };
     case GET_WORK_BOOKS:
       return {
