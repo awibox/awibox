@@ -38,7 +38,7 @@ class ProfileContainer extends Component {
     getAuthorDataAction: PropTypes.func.isRequired,
     AuthorInfo: ImmutablePropTypes.map,
     workData: ImmutablePropTypes.list,
-    workSkills: PropTypes.array,
+    workSkills: ImmutablePropTypes.list,
     workBooks: ImmutablePropTypes.list,
     errors: PropTypes.shape({
       message: PropTypes.string,
@@ -47,7 +47,7 @@ class ProfileContainer extends Component {
 
   static defaultProps = {
     workData: List([]),
-    workSkills: [],
+    workSkills: List([]),
     workBooks: List([]),
     AuthorInfo: Map({
       avatar: '',
