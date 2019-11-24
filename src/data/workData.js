@@ -2,6 +2,15 @@ import React from 'react';
 
 export const workData = () => [
   {
+    year: 2019,
+    type: 'work',
+    content: {
+      position: 'Chief Programmer',
+      company: 'Luxoft',
+      location: 'Saint Petersburg (Russia)',
+    },
+  },
+  {
     year: 2018,
     type: 'work',
     content: {
