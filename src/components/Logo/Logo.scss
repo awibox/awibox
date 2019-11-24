@@ -1,0 +1,19 @@
+$logoSize: 32px;
+
+.logo {
+  display: flex;
+  flex-flow: row;
+  font-size: $logoSize;
+  line-height: $logoSize;
+  align-items: center;
+}
+
+.bracket {
+  margin: -$logoSize/10 $logoSize/5 0;
+  color: #0079c1;
+  font-weight: 600;
+}
+
+.text {
+  color: #fff;
+}
