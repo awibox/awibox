@@ -162,52 +162,24 @@ export const workBooks = () => [
 ];
 
 export const workSkills = () => [
-  {
-    name: 'JavaScript',
-    key: true,
-  },
-  {
-    name: 'CSS',
-  },
-  {
-    name: 'Git',
-    key: true,
-  },
-  {
-    name: 'HTML5',
-  },
-  {
-    name: 'React',
-    key: true,
-  },
-  {
-    name: 'Redux',
-    key: true,
-  },
+  { name: 'JavaScript' },
+  { name: 'CSS' },
+  { name: 'Git' },
+  { name: 'HTML5' },
+  { name: 'React' },
+  { name: 'Redux' },
   { name: 'Immutable.js' },
   { name: 'Angular' },
   { name: 'Backbone' },
   { name: 'Knockout' },
   { name: 'Sencha Touch' },
   { name: 'TypeScript' },
-  {
-    name: 'Webpack',
-    key: true,
-  },
+  { name: 'Webpack' },
   { name: 'Babel.js' },
-  {
-    name: 'Reselect',
-    key: true,
-  },
-  {
-    name: 'Jest',
-    key: true,
-  },
+  { name: 'Reselect' },
+  { name: 'Jest' },
   { name: 'Karma' },
-  {
-    name: 'Enzyme',
-    key: true,
-  },
+  { name: 'Enzyme' },
   { name: 'Node.js' },
   { name: 'Express' },
   { name: 'MongoDB' },
@@ -217,20 +189,11 @@ export const workSkills = () => [
   { name: 'Twig' },
   { name: 'SketchUp' },
   { name: 'Docker' },
-  {
-    name: 'SCSS',
-    key: true,
-  },
+  { name: 'SCSS' },
   { name: 'LESS' },
   { name: 'Stylus' },
-  {
-    name: 'CSS-modules',
-    key: true,
-  },
+  { name: 'CSS-modules' },
   { name: 'PropTypes' },
-  {
-    name: 'Async/Await',
-    key: true,
-  },
+  { name: 'Async/Await' },
   { name: 'EventLoop' },
 ];
