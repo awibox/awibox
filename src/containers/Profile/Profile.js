@@ -85,11 +85,11 @@ class ProfileContainer extends Component {
             <Card className={styles.personalCardDesktop} title='Andrei Arkhipov' color='blue' icon='id-card'>
               <PersonalCard data={AuthorInfo}/>
             </Card>
-            <Card title='DEVELOPMENT SKILLS' color='blue' icon='magic'>
-              <Skills data={workSkills}/>
-            </Card>
             <Card title='my favorite books' color='blue' icon='book' withoutContainer>
               <Books data={workBooks}/>
+            </Card>
+            <Card title='DEVELOPMENT SKILLS' color='blue' icon='magic'>
+              <Skills data={workSkills}/>
             </Card>
           </div>
         </div>
