@@ -24,8 +24,8 @@ export default class NavBar extends Component {
                  activeClassName={styles.navMenuItemActive}
                  onClick={() => this.closeMenu()}
                  to="/">
-          <i className="fa fa-home"/>
-          <span className={styles.navMenuItemText}>Home page</span>
+          <i className="fa fa-id-card"/>
+          <span className={styles.navMenuItemText}>Profile</span>
         </NavLink>
       </div>
     );
