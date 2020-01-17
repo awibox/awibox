@@ -8,14 +8,7 @@ exports[`Header should render correctly 1`] = `
     className="logoBlock"
     to="/"
   >
-    <span
-      className="logo"
-    />
-    <span
-      className="name"
-    >
-      Andrei Arkhipov
-    </span>
+    <Logo />
   </Link>
   <NavBar />
 </header>
