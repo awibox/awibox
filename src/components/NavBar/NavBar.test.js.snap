@@ -18,12 +18,12 @@ exports[`NavBar should render correctly 1`] = `
         to="/"
       >
         <i
-          className="fa fa-home"
+          className="fa fa-id-card"
         />
         <span
           className="navMenuItemText"
         >
-          Home page
+          Profile
         </span>
       </NavLink>
     </div>
@@ -50,12 +50,12 @@ exports[`NavBar should render correctly 1`] = `
         to="/"
       >
         <i
-          className="fa fa-home"
+          className="fa fa-id-card"
         />
         <span
           className="navMenuItemText"
         >
-          Home page
+          Profile
         </span>
       </NavLink>
     </div>
