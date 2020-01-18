@@ -31,4 +31,4 @@ jobs:
         user: ${{ secrets.user }}
         password: ${{ secrets.password }}
         localDir: "public"
-        remoteDir: ""
+        remoteDir: "/"
