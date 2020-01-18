@@ -22,3 +22,11 @@ jobs:
         yarn test
       env:
         CI: true
+    - name: Deploy
+      uses: sebastianpopp/ftp-action@releases/v1
+      with:
+        host: ${{ secrets.host }}
+        user: ${{ secrets.user }}
+        password: ${{ secrets.password }}
+        localDir: "public"
+        remoteDir: "/"
