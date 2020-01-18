@@ -1,0 +1,28 @@
+name: Deploy to Github
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: yarn install, build, and test
+        run: |
+          yarn install
+          yarn build
+      - name: Copycat
+        uses: andstor/copycat-action@v1.1.0
+        env:
+          DST_BRANCH: master
+          DST_OWNER: awibox
+          DST_REPO_NAME: awibox.github.io
+          DST_PATH: /.
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SRC_BRANCH: master
+          SRC_PATH: /public
+          USERNAME: awibox
+          EMAIL: andrei@awb.pw
+
