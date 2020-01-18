@@ -10,9 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: yarn install, build, and test
-        run: |
-          yarn install
-          yarn build
+      run: |
+        yarn install
+        yarn build
     - name: Upload ftp
       uses: sebastianpopp/ftp-action@releases/v1
       with:
