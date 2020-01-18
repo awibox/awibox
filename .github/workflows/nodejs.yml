@@ -14,18 +14,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: yarn install, lint, build, and test
       run: |
         yarn install
+        yarn lint
         yarn build --if-present
         yarn test
       env:
         CI: true
-    - name: Deploy
-      uses: sebastianpopp/ftp-action@releases/v1
-      with:
-        host: ${{ secrets.host }}
-        user: ${{ secrets.user }}
-        password: ${{ secrets.password }}
-        localDir: "public"
-        remoteDir: "/"
