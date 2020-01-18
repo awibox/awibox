@@ -1,5 +1,8 @@
-name: Deploy via ftp
-on: push
+name: Deploy
+on:
+  push:
+    branches:
+      - master
 jobs:
   deploy:
     name: Deploy
