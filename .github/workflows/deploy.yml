@@ -1,5 +1,5 @@
-name: Deploy via ftp
-on: push
+name: Deploy
+on: pull_request
 jobs:
   deploy:
     name: Deploy
