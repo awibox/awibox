@@ -22,7 +22,7 @@ jobs:
           DST_PATH: /.
           GH_PAT: ${{ secrets.GH_PAT }}
           SRC_BRANCH: master
-          SRC_PATH: /public
+          SRC_PATH: /public/.
           USERNAME: awibox
           EMAIL: andrei@awb.pw
 
