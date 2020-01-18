@@ -20,7 +20,7 @@ module.exports = {
   mode: devMode ? 'development' : 'production',
   entry: './index.js',
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'public'),
     filename: './js/main.js',
     publicPath: '/',
     chunkFilename: './js/[name].js',
