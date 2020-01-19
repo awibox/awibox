@@ -8,16 +8,25 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: yarn install, build, and test
-      run: |
-        yarn install
-        yarn build
-    - name: Upload ftp
-      uses: sebastianpopp/ftp-action@releases/v1
-      with:
-        host: ${{ secrets.host }}
-        user: ${{ secrets.user }}
-        password: ${{ secrets.password }}
-        localDir: "public"
-        remoteDir: "/"
+      - uses: actions/checkout@master
+      - name: yarn install, build, and test
+        run: |
+          yarn install
+          yarn lint
+          yarn build --if-present
+          yarn test
+        env:
+          CI: true
+      - name: Deploy to prod
+        uses: andstor/copycat-action@v1.1.0
+        env:
+          DST_BRANCH: master
+          DST_OWNER: awibox
+          DST_REPO_NAME: awibox.github.io
+          DST_PATH: /.
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SRC_BRANCH: master
+          SRC_PATH: /public/.
+          USERNAME: awibox
+          EMAIL: andrei@awb.pw
+
