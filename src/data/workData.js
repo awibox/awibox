@@ -8,7 +8,9 @@ export const workData = () => [
       position: 'Chief Programmer',
       company: 'Luxoft',
       location: 'Saint Petersburg (Russia)',
-      description: 'I\'m developing web services for an analytical system.',
+      description: (<div>
+        I am developing web services for an analytical system.
+      </div>),
     },
   },
   {
