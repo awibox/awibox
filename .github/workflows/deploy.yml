@@ -15,6 +15,7 @@ jobs:
           yarn lint
           yarn build --if-present
           yarn test
+          ls -laG
         env:
           CI: true
       - name: Deploy to prod
