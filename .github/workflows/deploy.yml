@@ -18,16 +18,13 @@ jobs:
           ls -laG
         env:
           CI: true
-      - name: Deploy to prod
-        uses: andstor/copycat-action@v1.1.0
+      - name: Deploy to production
+        uses: awibox/deploy-to-github-pages-action
         env:
-          DST_BRANCH: master
-          DST_OWNER: awibox
-          DST_REPO_NAME: awibox.github.io
-          DST_PATH: /.
+          AUTHOR: awibox
+          GITHUB_PAGE_NAME: awibox.github.io
           GH_PAT: ${{ secrets.GH_PAT }}
-          SRC_BRANCH: master
-          SRC_PATH: public/.
+          BUILD_PATH: public
           USERNAME: awibox
           EMAIL: andrei@awb.pw
 
