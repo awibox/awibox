@@ -15,15 +15,14 @@ jobs:
           yarn lint
           yarn build --if-present
           yarn test
-          ls -laG
         env:
           CI: true
       - name: Deploy to production
-        uses: awibox/deploy-to-github-pages-action@1.0.0
+        uses: awibox/deploy-to-github-pages-action@1.0.1
         env:
           AUTHOR: awibox
           GITHUB_PAGE_NAME: awibox.github.io
-          GH_PAT: ${{ secrets.GH_PAT }}
+          PA_TOKEN: ${{ secrets.PA_TOKEN }}
           BUILD_PATH: public
           USERNAME: awibox
           EMAIL: andrei@awb.pw
