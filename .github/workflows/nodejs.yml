@@ -18,7 +18,15 @@ jobs:
       run: |
         yarn install
         yarn lint
-        yarn build --if-present
-        yarn coveralls
+        yarn build
+        yarn test --coverage
       env:
         CI: true
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.PA_TOKEN }}
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.COVERALLS }}
