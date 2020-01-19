@@ -19,6 +19,6 @@ jobs:
         yarn install
         yarn lint
         yarn build --if-present
-        yarn test
+        yarn coveralls
       env:
         CI: true
