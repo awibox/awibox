@@ -16,7 +16,7 @@ jobs:
           yarn install
           yarn lint
           yarn build
-          yarn test
+          yarn test --coverage
         env:
           CI: true
       - name: Deploy to production
@@ -28,4 +28,8 @@ jobs:
           BUILD_PATH: public
           USERNAME: awibox
           EMAIL: andrei@awb.pw
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+         github-token: ${{ secrets.GITHUB_TOKEN }}
 
