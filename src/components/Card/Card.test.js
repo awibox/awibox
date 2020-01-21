@@ -6,7 +6,12 @@ const testClassName = 'test-class';
 
 describe('Card', () => {
   it('should render correctly', () => {
-    const component = shallow(<Card>
+    const component = shallow(<Card
+      title={'Title'}
+      icon={'fa fa-home'}
+      color={'blue'}
+      className={testClassName}
+      withoutContainer={false}>
       <div>
         <div>
           Test Card
@@ -14,9 +19,5 @@ describe('Card', () => {
       </div>
     </Card>);
     expect(component).toMatchSnapshot();
-  });
-  it('should have className', () => {
-    const component = shallow(<Card className={testClassName}>Test button</Card>);
-    expect(component.find(`.${testClassName}`)).toExist();
   });
 });
