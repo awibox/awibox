@@ -16,4 +16,9 @@ describe('NavBar', () => {
     component.find('.navMobile').simulate('click');
     expect(component.state('openNavMenu')).toEqual(true);
   });
+  it('should check close func', () => {
+    const component = shallow(<NavBar />);
+    component.find('.navMenuItem').at(0).simulate('click');
+    expect(component.state('openNavMenu')).toEqual(false);
+  });
 });

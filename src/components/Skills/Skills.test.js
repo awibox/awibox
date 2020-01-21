@@ -1,8 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { List } from 'immutable';
 import Skills from './Skills';
 
-const mockSkills = ['react', 'js', 'css'];
+const mockSkills = List([
+  { name: 'react' },
+  { name: 'js' },
+  { name: 'css' },
+]);
 
 describe('Card', () => {
   it('should render correctly', () => {
