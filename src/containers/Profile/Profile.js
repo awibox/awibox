@@ -16,7 +16,6 @@ import Card from 'components/Card/Card';
 import Loader from 'components/Loader/Loader';
 import PersonalCard from 'components/PersonalCard/PersonalCard';
 import Skills from 'components/Skills/Skills';
-import Timeline from 'components/Timeline/Timeline';
 import Title from 'components/Title/Title';
 // Selectors
 import {
@@ -26,6 +25,8 @@ import {
 } from 'selectors/profileSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import { getAuthorInfoSelector } from 'selectors/authorSelectors';
+import EventsTimeline from 'react-events-timeline';
+import 'react-events-timeline/dist/main.css';
 // Styles
 import styles from './Profile.scss';
 
@@ -79,7 +80,7 @@ class ProfileContainer extends Component {
             <PersonalCard data={AuthorInfo}/>
           </Card>
           <div className={styles.workPartHistory}>
-            <Timeline title='WORK HISTORY' icon='briefcase' color='blue' data={workData}/>
+            <EventsTimeline title='WORK HISTORY' icon={<i className='fa fa-briefcase'/>} color='blue' data={workData}/>
           </div>
           <div className={styles.workPartBlocks}>
             <Card className={styles.personalCardDesktop} title='Andrei Arkhipov' color='blue' icon='id-card'>
