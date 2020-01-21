@@ -2,8 +2,16 @@
 
 exports[`Card should render correctly 1`] = `
 <div
-  className="card"
+  className="card test-class blue"
 >
+  <div
+    className="title"
+  >
+    <i
+      className="fa fa-fa fa-home"
+    />
+    Title
+  </div>
   <div
     className="content"
   >
