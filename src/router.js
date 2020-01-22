@@ -19,6 +19,7 @@ const RouterComponent = () => (
         <div className={styles.wrapper}>
           <Switch>
             <Route exact path="/" component={ProfileContainer}/>
+            <Route exact path="/test" component={ProfileContainer}/>
             <Route component={NotFound}/>
           </Switch>
         </div>
