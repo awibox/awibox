@@ -1,12 +1,12 @@
 ![awb-pw](https://repository-images.githubusercontent.com/215135694/ad660480-1c5a-11ea-8d77-cc2af6d21782)
 
 <p align="center">
-    <img src='https://img.shields.io/github/workflow/status/awibox/awb-pw/Deploy' alt='Build' />
-    <a href='https://coveralls.io/github/awibox/awb-pw?branch=master'>
-        <img src='https://coveralls.io/repos/github/awibox/awb-pw/badge.svg?branch=master' alt='Coverage Status' />
+    <img src='https://img.shields.io/github/workflow/status/awb-pw/awb-pw/Deploy' alt='Build' />
+    <a href='https://coveralls.io/github/awb-pw/awb-pw?branch=master'>
+        <img src='https://coveralls.io/repos/github/awb-pw/awb-pw/badge.svg?branch=master' alt='Coverage Status' />
     </a>
-    <img src="https://img.shields.io/github/last-commit/awibox/awb-pw" alt="Last commit">
-    <img src="https://img.shields.io/github/license/awibox/awb-pw" alt="license">
+    <img src="https://img.shields.io/github/last-commit/awb-pw/awb-pw" alt="Last commit">
+    <img src="https://img.shields.io/github/license/awb-pw/awb-pw" alt="license">
 </p>
 
 ## Description
@@ -24,7 +24,7 @@ This project is the source code of my personal website
 ## How to install
 You need to clone repository and go to the project folder.
 ```bash
-git clone git@github.com:awibox/awb-pw.git ProjectName
+git clone git@github.com:awb-pw/awb-pw.git ProjectName
 cd ProjectName
 ```
 Then to install required dependencies.
