@@ -4,7 +4,7 @@
   "description": "Personal site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/awibox/awb-pw.git"
+    "url": "https://github.com/awb-pw/awb-pw.git"
   },
   "keywords": [
     "react",
@@ -125,5 +125,10 @@
       "^.+\\.js$": "babel-jest",
       ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/awb-pw/awb-pw/issues"
+  },
+  "homepage": "https://github.com/awb-pw/awb-pw#readme",
+  "main": "webpack.config.js"
 }
