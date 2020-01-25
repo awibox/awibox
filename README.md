@@ -18,6 +18,7 @@ This project is the source code of my personal website
 * [Run linter](#runlinter)
 * [Run tests](#runtests)
 * [Setup pre-commit](#precommit)
+* [Contributing](#contributing)
 
 <a name="howtoinstall"></a>
 ## How to install
@@ -62,10 +63,7 @@ Jest with Enzyme is used for testing.
 ```bash
 yarn test
 ```
-<a name="precommit"></a>
-## Setup pre-commit
-You can set up git hook (pre-commit). In this case linter will be launched for necessary files before commit.
 
-```bash
-yarn setup
-```
+<a name="contributing"></a>
+## Contributing
+Please read through our [CONTRIBUTING.md](/.github/CONTRIBUTING.md).
