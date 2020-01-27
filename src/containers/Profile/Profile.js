@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Map, List } from 'immutable';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
+import { usePromiseTracker } from 'react-promise-tracker';
+import Loader from 'react-promise-loader';
 import {
   getWorkDataAction,
   getWorkSkillsAction,
@@ -13,7 +15,6 @@ import { getAuthorDataAction } from 'actions/authorActions';
 import Alert from 'components/Alert/Alert';
 import Books from 'components/Books/Books';
 import Card from 'components/Card/Card';
-import Loader from 'components/Loader/Loader';
 import PersonalCard from 'components/PersonalCard/PersonalCard';
 import Skills from 'components/Skills/Skills';
 import Title from 'components/Title/Title';
@@ -94,7 +95,7 @@ class ProfileContainer extends Component {
             </Card>
           </div>
         </div>
-        <Loader/>
+        <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'} />
       </div>
     );
   }
