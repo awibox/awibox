@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'components/Card/Card';
-import Title from '../../components/Title/Title';
+import Title from 'components/Title/Title';
 
 const CookiePolicy = () => (
   <div>
@@ -28,7 +28,7 @@ const CookiePolicy = () => (
               Privacy Policy</a>
           </p>
         </Card>
-        <Card title={'How can I deny the use of cookies?'}>
+        <Card title={'How can you prevent the use of cookies?'}>
           <p>
             Most browsers automatically accept cookies.
             You can delete saved cookies on your device at any time.
