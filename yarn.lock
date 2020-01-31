@@ -2986,6 +2986,11 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
+combo-storage@^1.1.2:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/combo-storage/-/combo-storage-1.1.3.tgz#470f1be22dbedf8ffd8ac32a1dbb635a16f00612"
+  integrity sha512-eD2yHoT6aWWpKnLL2wkVXyF0LmXtQyKwPT8d9uxclhrdTNSRkWkIrUMZLpDB7peMsp9NgZ1HqDADbrRXdIiP1g==
+
 commander@2.17.x:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
@@ -9095,6 +9100,26 @@ raw-body@2.4.0:
     http-errors "1.7.2"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+react-cookie-consent-notification@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent-notification/-/react-cookie-consent-notification-1.0.3.tgz#8c0afa95187bd0131d8980866bbc3c6bc4f57ef7"
+  integrity sha512-QW6ZqXTNdZLKXsdmbV7SO9v74Q30g/P8RiJSFQCeezpTJ68tP39jD5/PxA/hdq4LcUSaB2epfBjM76xPF1IV8g==
+  dependencies:
+    combo-storage "^1.1.2"
+    prop-types "^15.7.2"
+    react "^16.12.0"
+    react-dom "^16.12.0"
+
+react-cookie-disclaimer@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-cookie-disclaimer/-/react-cookie-disclaimer-2.1.0.tgz#ce83ea16764c6f6ab3c164e57c0c8d4cb96436a7"
+  integrity sha512-R5k4Sw9GHDyWC0DNfGNO+ZtUWYxLQO9EAXgVD9C+QcXHZBQ4VmIW2Vf1rvhbCAYyCQQiw20G3JeUo8GRLemIIg==
+  dependencies:
+    combo-storage "^1.1.2"
+    prop-types "^15.7.2"
+    react "^16.12.0"
+    react-dom "^16.12.0"
 
 react-dom@16.9.0:
   version "16.9.0"
