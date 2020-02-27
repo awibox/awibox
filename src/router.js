@@ -6,6 +6,7 @@ import Footer from 'components/Footer/Footer';
 // Pages
 import ProfileContainer from 'containers/Profile/Profile';
 import NotFound from 'pages/NotFound/NotFound';
+import Branding from 'pages/Branding/Branding';
 import CookiePolicy from 'pages/CookiePolicy/CookiePolicy';
 // Styles
 import styles from 'styles/container.scss';
@@ -34,6 +35,7 @@ class RouterComponent extends Component {
               <Switch>
                 <Route exact path="/" component={ProfileContainer}/>
                 <Route exact path="/cookie-policy" component={CookiePolicy}/>
+                <Route exact path="/branding" component={Branding}/>
                 <Route component={NotFound}/>
               </Switch>
             </div>
