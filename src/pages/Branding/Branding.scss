@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+$iconSize: 128px;
+$iconMargin: 20px;
+$logoSize: 80px;
+
+.branding {
+  background: #23282d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.logo {
+  div {
+    font-size: $logoSize !important;
+    line-height: $logoSize !important;
+  }
+}
+
+.icon {
+  color: #fff;
+  font-size: $iconSize;
+  margin-right: $iconMargin;
+  margin-left: $iconMargin;
+}
