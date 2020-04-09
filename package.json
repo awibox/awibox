@@ -29,7 +29,7 @@
     "react": "^16.13.1",
     "react-cookie-consent-notification": "1.0.7",
     "react-dom": "16.13.1",
-    "react-events-timeline": "^1.0.1",
+    "react-events-timeline": "^1.0.3",
     "react-immutable-proptypes": "^2.1.0",
     "react-promise-loader": "^1.0.4",
     "react-promise-tracker": "^2.0.5",
