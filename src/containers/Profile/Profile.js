@@ -12,9 +12,8 @@ import {
 } from 'actions/profileActions';
 import { getAuthorDataAction } from 'actions/authorActions';
 // Components
-import Alert from 'components/Alert/Alert';
+import { Alert, Card } from 'tigerspack';
 import Books from 'components/Books/Books';
-import Card from 'components/Card/Card';
 import PersonalCard from 'components/PersonalCard/PersonalCard';
 import Skills from 'components/Skills/Skills';
 import Title from 'components/Title/Title';
@@ -77,20 +76,20 @@ class ProfileContainer extends Component {
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <Title>Profile</Title>
         <div className={styles.workPart}>
-          <Card className={styles.personalCardMobile} title='Andrei Arkhipov' color='blue' icon='id-card'>
+          <Card outline className={styles.personalCardMobile} title='Andrei Arkhipov' icon={<i className={'fa fa-id-card'}/>}>
             <PersonalCard data={AuthorInfo}/>
           </Card>
           <div className={styles.workPartHistory}>
             <EventsTimeline title='WORK HISTORY' icon={<i className='fa fa-briefcase'/>} color='blue' data={workData}/>
           </div>
           <div className={styles.workPartBlocks}>
-            <Card className={styles.personalCardDesktop} title='Andrei Arkhipov' color='blue' icon='id-card'>
+            <Card outline className={styles.personalCardDesktop} title='Andrei Arkhipov' icon={<i className={'fa fa-id-card'}/>}>
               <PersonalCard data={AuthorInfo}/>
             </Card>
-            <Card title='my favorite books' color='blue' icon='book' withoutContainer>
+            <Card outline title='my favorite books' icon={<i className={'fa fa-book'}/>} withoutContainer>
               <Books data={workBooks}/>
             </Card>
-            <Card title='DEVELOPMENT SKILLS' color='blue' icon='magic'>
+            <Card outline title='DEVELOPMENT SKILLS' icon={<i className={'fa fa-magic'}/>}>
               <Skills data={workSkills}/>
             </Card>
           </div>
