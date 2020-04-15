@@ -1,6 +1,6 @@
 import React from 'react';
 // Components
-import Card from 'components/Card/Card';
+import { Card } from 'tigerspack';
 // Styles
 import styles from './NotFound.scss';
 
