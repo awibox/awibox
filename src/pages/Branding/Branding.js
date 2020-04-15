@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'components/Card/Card';
+import { Card } from 'tigerspack';
 import Logo from 'components/Logo/Logo';
 import styles from './Branding.scss';
 
