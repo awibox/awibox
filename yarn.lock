@@ -9932,10 +9932,10 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-promise-loader@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.0.4.tgz#bb22da699fc4b71ea8331e3e0c68d2db8a9305d6"
-  integrity sha512-iRDUQcw72IZreeEeYCYyPZOagnpUSNx2iQOqplw2HwTQLQB+dUG4w8vxzcLvVby/kYaPXB5Zsxg6SFsfqhCf0A==
+react-promise-loader@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.0.5.tgz#b5fab14b579a793350aebfb2cc7b2dd0c2f4fbbd"
+  integrity sha512-nH5PfdPvD2dVy6TTDWlgLn1gj8Y95yWi8MH6tck28Lx8F2uUI0msVUJ4bVUjth1VUt0ChSE4zLxqr6r65b9MiQ==
   dependencies:
     prop-types "^15.7.2"
 
