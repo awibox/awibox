@@ -9912,10 +9912,10 @@ react-dom@16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-events-timeline@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-events-timeline/-/react-events-timeline-1.0.3.tgz#cdd592506a47631b27d287e6b6ff8e4927179e70"
-  integrity sha512-/6xkNeeF9MjMkU8WaV9gBrr1NuXA+lCxjHTOS3WCHJhehADRBc/aeoT5CPKyyJ0uVd7m/3pwDzJcrR8fEcBr2w==
+react-events-timeline@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-events-timeline/-/react-events-timeline-1.0.4.tgz#dd009176dbcb49ec9fade9697dc743b5f7570785"
+  integrity sha512-m80+2+CIks6QYLeLmPQb9xgmmJIMOlLNwVOShuDh8ipkyvsfQ8OgFT/84kTZvADEp3Dx8D3hnH4Zrj5adhKthA==
   dependencies:
     classnames "^2.2.6"
     prop-types "^15.7.2"
