@@ -9731,10 +9731,10 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-cookie-consent-notification@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-cookie-consent-notification/-/react-cookie-consent-notification-1.1.0.tgz#5fd1e5b3cbf622a6e8e2e867d32600ac55b2f697"
-  integrity sha512-AqgWIxvS2rdbYue9EEL/mfu/d2ukWBGDHOLbnzAdzBb9vNAsjFO7XQ0tPCRtFgF/MSy8Fw7FN+earOsyl3+yMg==
+react-cookie-consent-notification@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent-notification/-/react-cookie-consent-notification-1.1.1.tgz#59d36bc46b7c9818369ebcee35bd86972641b37f"
+  integrity sha512-TpEsXExyNtpoD6LW7h+Lqt9EiGQ4JmMEcwuCxFH66MvpPa89GuNA2Rlrn2i/7ipnY7qzPEgPpSqrzBjGnbybSQ==
   dependencies:
     combo-storage "^2.0.3"
     prop-types "^15.7.2"
