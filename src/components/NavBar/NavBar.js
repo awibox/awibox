@@ -27,6 +27,14 @@ export default class NavBar extends Component {
           <i className="fa fa-id-card"/>
           <span className={styles.navMenuItemText}>Profile</span>
         </NavLink>
+        <a className={styles.navMenuItem}
+           onClick={() => this.closeMenu()}
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://medium.com/awb-pw">
+          <i className="fa fa-medium"/>
+          <span className={styles.navMenuItemText}>Blog</span>
+        </a>
       </div>
     );
   }
