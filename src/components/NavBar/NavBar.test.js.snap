@@ -26,6 +26,22 @@ exports[`NavBar should render correctly 1`] = `
           Profile
         </span>
       </NavLink>
+      <a
+        className="navMenuItem"
+        href="https://medium.com/awb-pw"
+        onClick={[Function]}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          className="fa fa-medium"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Blog
+        </span>
+      </a>
     </div>
   </div>
   <div
@@ -58,6 +74,22 @@ exports[`NavBar should render correctly 1`] = `
           Profile
         </span>
       </NavLink>
+      <a
+        className="navMenuItem"
+        href="https://medium.com/awb-pw"
+        onClick={[Function]}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          className="fa fa-medium"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Blog
+        </span>
+      </a>
     </div>
   </div>
 </div>
