@@ -29,6 +29,6 @@ export const author = () => ({
   avatar: 'https://avatars1.githubusercontent.com/u/1931010?s=460&v=4',
   position: 'Chief Programmer at Luxoft',
   location: 'Russia, Saint Petersburg',
-  email: 'andrei@awb.pw',
+  email: 'me@awb.pw',
   services: services(),
 });
