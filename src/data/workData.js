@@ -57,7 +57,7 @@ export const workData = () => [
           <li>Performed Code Reviews</li>
           <li>Conducted 1-on-1 meetings with developers</li>
           <li>Interviewed candidates for developer position</li>
-          <li>Implemented GitLab Flow which allowed to eliminate time-consuming "git rebase"</li>
+          <li>Implemented GitLab Flow which allowed to eliminate time-consuming `git rebase`</li>
           <li>Implemented ТSLint to improve code readability</li>
           <li>Participated in the development of UI-kit for the project</li>
           <li>Participated in the development of a complex authentication system</li>
@@ -81,7 +81,8 @@ export const workData = () => [
             cut highlights from the live broadcast (Angular 2, D3.js).
           </li>
           <li>Made content management system for NTV Plus
-            (single-page application using Angular 2).</li>
+            (single-page application using Angular 2).
+          </li>
         </ul>
       </div>),
   },
