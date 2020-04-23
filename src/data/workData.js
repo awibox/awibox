@@ -7,7 +7,15 @@ export const workData = () => [
     label: 'Luxoft',
     location: 'Saint Petersburg (Russia)',
     content: (<div>
-      I am developing web services for an analytical system.
+      <div>Participated in the development of 2 projects:</div>
+      <ol>
+        <li>Web application for auditing facilities of a large oil company.</li>
+        <li>Analytical system that allows to build reports or charts.</li>
+      </ol>
+      <div>I was the lead developer. My responsibilities included developing and refactoring complex
+        parts of the project as well as conducting code reviews and increasing testing coverage.
+      </div>
+
     </div>),
   },
   {
@@ -17,20 +25,17 @@ export const workData = () => [
     location: 'Moscow (Russia)',
     content: (
       <div>
-        <div>I worked on high-load (with more than 6 millions users per month)
-          travel site system.
+        <div>I developed bus selling section (single page application with React) on high-load (with
+          more than 6 millions users per month) travel site system.
         </div>
-        <div>I developed bus selling section (single page application with React)</div>
         <ul>
-          <li>Optimized page loading speed on high-load pages</li>
-          <li>Refactoring the search form (an important part of the product)
-            due to a large number of inherited and global logical errors
+          <li>Page loading speed on high-load pages has been optimized by more than 2 times</li>
+          <li>The search form was refactored (an important part of the product) which was necessary
+            to fix a large number of inherited and global logical errors
           </li>
-          <li>Increased javascript unit tests coverage up to 60
-            per cent (karma, chai, enzyme, sinon)
-          </li>
-          <li>Developed new pages for product</li>
-          <li>Performed Сode Reviews</li>
+          <li>2-fold increase in unit test coverage</li>
+          <li>Developed new services for product</li>
+          <li>Performed Code Reviews</li>
           <li>Had experience in Scrum team</li>
           <li>Worked closely with UI/UX designer</li>
         </ul>
@@ -43,25 +48,20 @@ export const workData = () => [
     location: 'Moscow (Russia)',
     content: (
       <div>
-        <div>I led a front-end development team of 10 people on the education project -
-          Modeus:
+        <div>
+          I led a front-end development team of 10 people on the education project
         </div>
         <ul>
           <li>Planning the work of frontend teams</li>
-          <li>Communicated with project manager and analysts</li>
           <li>Made knowledge-sharing and documentation creation processes</li>
-          <li>Implemented GitLab Flow which allowed to eliminate
-            time-consuming &quot;git rebase&quot;</li>
-          <li>Implemented ТSLint (TypeScript linter)</li>
           <li>Performed Code Reviews</li>
           <li>Conducted 1-on-1 meetings with developers</li>
-          <li>Interviewed candidates for developer position Participated
-            in the development of a complex authentication system for Modeus
-          </li>
+          <li>Interviewed candidates for developer position</li>
+          <li>Implemented GitLab Flow which allowed to eliminate time-consuming `git rebase`</li>
+          <li>Implemented ТSLint to improve code readability</li>
+          <li>Participated in the development of UI-kit for the project</li>
+          <li>Participated in the development of a complex authentication system</li>
         </ul>
-        <div>Contributed to the development of UI Kit for the company.</div>
-        <div>Updated from Angular 2 to Angular 5.</div>
-        <div>Wrote unit tests (Jasmine).</div>
       </div>),
   },
   {
@@ -73,17 +73,17 @@ export const workData = () => [
       <div>
         <div>Participated in the development of projects:</div>
         <ul>
-          <li>Video hosting Rutube (Backbone)</li>
+          <li>Video hosting Rutube</li>
           <li>Development site and secure online voting system for the TEFI award</li>
-          <li>Broadcasts service NTV Plus (Backbone)</li>
+          <li>Broadcasts service NTV Plus</li>
+          <li>Developed the interface part of the online video
+            editor for NTV Plus which makes it possible to
+            cut highlights from the live broadcast (Angular 2, D3.js).
+          </li>
+          <li>Made content management system for NTV Plus
+            (single-page application using Angular 2).
+          </li>
         </ul>
-        <div>Developed the interface part of the online video
-          editor for NTV Plus which makes it possible to
-          cut highlights from the live broadcast (Angular 2, D3.js).
-        </div>
-        <div>Made content management system for NTV Plus
-          (single-page application using Angular 2).
-        </div>
       </div>),
   },
   {
@@ -93,8 +93,12 @@ export const workData = () => [
     location: 'Kazan (Russia)',
     content: (
       <div>
-        <div>Developed project for monitoring Cultural Heritage.</div>
-        <div>Developed front-end part of project BARS.Accessible Environment.</div>
+        <div>I developed front-end part of projects for public services such as:</div>
+        <ul>
+          <li>Monitoring Cultural Heritage</li>
+          <li>Accessible Environment</li>
+          <li>Social network for school children</li>
+        </ul>
       </div>),
   },
   {
