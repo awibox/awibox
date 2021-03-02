@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 // Components
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
-// Pages
-import ProfileContainer from 'containers/Profile/Profile';
-import NotFound from 'pages/NotFound/NotFound';
-import Branding from 'pages/Branding/Branding';
-import CookiePolicy from 'pages/CookiePolicy/CookiePolicy';
 // Styles
 import styles from 'styles/container.scss';
 import CookieConsent from 'react-cookie-consent-notification';
+// Router
+import Routes from './routes';
 
-class RouterComponent extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,17 +24,12 @@ class RouterComponent extends Component {
 
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <div className={styles.app}>
           <Header/>
           <main className={styles.content}>
             <div className={styles.wrapper}>
-              <Switch>
-                <Route exact path="/" component={ProfileContainer}/>
-                <Route exact path="/cookie-policy" component={CookiePolicy}/>
-                <Route exact path="/branding" component={Branding}/>
-                <Route component={NotFound}/>
-              </Switch>
+              <Routes />
             </div>
           </main>
           <CookieConsent
@@ -56,9 +48,9 @@ class RouterComponent extends Component {
           </CookieConsent>
           <Footer/>
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
 
-export default RouterComponent;
+export default App;
