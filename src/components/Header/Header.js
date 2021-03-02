@@ -1,4 +1,5 @@
 import React from 'react';
+import cn from 'classnames';
 import PropTypes from 'prop-types';
 // Styles
 import styles from './Header.scss';
@@ -28,6 +29,11 @@ const Header = (props) => {
           </ul>
         </div>
       </div>
+      <div className={styles.headerButtons}>
+        <a href="#" target="_blank" className={cn('btn-primary', styles.btnPrimary)}>Download CV</a>
+      </div>
+
+      <div className={styles.copyrights}>© 2020 All rights reserved.</div>
     </header>);
 };
 

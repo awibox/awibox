@@ -59,5 +59,21 @@ exports[`Header should render correctly 1`] = `
       </ul>
     </div>
   </div>
+  <div
+    className="headerButtons"
+  >
+    <a
+      className="btn-primary btnPrimary"
+      href="#"
+      target="_blank"
+    >
+      Download CV
+    </a>
+  </div>
+  <div
+    className="copyrights"
+  >
+    © 2020 All rights reserved.
+  </div>
 </header>
 `;
