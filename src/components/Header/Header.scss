@@ -78,6 +78,34 @@
   }
 }
 
+.headerButtons {
+  margin-top: 50px;
+  .btnPrimary {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: #fea621;
+      border-color: #fff;
+    }
+  }
+}
+
+
+
+.copyrights {
+  color: #fff;
+  width: 380px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 10px 15px;
+  line-height: 14px;
+  font-size: 12px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1025px) {
   .header {
     display: inline-block;

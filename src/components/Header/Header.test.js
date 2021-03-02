@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Header from './Header';
 import { Map } from 'immutable';
+import Header from './Header';
 
 const testData = Map({
   avatar: 'https://avatars1.githubusercontent.com/u/1931010?s=460&v=4',
