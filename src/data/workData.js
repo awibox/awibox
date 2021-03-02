@@ -3,7 +3,7 @@ import React from 'react';
 export const workData = () => [
   {
     date: 2019,
-    title: 'Chief Programmer',
+    title: 'Lead Software Engineer',
     label: 'Luxoft',
     location: 'Saint Petersburg (Russia)',
     content: (<div>
