@@ -1,17 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from 'components/Logo/Logo';
-// Components
-import NavBar from 'components/NavBar/NavBar';
+import PropTypes from 'prop-types';
 // Styles
 import styles from './Header.scss';
 
-const Header = () => (
-  <header className={styles.header}>
-    <Link className={styles.logoBlock} to="/">
-      <Logo/>
-    </Link>
-    <NavBar/>
-  </header>);
+
+const Header = (props) => {
+  const { data } = props;
+  return (
+    <header id="site_header" className={styles.header}>
+      <div className="header-content">
+        <div className={styles.headerPhoto}>
+          <img src={data.get('avatar')} alt="Alex Smith" />
+        </div>
+        <div className={styles.headerTitles}>
+          <h2>Alex Smith</h2>
+          <h4>Web Designer</h4>
+        </div>
+        <div className={styles.socialLinks}>
+          <ul>
+          {data.get('services') && data.get('services').map((item) => (
+            <li key={item.name}>
+              <a href={item.link} target='_blank' rel='noopener noreferrer'>
+                <i className={`fab fa-${item.icon}`}/>
+              </a>
+            </li>
+          ))}
+          </ul>
+        </div>
+      </div>
+    </header>);
+};
+
+Header.propTypes = {
+  data: PropTypes.any.isRequired,
+};
+
 
 export default Header;

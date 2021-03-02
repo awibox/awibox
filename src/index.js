@@ -6,6 +6,5 @@ import App from './app';
 // Styles
 import './styles/build.css';
 import './styles/bootstrap-grid.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));

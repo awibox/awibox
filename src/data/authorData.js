@@ -7,13 +7,13 @@ export const services = () => [
   },
   {
     name: 'linkedin',
-    icon: 'linkedin-square',
+    icon: 'linkedin-in',
     link: 'https://linkedin.com/in/awibox',
     color: '#0077B5',
   },
   {
     name: 'facebook',
-    icon: 'facebook-official',
+    icon: 'facebook-f',
     link: 'https://facebook.com/awiboxpw',
     color: '#4267b2',
   },

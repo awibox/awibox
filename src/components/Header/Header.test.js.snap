@@ -3,13 +3,61 @@
 exports[`Header should render correctly 1`] = `
 <header
   className="header"
+  id="site_header"
 >
-  <Link
-    className="logoBlock"
-    to="/"
+  <div
+    className="header-content"
   >
-    <Logo />
-  </Link>
-  <NavBar />
+    <div
+      className="headerPhoto"
+    >
+      <img
+        alt="Alex Smith"
+        src="https://avatars1.githubusercontent.com/u/1931010?s=460&v=4"
+      />
+    </div>
+    <div
+      className="headerTitles"
+    >
+      <h2>
+        Alex Smith
+      </h2>
+      <h4>
+        Web Designer
+      </h4>
+    </div>
+    <div
+      className="socialLinks"
+    >
+      <ul>
+        <li
+          key="github"
+        >
+          <a
+            href="https://github.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i
+              className="fab fa-github"
+            />
+          </a>
+        </li>
+        <li
+          key="linkedin"
+        >
+          <a
+            href="https://linkedin.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i
+              className="fab fa-linkedin-square"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
 `;

@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import ImmutablePropTypes from 'react-immutable-proptypes';
+import { Map } from 'immutable';
 import { BrowserRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 // Components
 import Header from 'components/Header/Header';
+import CookieConsent from 'react-cookie-consent-notification';
 // Styles
 import styles from 'styles/container.scss';
-import CookieConsent from 'react-cookie-consent-notification';
 // Router
 import Routes from './routes';
+// Selectors
+import { getAuthorInfoSelector } from './selectors/authorSelectors';
+import { getAuthorDataAction } from './actions/authorActions';
 
 class App extends Component {
   constructor(props) {
@@ -17,14 +24,27 @@ class App extends Component {
     this.checkStatus = this.checkStatus.bind(this);
   }
 
+  static propTypes = {
+    getAuthorDataAction: PropTypes.func.isRequired,
+    AuthorInfo: ImmutablePropTypes.map,
+  };
+
+  static defaultProps = {
+    AuthorInfo: Map({
+      avatar: '',
+    }),
+  };
+
   checkStatus(consentStatus) {
     this.setState({ consentStatus });
   }
 
   render() {
+    const { AuthorInfo } = this.props;
+
     return (
       <BrowserRouter>
-        <Header/>
+        <Header data={AuthorInfo} />
         <div className={styles.contentArea}>
           <Routes />
         </div>
@@ -47,4 +67,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  AuthorInfo: getAuthorInfoSelector(state),
+});
+
+const mapDispatchToProps = {
+  getAuthorDataAction,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
