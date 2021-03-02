@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 // Components
 import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
 // Styles
 import styles from 'styles/container.scss';
 import CookieConsent from 'react-cookie-consent-notification';
@@ -25,29 +24,24 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className={styles.app}>
-          <Header/>
-          <main className={styles.content}>
-            <div className={styles.wrapper}>
-              <Routes />
-            </div>
-          </main>
-          <CookieConsent
-            background={'#0079c1'}
-            bottomPosition={false}
-            buttonText={'I agree'}
-            buttonBackground={'#fff'}
-            buttonColor={'#000'}
-            buttonFontSize={14}
-            color={'#fff'}
-            consentFunction={this.checkStatus}
-            padding={20}
-          >
-            This website uses cookies for analytical purposes.
-            Please read our <a href={'/cookie-policy'} style={{ color: '#fff' }}>Cookie Policy</a> and confirm your consent to the use of cookies.
-          </CookieConsent>
-          <Footer/>
+        <Header/>
+        <div className={styles.contentArea}>
+          <Routes />
         </div>
+        <CookieConsent
+          background={'#0079c1'}
+          bottomPosition={false}
+          buttonText={'I agree'}
+          buttonBackground={'#fff'}
+          buttonColor={'#000'}
+          buttonFontSize={14}
+          color={'#fff'}
+          consentFunction={this.checkStatus}
+          padding={20}
+        >
+          This website uses cookies for analytical purposes.
+          Please read our <a href={'/cookie-policy'} style={{ color: '#fff' }}>Cookie Policy</a> and confirm your consent to the use of cookies.
+        </CookieConsent>
       </BrowserRouter>
     );
   }

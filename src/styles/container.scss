@@ -1,22 +1,14 @@
 @import './variables';
 
-.app {
-  position: relative;
-  padding-bottom: $footerHeight + $defaultIndent;
-}
-.wrapper {
+.contentArea {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  height: 100%;
   width: 100%;
-  min-width: $widthScreenMobileSmall;
-  margin: 0 auto;
-  box-sizing: border-box;
-  &:after {
-    display: block;
-    content: "";
-    clear: both;
-  }
+  max-width: calc(100% - 380px);
 }
-.content {
-}
+
 .cookies {
   visibility: visible;
   background-color: $blue;
