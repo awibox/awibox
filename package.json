@@ -94,7 +94,8 @@
     "test": "jest",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "prepare": "husky install"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -138,7 +139,7 @@
   "lint-staged": {
     "src/**/*.js": [
       "eslint --fix",
-      "npm run test:staged"
+      "npm run test"
     ]
   },
   "husky": {
