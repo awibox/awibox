@@ -46,7 +46,11 @@ class App extends Component {
       <BrowserRouter>
         <Header data={AuthorInfo} />
         <div className={styles.contentArea}>
-          <Routes />
+          <div className={styles.animatedSections}>
+            <section data-id="home" className={styles.animatedSection}>
+              <Routes />
+            </section>
+          </div>
         </div>
         <CookieConsent
           background={'#0079c1'}
