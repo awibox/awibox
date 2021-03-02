@@ -138,8 +138,8 @@
   "main": "webpack.config.js",
   "lint-staged": {
     "src/**/*.js": [
-      "eslint --fix",
-      "npm run test"
+      "yarn lint",
+      "yarn test"
     ]
   },
   "husky": {
