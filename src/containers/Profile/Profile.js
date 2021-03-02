@@ -16,7 +16,6 @@ import { Alert, Card } from 'tigerspack';
 import Books from 'components/Books/Books';
 import PersonalCard from 'components/PersonalCard/PersonalCard';
 import Skills from 'components/Skills/Skills';
-import Title from 'components/Title/Title';
 // Selectors
 import {
   getWorkDataSelector,
@@ -74,7 +73,6 @@ class ProfileContainer extends Component {
     return (
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
-        <Title>Profile</Title>
         <div className={styles.workPart}>
           <Card outline className={styles.personalCardMobile} title='Andrei Arkhipov' icon={<i className={'fa fa-id-card'}/>}>
             <PersonalCard data={AuthorInfo}/>
