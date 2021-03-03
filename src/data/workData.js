@@ -6,17 +6,18 @@ export const workData = () => [
     title: 'Lead Software Engineer',
     label: 'Luxoft',
     location: 'Saint Petersburg (Russia)',
-    content: (<p>
-      <div>Participated in the development of 2 projects:</div>
-      <ul>
-        <li>Web application for auditing facilities of a large oil company.</li>
-        <li>Analytical system that allows to build reports or charts.</li>
-      </ul>
-      <div>I was the lead developer. My responsibilities included developing and refactoring complex
-        parts of the project as well as conducting code reviews and increasing testing coverage.
-      </div>
-
-    </p>),
+    content: (
+      <>
+        <div>Participated in the development of 2 projects:</div>
+        <ul>
+          <li>Web application for auditing facilities of a large oil company.</li>
+          <li>Analytical system that allows to build reports or charts.</li>
+        </ul>
+        <div>I was the lead developer. My responsibilities included developing and refactoring
+          complex parts of the project as well as conducting code reviews and increasing
+          testing coverage.
+        </div>
+      </>),
   },
   {
     date: '2018 - 2019',
@@ -24,7 +25,7 @@ export const workData = () => [
     label: 'Tutu.ru',
     location: 'Moscow (Russia)',
     content: (
-      <p>
+      <>
         <div>I developed bus selling section (single page application with React) on high-load (with
           more than 6 millions users per month) travel site system.
         </div>
@@ -39,7 +40,7 @@ export const workData = () => [
           <li>Had experience in Scrum team</li>
           <li>Worked closely with UI/UX designer</li>
         </ul>
-      </p>),
+      </>),
   },
   {
     date: '2016 - 2018',
@@ -47,7 +48,7 @@ export const workData = () => [
     label: 'CUSTIS',
     location: 'Moscow (Russia)',
     content: (
-      <p>
+      <>
         <div>
           I led a front-end development team of 10 people on the education project
         </div>
@@ -62,7 +63,7 @@ export const workData = () => [
           <li>Participated in the development of UI-kit for the project</li>
           <li>Participated in the development of a complex authentication system</li>
         </ul>
-      </p>),
+      </>),
   },
   {
     date: '2013 - 2016',
@@ -70,7 +71,7 @@ export const workData = () => [
     label: 'Rutube',
     location: 'Moscow (Russia)',
     content: (
-      <p>
+      <>
         <div>Participated in the development of projects:</div>
         <ul>
           <li>Video hosting Rutube</li>
@@ -84,7 +85,7 @@ export const workData = () => [
             (single-page application using Angular 2).
           </li>
         </ul>
-      </p>),
+      </>),
   },
   {
     date: '2012 - 2013',
@@ -92,14 +93,14 @@ export const workData = () => [
     label: 'BARS GROUP',
     location: 'Kazan (Russia)',
     content: (
-      <p>
+      <>
         <div>I developed front-end part of projects for public services such as:</div>
         <ul>
           <li>Monitoring Cultural Heritage</li>
           <li>Accessible Environment</li>
           <li>Social network for school children</li>
         </ul>
-      </p>),
+      </>),
   },
   {
     date: '2007 - 2012',
@@ -107,18 +108,17 @@ export const workData = () => [
     label: 'Freelance',
     location: 'Kazan (Russia)',
     content: (
-      <p>
-        <div>It was my hobby.</div>
-        <div>I created different websites using CMS such as Wordpress,
+      <>
+        <div>I created websites using CMS such as Wordpress,
           Joomla, NetCat, 1C Bitrix.
         </div>
-      </p>),
+      </>),
   },
 ];
 
 export const workCertificates = () => [
   {
-    name: 'JavaScript (Basic) Certificate',
+    name: 'JavaScript',
     id: 'F510F1E6D375',
     date: 'Apr 2020',
     company: 'Hacker Rank',
@@ -126,7 +126,7 @@ export const workCertificates = () => [
     link: 'https://www.hackerrank.com/certificates/',
   },
   {
-    name: 'React (Basic) Certificate',
+    name: 'React',
     id: '8DABF8164735',
     date: 'Apr 2020',
     company: 'Hacker Rank',
@@ -134,7 +134,7 @@ export const workCertificates = () => [
     link: 'https://www.hackerrank.com/certificates/',
   },
   {
-    name: 'Problem Solving (Basic) Certificate',
+    name: 'Problem Solving',
     id: 'D18174E870B3',
     date: 'Apr 2020',
     company: 'Hacker Rank',
@@ -142,7 +142,7 @@ export const workCertificates = () => [
     link: 'https://www.hackerrank.com/certificates/',
   },
   {
-    name: 'Python (Basic) Certificate',
+    name: 'Python',
     id: '9D32D3FBF1E6',
     date: 'Apr 2020',
     company: 'Hacker Rank',

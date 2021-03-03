@@ -68,7 +68,7 @@ class ProfileContainer extends Component {
       errors,
     } = this.props;
     return (
-      <div>
+      <>
         <Title>Resume</Title>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <div className="section-content">
@@ -80,7 +80,7 @@ class ProfileContainer extends Component {
           <Certificates data={workCertificates} />
         </div>
         <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'} />
-      </div>
+      </>
     );
   }
 }
