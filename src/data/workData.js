@@ -8,15 +8,14 @@ export const workData = () => [
     location: 'Saint Petersburg (Russia)',
     content: (
       <>
-        <div>Participated in the development of 2 projects:</div>
+        <div>I&apos;m a team lead on a project of public services.
+          My team is developing a new version of the form player from scratch.</div>
         <ul>
-          <li>Web application for auditing facilities of a large oil company.</li>
-          <li>Analytical system that allows to build reports or charts.</li>
+          <li>Building a client-side architecture.</li>
+          <li>Integration of automatic code verification</li>
+          <li>The process of code review</li>
+          <li>Delivery as an npm package</li>
         </ul>
-        <div>I was the lead developer. My responsibilities included developing and refactoring
-          complex parts of the project as well as conducting code reviews and increasing
-          testing coverage.
-        </div>
       </>),
   },
   {

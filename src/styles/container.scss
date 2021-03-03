@@ -68,3 +68,18 @@
   padding: 30px 60px;
   position: relative;
 }
+
+@media only screen and (max-width: 1280px) {
+  .contentArea {
+    max-width: calc(100% - 330px);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contentArea {
+    max-width: 100%;
+  }
+  .animatedSection {
+    border-radius: 0;
+    overflow: auto !important;
+  }
+}

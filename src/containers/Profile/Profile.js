@@ -27,7 +27,7 @@ import Timeline from '../../components/Timeline/Timeline';
 import Skills from '../../components/Skills/Skills';
 import Certificates from '../../components/Certificates/Certificates';
 // Styles
-// import styles from './Profile.scss';
+import styles from './Profile.scss';
 
 
 class ProfileContainer extends Component {
@@ -69,7 +69,47 @@ class ProfileContainer extends Component {
     } = this.props;
     return (
       <>
-        <Title>Resume</Title>
+        <Title>About <span>me</span></Title>
+        <div className="row">
+          <div className="col-xs-12 col-md-7">
+            <div className={styles.description}>
+              <ul>
+                <li>12+ years of experience</li>
+                <li>Tech stack: JavaScript, TypeScript, React, Angular 2+,
+                  Node.js (Express, Next.js)</li>
+                <li>Participated in the development of 20+ web-applications in various industries
+                  (include high-load platform)</li>
+                <li>Experience creating apps from scratch</li>
+                <li>Automating everything that can be automated</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-xs-12 col-md-5">
+            <div className={styles.infoList}>
+              <ul>
+                <li>
+                  <span className={styles.title}>Name</span>
+                  <span className="value">Andrei Arkhipov</span>
+                </li>
+
+                <li>
+                  <span className={styles.title}>Country</span>
+                  <span className="value">Russia</span>
+                </li>
+
+                <li>
+                  <span className={styles.title}>City</span>
+                  <span className="value">Saint-Petersburg</span>
+                </li>
+
+                <li>
+                  <span className={styles.title}>E-mail</span>
+                  <span className="value">me@awb.pw</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <div className="section-content">
           <Title subtitle>Experience</Title>

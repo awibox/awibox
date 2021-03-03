@@ -1,55 +1,23 @@
-@import '../../styles/variables';
-
-.workPart {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  padding: $defaultIndent;
-}
-%workPartItem {
-  padding: 10px;
-  box-sizing: border-box;
-}
-.workPartHistory {
-  @extend %workPartItem;
-  width: 60%;
-  overflow-y: hidden;
-}
-.workPartBlocks {
-  @extend %workPartItem;
-  width: 40%;
-  padding-top: 98px;
-}
-.personalCardMobile {
-  display: none;
-  margin: $defaultIndent;
-}
-.personalCardDesktop {
-  display: block;
+.description {
+  margin-bottom: 50px;
+  ul {
+    margin-left: 16px;
+  }
 }
 
-@media (max-width: $widthScreenTabletDefault) {
-  .workPart {
-    flex-flow: column;
-  }
-  .workPartHistory {
-    width: 100%;
-  }
-  .workPartBlocks {
-    padding-top: 30px;
-    width: 100%;
-  }
-  .personalCardMobile {
-    display: block;
-  }
-  .personalCardDesktop {
-    display: none;
-  }
-}
-@media (max-width: $widthScreenMobileLarge) {
-  .workPart {
-    flex-flow: column;
+.infoList {
+  margin-bottom: 50px;
+  ul {
+    list-style: none;
     padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .title {
+    color: #fea621;
+    margin-right: 5px;
+    font-weight: 600;
   }
 }
