@@ -21,6 +21,8 @@ import {
 } from 'selectors/profileSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import 'react-events-timeline/dist/main.css';
+import Timeline from '../../components/Timeline/Timeline';
+import Skills from '../../components/Skills/Skills';
 // Styles
 // import styles from './Profile.scss';
 
@@ -54,7 +56,7 @@ class ProfileContainer extends Component {
     const {
       workData,
       workSkills,
-      workBooks,
+      // workBooks,
       errors,
     } = this.props;
 
@@ -64,6 +66,9 @@ class ProfileContainer extends Component {
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <div className="section-content">
           <Title subtitle>Experience</Title>
+          <Timeline data={workData} />
+          <Title subtitle>My <span>skills</span></Title>
+          <Skills data={workSkills} />
           <div className="row">
             <div className="col-xs-12 col-sm-7">
 

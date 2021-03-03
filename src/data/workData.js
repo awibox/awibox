@@ -2,29 +2,29 @@ import React from 'react';
 
 export const workData = () => [
   {
-    date: 2019,
+    date: '2019 - Current',
     title: 'Lead Software Engineer',
     label: 'Luxoft',
     location: 'Saint Petersburg (Russia)',
-    content: (<div>
+    content: (<p>
       <div>Participated in the development of 2 projects:</div>
-      <ol>
+      <ul>
         <li>Web application for auditing facilities of a large oil company.</li>
         <li>Analytical system that allows to build reports or charts.</li>
-      </ol>
+      </ul>
       <div>I was the lead developer. My responsibilities included developing and refactoring complex
         parts of the project as well as conducting code reviews and increasing testing coverage.
       </div>
 
-    </div>),
+    </p>),
   },
   {
-    date: 2018,
+    date: '2018 - 2019',
     title: 'Senior Software Engineer',
     label: 'Tutu.ru',
     location: 'Moscow (Russia)',
     content: (
-      <div>
+      <p>
         <div>I developed bus selling section (single page application with React) on high-load (with
           more than 6 millions users per month) travel site system.
         </div>
@@ -39,15 +39,15 @@ export const workData = () => [
           <li>Had experience in Scrum team</li>
           <li>Worked closely with UI/UX designer</li>
         </ul>
-      </div>),
+      </p>),
   },
   {
-    date: 2016,
+    date: '2016 - 2018',
     title: 'Lead Software Developer',
     label: 'CUSTIS',
     location: 'Moscow (Russia)',
     content: (
-      <div>
+      <p>
         <div>
           I led a front-end development team of 10 people on the education project
         </div>
@@ -62,15 +62,15 @@ export const workData = () => [
           <li>Participated in the development of UI-kit for the project</li>
           <li>Participated in the development of a complex authentication system</li>
         </ul>
-      </div>),
+      </p>),
   },
   {
-    date: 2013,
-    title: 'Software Engineer',
+    date: '2013 - 2016',
+    title: 'Senior Software Engineer',
     label: 'Rutube',
     location: 'Moscow (Russia)',
     content: (
-      <div>
+      <p>
         <div>Participated in the development of projects:</div>
         <ul>
           <li>Video hosting Rutube</li>
@@ -84,35 +84,35 @@ export const workData = () => [
             (single-page application using Angular 2).
           </li>
         </ul>
-      </div>),
+      </p>),
   },
   {
-    date: 2012,
+    date: '2012 - 2013',
     title: 'Web Developer',
     label: 'BARS GROUP',
     location: 'Kazan (Russia)',
     content: (
-      <div>
+      <p>
         <div>I developed front-end part of projects for public services such as:</div>
         <ul>
           <li>Monitoring Cultural Heritage</li>
           <li>Accessible Environment</li>
           <li>Social network for school children</li>
         </ul>
-      </div>),
+      </p>),
   },
   {
-    date: 2007,
+    date: '2007 - 2012',
     title: 'Web Developer',
     label: 'Freelance',
     location: 'Kazan (Russia)',
     content: (
-      <div>
+      <p>
         <div>It was my hobby.</div>
         <div>I created different websites using CMS such as Wordpress,
           Joomla, NetCat, 1C Bitrix.
         </div>
-      </div>),
+      </p>),
   },
 ];
 

@@ -1,24 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card should render correctly 1`] = `
-<div>
-  <div
+<ul
+  className="skills"
+>
+  <li
     className="skillItem"
     key="react"
   >
     react
-  </div>
-  <div
+  </li>
+  <li
     className="skillItem"
     key="js"
   >
     js
-  </div>
-  <div
+  </li>
+  <li
     className="skillItem"
     key="css"
   >
     css
-  </div>
-</div>
+  </li>
+</ul>
 `;

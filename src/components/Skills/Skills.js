@@ -6,11 +6,11 @@ import styles from './Skills.scss';
 
 
 const Skills = (props) => (
-  <div className={styles.skills}>
+  <ul className={styles.skills}>
     {props.data.map((item) => (
-      <div key={item.name} className={styles.skillItem}>{item.name}</div>
+      <li key={item.name} className={styles.skillItem}>{item.name}</li>
     ))}
-  </div>
+  </ul>
 );
 
 Skills.propTypes = {
