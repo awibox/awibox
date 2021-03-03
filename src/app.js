@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import ImmutablePropTypes from 'react-immutable-proptypes';
+import { Map } from 'immutable';
 import { BrowserRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 // Components
 import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
+import CookieConsent from 'react-cookie-consent-notification';
 // Styles
 import styles from 'styles/container.scss';
-import CookieConsent from 'react-cookie-consent-notification';
 // Router
 import Routes from './routes';
+// Selectors
+import { getAuthorInfoSelector } from './selectors/authorSelectors';
+import { getAuthorDataAction } from './actions/authorActions';
 
 class App extends Component {
   constructor(props) {
@@ -18,39 +24,64 @@ class App extends Component {
     this.checkStatus = this.checkStatus.bind(this);
   }
 
+  static propTypes = {
+    getAuthorDataAction: PropTypes.func.isRequired,
+    AuthorInfo: ImmutablePropTypes.map,
+  };
+
+  static defaultProps = {
+    AuthorInfo: Map({
+      avatar: '',
+    }),
+  };
+
   checkStatus(consentStatus) {
     this.setState({ consentStatus });
   }
 
+  componentDidMount() {
+    this.props.getAuthorDataAction();
+  }
+
   render() {
+    const { AuthorInfo } = this.props;
     return (
       <BrowserRouter>
-        <div className={styles.app}>
-          <Header/>
-          <main className={styles.content}>
-            <div className={styles.wrapper}>
-              <Routes />
-            </div>
-          </main>
-          <CookieConsent
-            background={'#0079c1'}
-            bottomPosition={false}
-            buttonText={'I agree'}
-            buttonBackground={'#fff'}
-            buttonColor={'#000'}
-            buttonFontSize={14}
-            color={'#fff'}
-            consentFunction={this.checkStatus}
-            padding={20}
-          >
-            This website uses cookies for analytical purposes.
-            Please read our <a href={'/cookie-policy'} style={{ color: '#fff' }}>Cookie Policy</a> and confirm your consent to the use of cookies.
-          </CookieConsent>
-          <Footer/>
+        <Header data={AuthorInfo} />
+        <div className={styles.contentArea}>
+          <div className={styles.animatedSections}>
+            <section data-id="home" className={styles.animatedSection}>
+              <div className={styles.scrollbar}>
+                <Routes />
+              </div>
+            </section>
+          </div>
         </div>
+        <CookieConsent
+          background={'#0079c1'}
+          bottomPosition={false}
+          buttonText={'I agree'}
+          buttonBackground={'#fff'}
+          buttonColor={'#000'}
+          buttonFontSize={14}
+          color={'#fff'}
+          consentFunction={this.checkStatus}
+          padding={20}
+        >
+          This website uses cookies for analytical purposes.
+          Please read our <a href={'/cookie-policy'} style={{ color: '#fff' }}>Cookie Policy</a> and confirm your consent to the use of cookies.
+        </CookieConsent>
       </BrowserRouter>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  AuthorInfo: getAuthorInfoSelector(state),
+});
+
+const mapDispatchToProps = {
+  getAuthorDataAction,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

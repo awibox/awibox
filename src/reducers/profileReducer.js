@@ -2,6 +2,7 @@ import {
   GET_WORK_DATA,
   GET_WORK_SKILLS,
   GET_WORK_BOOKS,
+  GET_WORK_CERTIFICATES,
 } from 'actions/types';
 import { List } from 'immutable';
 
@@ -23,6 +24,11 @@ const profileReducer = (state = initialState, action) => {
       return {
         ...state,
         workBooks: List(action.payload),
+      };
+    case GET_WORK_CERTIFICATES:
+      return {
+        ...state,
+        workCertificates: List(action.payload),
       };
     default:
       return state;

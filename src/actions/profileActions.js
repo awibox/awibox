@@ -1,5 +1,12 @@
-import { GET_WORK_DATA, GET_WORK_SKILLS, GET_WORK_BOOKS } from 'actions/types';
-import { workData, workSkills, workBooks } from 'data/workData';
+import {
+  GET_WORK_DATA,
+  GET_WORK_SKILLS,
+  GET_WORK_BOOKS,
+  GET_WORK_CERTIFICATES,
+} from 'actions/types';
+import {
+  workData, workSkills, workBooks, workCertificates,
+} from 'data/workData';
 import { getError } from './errorActions';
 
 export const getWorkData = (data) => ({
@@ -14,6 +21,11 @@ export const getWorkSkills = (data) => ({
 
 export const getWorkBooks = (data) => ({
   type: GET_WORK_BOOKS,
+  payload: data,
+});
+
+export const getWorkCertificates = (data) => ({
+  type: GET_WORK_CERTIFICATES,
   payload: data,
 });
 
@@ -46,6 +58,17 @@ export const getWorkBooksAction = () => (dispatch) => {
   } catch (err) {
     dispatch(getError({
       message: 'Work books not found',
+    }));
+  }
+};
+
+export const getWorkCertificatesAction = () => (dispatch) => {
+  try {
+    const certificates = workCertificates();
+    dispatch(getWorkCertificates(certificates));
+  } catch (err) {
+    dispatch(getError({
+      message: 'Work certificates not found',
     }));
   }
 };
