@@ -39,9 +39,12 @@ class App extends Component {
     this.setState({ consentStatus });
   }
 
+  componentDidMount() {
+    this.props.getAuthorDataAction();
+  }
+
   render() {
     const { AuthorInfo } = this.props;
-    console.log('this.props', this.props);
     return (
       <BrowserRouter>
         <Header data={AuthorInfo} />
