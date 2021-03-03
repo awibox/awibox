@@ -190,12 +190,6 @@
 
 }
 
-@media only screen and (max-width: 1280px) {
-  .header {
-    max-width: 330px;
-  }
-}
-
 @media only screen and (min-width: 1025px) {
   .header {
     display: inline-block;
@@ -267,5 +261,11 @@
 @media only screen and (min-width: 1025px) {
   .menuToggle {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .header {
+    max-width: 330px;
   }
 }
