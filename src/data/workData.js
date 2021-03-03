@@ -116,6 +116,41 @@ export const workData = () => [
   },
 ];
 
+export const workCertificates = () => [
+  {
+    name: 'JavaScript (Basic) Certificate',
+    id: 'F510F1E6D375',
+    date: 'Apr 2020',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'React (Basic) Certificate',
+    id: '8DABF8164735',
+    date: 'Apr 2020',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'Problem Solving (Basic) Certificate',
+    id: 'D18174E870B3',
+    date: 'Apr 2020',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'Python (Basic) Certificate',
+    id: '9D32D3FBF1E6',
+    date: 'Apr 2020',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+];
+
 export const workBooks = () => [
   {
     name: 'Eloquent JavaScript',
