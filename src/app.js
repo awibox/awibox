@@ -51,7 +51,9 @@ class App extends Component {
         <div className={styles.contentArea}>
           <div className={styles.animatedSections}>
             <section data-id="home" className={styles.animatedSection}>
-              <Routes />
+              <div className={styles.scrollbar}>
+                <Routes />
+              </div>
             </section>
           </div>
         </div>
