@@ -1,12 +1,9 @@
 import React from 'react';
 import { Card } from 'tigerspack';
-import Title from 'components/Title/Title';
 
 const CookiePolicy = () => (
   <div>
-    <Title>
-      <div style={{ textAlign: 'center' }}>Cookie Policy</div>
-    </Title>
+    <div style={{ textAlign: 'center' }}>Cookie Policy</div>
     <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center' }}>
       <div style={{ padding: '20px', maxWidth: '500px' }}>
         <Card title={'Why we use cookies?'}>

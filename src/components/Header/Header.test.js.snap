@@ -1,15 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should render correctly 1`] = `
-<header
-  className="header"
->
-  <Link
-    className="logoBlock"
-    to="/"
+<Fragment>
+  <header
+    className="header menuHide"
+    id="site_header"
   >
-    <Logo />
-  </Link>
-  <NavBar />
-</header>
+    <div
+      className="header-content"
+    >
+      <div
+        className="headerPhoto"
+      >
+        <img
+          src="https://avatars1.githubusercontent.com/u/1931010?s=460&v=4"
+        />
+      </div>
+      <div
+        className="headerTitles"
+      >
+        <h2 />
+        <h4>
+          Test position
+        </h4>
+      </div>
+      <div
+        className="socialLinks"
+      >
+        <ul>
+          <li
+            key="github"
+          >
+            <a
+              href="https://github.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                className="fab fa-github"
+              />
+            </a>
+          </li>
+          <li
+            key="linkedin"
+          >
+            <a
+              href="https://linkedin.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                className="fab fa-linkedin-square"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="headerButtons"
+    />
+    <div
+      className="copyrights"
+    >
+      © 2020 All rights reserved.
+    </div>
+  </header>
+  <div
+    className="menuToggle"
+    onClick={[Function]}
+  >
+    <span />
+    <span />
+    <span />
+  </div>
+</Fragment>
 `;

@@ -4,6 +4,8 @@ exports[`Title should render correctly 1`] = `
 <div
   className="title"
 >
-  Test title
+  <h2>
+    Test title
+  </h2>
 </div>
 `;
