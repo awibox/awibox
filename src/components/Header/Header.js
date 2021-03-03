@@ -4,18 +4,17 @@ import PropTypes from 'prop-types';
 // Styles
 import styles from './Header.scss';
 
-
 const Header = (props) => {
   const { data } = props;
   return (
     <header id="site_header" className={styles.header}>
       <div className="header-content">
         <div className={styles.headerPhoto}>
-          <img src={data.get('avatar')} alt="Alex Smith" />
+          <img src={data.get('avatar')} alt={data.get('name')} />
         </div>
         <div className={styles.headerTitles}>
-          <h2>Alex Smith</h2>
-          <h4>Web Designer</h4>
+          <h2>{data.get('name')}</h2>
+          <h4>{data.get('position')}</h4>
         </div>
         <div className={styles.socialLinks}>
           <ul>
@@ -30,7 +29,7 @@ const Header = (props) => {
         </div>
       </div>
       <div className={styles.headerButtons}>
-        <a href="#" target="_blank" className={cn('btn-primary', styles.btnPrimary)}>Download CV</a>
+        {data.get('cv') ? <a href={data.get('cv')} rel="noopener noreferrer" target="_blank" className={cn('btn-primary', styles.btnPrimary)}>Download CV</a> : ''}
       </div>
 
       <div className={styles.copyrights}>© 2020 All rights reserved.</div>
@@ -40,6 +39,5 @@ const Header = (props) => {
 Header.propTypes = {
   data: PropTypes.any.isRequired,
 };
-
 
 export default Header;

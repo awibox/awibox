@@ -41,7 +41,7 @@ class App extends Component {
 
   render() {
     const { AuthorInfo } = this.props;
-
+    console.log('this.props', this.props);
     return (
       <BrowserRouter>
         <Header data={AuthorInfo} />
