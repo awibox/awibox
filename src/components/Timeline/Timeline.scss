@@ -1,0 +1,121 @@
+.timeline {
+  margin-bottom: 50px;
+  .timelineItem {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-bottom: 15px;
+    &:last-child {
+      padding-bottom: 0;
+      .right-part {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .leftPart {
+    width: 20%;
+    display: table-cell;
+    padding-right: 25px;
+    min-height: 100%;
+    text-align: right;
+    vertical-align: top;
+  }
+  .rightPart {
+    width: 80%;
+    display: table-cell;
+    padding-left: 25px;
+    padding-right: 15px;
+    vertical-align: top;
+    p, p > * {
+      font-size: 0.92em;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  }
+  .divider {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    bottom: 0;
+    width: 1px;
+    background-color: #eee;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      margin-top: 4px;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      margin-left: -8px;
+      border-radius: 10px;
+      background-color: #fea621;
+      opacity: .25;
+      z-index: 0;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      margin-top: 8px;
+      width: 9px;
+      height: 9px;
+      margin-left: -4px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 2px solid #fea621;
+      z-index: 1;
+    }
+  }
+  .itemTitle {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  .itemPeriod {
+    margin: 3px 0;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  .itemCompany {
+    display: block;
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.45em;
+    color: #a5a6a7;
+  }
+  .item-logo {
+    display: block;
+    margin-bottom: 10px;
+    img {
+      max-height: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .timeline {
+    .timelineItem {
+      position: relative;
+      display: block;
+    }
+    .leftPart {
+      width: 100%;
+      display: block;
+      padding-left: 25px;
+      min-height: 100%;
+      text-align: left;
+    }
+    .divider {
+      left: 0;
+    }
+    .rightPart {
+      width: 100%;
+      display: block;
+      padding-left: 25px;
+      padding-right: 0;
+    }
+  }
+}
