@@ -12,18 +12,15 @@ exports[`Header should render correctly 1`] = `
       className="headerPhoto"
     >
       <img
-        alt="Alex Smith"
         src="https://avatars1.githubusercontent.com/u/1931010?s=460&v=4"
       />
     </div>
     <div
       className="headerTitles"
     >
-      <h2>
-        Alex Smith
-      </h2>
+      <h2 />
       <h4>
-        Web Designer
+        Test position
       </h4>
     </div>
     <div
@@ -61,15 +58,7 @@ exports[`Header should render correctly 1`] = `
   </div>
   <div
     className="headerButtons"
-  >
-    <a
-      className="btn-primary btnPrimary"
-      href="#"
-      target="_blank"
-    >
-      Download CV
-    </a>
-  </div>
+  />
   <div
     className="copyrights"
   >

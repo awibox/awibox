@@ -1,5 +1,5 @@
-import { GET_AUTHOR_DATA, GET_AUTHOR_SERVICES } from 'actions/types';
-import { List, Map } from 'immutable';
+import { GET_AUTHOR_DATA } from 'actions/types';
+import { Map } from 'immutable';
 
 const initialState = {};
 
@@ -9,11 +9,6 @@ const profileReducer = (state = initialState, action) => {
       return {
         ...state,
         authorInfo: Map(action.payload),
-      };
-    case GET_AUTHOR_SERVICES:
-      return {
-        ...state,
-        authorServices: List(action.payload),
       };
     default:
       return state;
