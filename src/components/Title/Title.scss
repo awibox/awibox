@@ -1,0 +1,31 @@
+.title {
+  display: inline-block;
+  position: relative;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  h2 {
+    position: relative;
+    font-size: 32px;
+    z-index: 1;
+    span {
+      color: #fea621;
+    }
+  }
+  &:after {
+    position: absolute;
+    opacity: 0.45;
+    top: 10px;
+    right: 0;
+    content: '';
+    height: 30px;
+    width: 50px;
+    background-image: -webkit-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+    -webkit-background-size: 6px 6px;
+    -moz-background-size: 6px 6px;
+    background-size: 6px 6px;
+    z-index: 0;
+  }
+}
