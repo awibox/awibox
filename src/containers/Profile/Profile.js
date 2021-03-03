@@ -14,6 +14,7 @@ import {
 import { Alert, Card } from 'tigerspack';
 import Books from 'components/Books/Books';
 import Skills from 'components/Skills/Skills';
+import Title from 'components/Title/Title';
 // Selectors
 import {
   getWorkDataSelector,
@@ -62,6 +63,7 @@ class ProfileContainer extends Component {
 
     return (
       <div>
+        <Title>Resume</Title>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <div className={styles.workPart}>
           <div className={styles.workPartHistory}>
