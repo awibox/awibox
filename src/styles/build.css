@@ -254,3 +254,22 @@ input[type="submit"]:focus {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
+@media only screen and (max-width: 1280px) {
+    .page {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page {
+        padding: 0;
+    }
+
+    .page-content {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        min-height: 100%;
+    }
+}
