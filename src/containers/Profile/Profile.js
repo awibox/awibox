@@ -93,13 +93,8 @@ class ProfileContainer extends Component {
                 </li>
 
                 <li>
-                  <span className={styles.title}>Country</span>
-                  <span className="value">Russia</span>
-                </li>
-
-                <li>
-                  <span className={styles.title}>City</span>
-                  <span className="value">Saint-Petersburg</span>
+                  <span className={styles.title}>Location</span>
+                  <span className="value">Russia, Saint-Petersburg</span>
                 </li>
 
                 <li>

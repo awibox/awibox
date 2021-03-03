@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 // Styles
@@ -6,9 +6,10 @@ import styles from './Header.scss';
 
 const Header = (props) => {
   const { data } = props;
+  const [showHeader, setHeaderState] = useState(false);
   return (
     <>
-      <header id="site_header" className={styles.header}>
+      <header id="site_header" className={cn(styles.header, { [styles.menuHide]: !showHeader })}>
         <div className="header-content">
           <div className={styles.headerPhoto}>
             <img src={data.get('avatar')} alt={data.get('name')} />
@@ -34,7 +35,8 @@ const Header = (props) => {
         </div>
         <div className={styles.copyrights}>© 2020 All rights reserved.</div>
       </header>
-      <div className={cn(styles.menuToggle, styles.open)}>
+      <div className={cn(styles.menuToggle, { [styles.open]: showHeader })}
+           onClick={() => setHeaderState(!showHeader)}>
         <span></span>
         <span></span>
         <span></span>

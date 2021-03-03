@@ -237,9 +237,35 @@
       margin-top: 30px;
     }
   }
+  .headerTitles {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-size: 17px;
+    }
+  }
+
+  .headerPhoto {
+    max-width: 130px;
+    margin-bottom: 25px;
+  }
+
+  .menuHide {
+    width: 0;
+    right: 0;
+    margin-right: -100%;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
 }
 @media only screen and (min-width: 1025px) {
-  .menu-toggle {
+  .menuToggle {
     display: none;
   }
 }

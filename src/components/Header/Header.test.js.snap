@@ -3,7 +3,7 @@
 exports[`Header should render correctly 1`] = `
 <Fragment>
   <header
-    className="header"
+    className="header menuHide"
     id="site_header"
   >
     <div
@@ -67,7 +67,8 @@ exports[`Header should render correctly 1`] = `
     </div>
   </header>
   <div
-    className="menuToggle open"
+    className="menuToggle"
+    onClick={[Function]}
   >
     <span />
     <span />
