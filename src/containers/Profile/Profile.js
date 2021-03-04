@@ -12,7 +12,6 @@ import {
   getWorkCertificatesAction,
 } from 'actions/profileActions';
 // Components
-import { Alert } from 'tigerspack';
 import Title from 'components/Title/Title';
 // Selectors
 import {
@@ -22,7 +21,6 @@ import {
   getWorkCertificatesSelector,
 } from 'selectors/profileSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
-import 'react-events-timeline/dist/main.css';
 import Timeline from '../../components/Timeline/Timeline';
 import Skills from '../../components/Skills/Skills';
 import Certificates from '../../components/Certificates/Certificates';
@@ -30,7 +28,6 @@ import Certificates from '../../components/Certificates/Certificates';
 import styles from './Profile.scss';
 import { getAuthorInfoSelector } from '../../selectors/authorSelectors';
 import { getAuthorDataAction } from '../../actions/authorActions';
-
 
 class ProfileContainer extends Component {
   static propTypes = {
@@ -105,7 +102,7 @@ class ProfileContainer extends Component {
             </div>
           </div>
         </div>
-        {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
+        {typeof errors.message !== 'undefined' && errors.message}
         <div className="section-content">
           <Title subtitle>Experience</Title>
           <Timeline data={workData} />
