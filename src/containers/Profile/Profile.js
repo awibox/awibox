@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { List } from 'immutable';
+import { List, Map } from 'immutable';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 import { usePromiseTracker } from 'react-promise-tracker';
@@ -28,6 +28,8 @@ import Skills from '../../components/Skills/Skills';
 import Certificates from '../../components/Certificates/Certificates';
 // Styles
 import styles from './Profile.scss';
+import { getAuthorInfoSelector } from '../../selectors/authorSelectors';
+import { getAuthorDataAction } from '../../actions/authorActions';
 
 
 class ProfileContainer extends Component {
@@ -36,6 +38,8 @@ class ProfileContainer extends Component {
     getWorkSkillsAction: PropTypes.func.isRequired,
     getWorkBooksAction: PropTypes.func.isRequired,
     getWorkCertificatesAction: PropTypes.func.isRequired,
+    getAuthorDataAction: PropTypes.func.isRequired,
+    AuthorInfo: ImmutablePropTypes.map,
     workData: ImmutablePropTypes.list,
     workSkills: ImmutablePropTypes.list,
     workBooks: ImmutablePropTypes.list,
@@ -50,6 +54,9 @@ class ProfileContainer extends Component {
     workSkills: List([]),
     workBooks: List([]),
     workCertificates: List([]),
+    AuthorInfo: Map({
+      avatar: '',
+    }),
   };
 
   componentDidMount() {
@@ -65,6 +72,7 @@ class ProfileContainer extends Component {
       workSkills,
       // workBooks,
       workCertificates,
+      AuthorInfo,
       errors,
     } = this.props;
     return (
@@ -73,15 +81,7 @@ class ProfileContainer extends Component {
         <div className="row">
           <div className="col-xs-12 col-md-7">
             <div className={styles.description}>
-              <ul>
-                <li>12+ years of experience</li>
-                <li>Tech stack: JavaScript, TypeScript, React, Angular 2+,
-                  Node.js (Express, Next.js)</li>
-                <li>Participated in the development of 20+ web-applications in various industries
-                  (include high-load platform)</li>
-                <li>Experience creating apps from scratch</li>
-                <li>Automating everything that can be automated</li>
-              </ul>
+              {AuthorInfo.get('aboutMe')}
             </div>
           </div>
           <div className="col-xs-12 col-md-5">
@@ -89,17 +89,17 @@ class ProfileContainer extends Component {
               <ul>
                 <li>
                   <span className={styles.title}>Name</span>
-                  <span className="value">Andrei Arkhipov</span>
+                  <span className="value">{AuthorInfo.get('name')}</span>
                 </li>
 
                 <li>
                   <span className={styles.title}>Location</span>
-                  <span className="value">Russia, Saint-Petersburg</span>
+                  <span className="value">{AuthorInfo.get('location')}</span>
                 </li>
 
                 <li>
                   <span className={styles.title}>E-mail</span>
-                  <span className="value">me@awb.pw</span>
+                  <span className="value">{AuthorInfo.get('email')}</span>
                 </li>
               </ul>
             </div>
@@ -126,6 +126,7 @@ const mapStateToProps = (state) => ({
   workBooks: getWorkBooksSelector(state),
   workCertificates: getWorkCertificatesSelector(state),
   errors: getErrorsSelector(state),
+  AuthorInfo: getAuthorInfoSelector(state),
 });
 
 const mapDispatchToProps = {
@@ -133,6 +134,7 @@ const mapDispatchToProps = {
   getWorkSkillsAction,
   getWorkBooksAction,
   getWorkCertificatesAction,
+  getAuthorDataAction,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProfileContainer);
