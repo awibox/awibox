@@ -1,12 +1,11 @@
 import React from 'react';
-import { Card } from 'tigerspack';
 
 const CookiePolicy = () => (
   <div>
     <div style={{ textAlign: 'center' }}>Cookie Policy</div>
     <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center' }}>
       <div style={{ padding: '20px', maxWidth: '500px' }}>
-        <Card title={'Why we use cookies?'}>
+        <div title={'Why we use cookies?'}>
           <p>
             We use cookies and other similar technologies for only analytical purposes that
             will help us distinguish you from other users of our site.
@@ -24,8 +23,8 @@ const CookiePolicy = () => (
             <a href={'https://policies.google.com/privacy?hl=en'} target='_blank' rel='noopener noreferrer'>Google
               Privacy Policy</a>
           </p>
-        </Card>
-        <Card title={'How can you prevent the use of cookies?'}>
+        </div>
+        <div title={'How can you prevent the use of cookies?'}>
           <p>
             Most browsers automatically accept cookies.
             You can delete saved cookies on your device at any time.
@@ -37,7 +36,7 @@ const CookiePolicy = () => (
             However, all browsers differ from each other, so for more information about
             cookie settings, see the Help section of your browser.
           </p>
-        </Card>
+        </div>
       </div>
     </div>
   </div>

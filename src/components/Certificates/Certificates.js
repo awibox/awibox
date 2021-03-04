@@ -5,7 +5,6 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 // Styles
 import styles from './Certificates.scss';
 
-
 const Certificates = (props) => {
   const { data } = props;
   return (
