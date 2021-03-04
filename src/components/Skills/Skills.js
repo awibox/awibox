@@ -4,7 +4,6 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 // Styles
 import styles from './Skills.scss';
 
-
 const Skills = (props) => (
   <ul className={styles.skills}>
     {props.data.map((item) => (
