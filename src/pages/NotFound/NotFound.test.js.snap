@@ -1,11 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NotFound should render correctly 1`] = `
-<Card
-  className="notFound"
-  indent={15}
-  padding={15}
->
+<Fragment>
   <div
     className="code"
   >
@@ -17,5 +13,5 @@ exports[`NotFound should render correctly 1`] = `
   <p>
     The page you are looking for does not exists.
   </p>
-</Card>
+</Fragment>
 `;
