@@ -6,8 +6,4 @@
         <img src='https://coveralls.io/repos/github/awb-pw/awb-pw/badge.svg?branch=master' alt='Coverage Status' />
     </a>
     <img src="https://img.shields.io/github/last-commit/awb-pw/awb-pw" alt="Last commit">
-    <img src="https://img.shields.io/github/license/awb-pw/awb-pw" alt="license">
 </p>
-
-## Description
-This project is the source code of my personal website
