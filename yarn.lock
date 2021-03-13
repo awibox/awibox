@@ -709,10 +709,10 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/plugin-transform-runtime@^7.13.9":
-  version "7.13.9"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.13.9.tgz#744d3103338a0d6c90dee0497558150b490cee07"
-  integrity sha512-XCxkY/wBI6M6Jj2mlWxkmqbKPweRanszWbF3Tyut+hKh+PHcuIH/rSr/7lmmE7C3WW+HSIm2GT+d5jwmheuB0g==
+"@babel/plugin-transform-runtime@^7.13.10":
+  version "7.13.10"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.13.10.tgz#a1e40d22e2bf570c591c9c7e5ab42d6bf1e419e1"
+  integrity sha512-Y5k8ipgfvz5d/76tx7JYbKQTcgFSU6VgJ3kKQv4zGTKr+a9T/KBvfRvGtSFgKDQGt/DBykQixV0vNWKIdzWErA==
   dependencies:
     "@babel/helper-module-imports" "^7.12.13"
     "@babel/helper-plugin-utils" "^7.13.0"
@@ -10017,10 +10017,10 @@ react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-promise-loader@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.1.1.tgz#6ae551c3553aa82fb8db986b6f3991882e79791c"
-  integrity sha512-jllALXriqujFaVoAcNmIpjaQDInpS5WZxIKN3kCUzx1KMxFi/4S4D6E5JlL2XZBEEqOPCXn5CaO+MqigAEyQVg==
+react-promise-loader@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.1.2.tgz#3e1af6b69f4096c00385e910704fd91e2df5cbb2"
+  integrity sha512-HEfUoa1uIEU/ClwSeXqmyX/Vi0O8Cc3AgeRuIWtXdu/j3VLlM1xnf6xJldO4POIqn7sMisVziBjWVpyilCPORQ==
   dependencies:
     prop-types "^15.7.2"
 
