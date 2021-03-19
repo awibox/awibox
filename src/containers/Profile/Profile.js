@@ -13,6 +13,7 @@ import {
 } from 'actions/profileActions';
 // Components
 import Title from 'components/Title/Title';
+import Github from 'components/Github/Github';
 // Selectors
 import {
   getWorkDataSelector,
@@ -108,6 +109,8 @@ class ProfileContainer extends Component {
           <Timeline data={workData} />
           <Title subtitle>My <span>skills</span></Title>
           <Skills data={workSkills} />
+          <Title subtitle>Github <span>Stats</span></Title>
+          <Github />
           <Title subtitle>Certificates</Title>
           <Certificates data={workCertificates} />
         </div>
