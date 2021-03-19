@@ -53,3 +53,8 @@
   color: #777;
   opacity: .7;
 }
+@media only screen and (max-width: 415px) {
+  .certiLogo {
+    width: 80px;
+  }
+}
