@@ -20,14 +20,11 @@ const Certificates = (props) => {
                 <h4>{item.name}</h4>
               </div>
               <div className={styles.certiId}>
-                <span>Credential ID: <a href={item.link + item.id}>{item.id}</a></span>
+                <span>ID: <a href={item.link + item.id}>{item.id}</a></span>
               </div>
               <div className={styles.certiDate}>
-                <span>{item.date}</span>
+                <span>{item.company} ({item.date})</span>
               </div>
-              {/* <div className={styles.certiCompany}> */}
-              {/*  <span>{item.company}</span> */}
-              {/* </div> */}
             </div>
           </div>
         </div>
