@@ -8,6 +8,7 @@ import Loader from 'react-promise-loader';
 import {
   getWorkDataAction,
   getWorkSkillsAction,
+  getWorkExperienceAction,
   getWorkCertificatesAction,
 } from 'actions/profileActions';
 // Components
@@ -17,10 +18,12 @@ import Github from 'components/Github/Github';
 import {
   getWorkDataSelector,
   getWorkSkillsSelector,
+  getWorkExperienceSelector,
   getWorkCertificatesSelector,
 } from 'selectors/profileSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import Timeline from '../../components/Timeline/Timeline';
+import Experience from '../../components/Experience/Experience';
 import Skills from '../../components/Skills/Skills';
 import Certificates from '../../components/Certificates/Certificates';
 // Styles
@@ -32,11 +35,13 @@ class ProfileContainer extends Component {
   static propTypes = {
     getWorkDataAction: PropTypes.func.isRequired,
     getWorkSkillsAction: PropTypes.func.isRequired,
+    getWorkExperienceAction: PropTypes.func.isRequired,
     getWorkCertificatesAction: PropTypes.func.isRequired,
     getAuthorDataAction: PropTypes.func.isRequired,
     AuthorInfo: ImmutablePropTypes.map,
     workData: ImmutablePropTypes.list,
     workSkills: ImmutablePropTypes.list,
+    workExperience: ImmutablePropTypes.list,
     workCertificates: ImmutablePropTypes.list,
     errors: PropTypes.shape({
       message: PropTypes.string,
@@ -46,6 +51,7 @@ class ProfileContainer extends Component {
   static defaultProps = {
     workData: List([]),
     workSkills: List([]),
+    workExperience: List([]),
     workCertificates: List([]),
     AuthorInfo: Map({
       avatar: '',
@@ -55,6 +61,7 @@ class ProfileContainer extends Component {
   componentDidMount() {
     this.props.getWorkDataAction();
     this.props.getWorkSkillsAction();
+    this.props.getWorkExperienceAction();
     this.props.getWorkCertificatesAction();
   }
 
@@ -62,6 +69,7 @@ class ProfileContainer extends Component {
     const {
       workData,
       workSkills,
+      workExperience,
       workCertificates,
       AuthorInfo,
       errors,
@@ -82,12 +90,10 @@ class ProfileContainer extends Component {
                   <span className={styles.title}>Name</span>
                   <span className="value">{AuthorInfo.get('name')}</span>
                 </li>
-
                 <li>
                   <span className={styles.title}>Location</span>
                   <span className="value">{AuthorInfo.get('location')}</span>
                 </li>
-
                 <li>
                   <span className={styles.title}>E-mail</span>
                   <span className="value">{AuthorInfo.get('email')}</span>
@@ -100,7 +106,9 @@ class ProfileContainer extends Component {
         <div className="section-content">
           <Title subtitle>Experience</Title>
           <Timeline data={workData} />
-          <Title subtitle>My <span>skills</span></Title>
+          <Title subtitle>Experience</Title>
+          <Experience data={workExperience} />
+          <Title subtitle>Skills</Title>
           <Skills data={workSkills} />
           <Title subtitle>Github <span>Stats</span></Title>
           <Github />
@@ -116,6 +124,7 @@ class ProfileContainer extends Component {
 const mapStateToProps = (state) => ({
   workData: getWorkDataSelector(state),
   workSkills: getWorkSkillsSelector(state),
+  workExperience: getWorkExperienceSelector(state),
   workCertificates: getWorkCertificatesSelector(state),
   errors: getErrorsSelector(state),
   AuthorInfo: getAuthorInfoSelector(state),
@@ -123,6 +132,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   getWorkDataAction,
+  getWorkExperienceAction,
   getWorkSkillsAction,
   getWorkCertificatesAction,
   getAuthorDataAction,

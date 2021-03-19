@@ -1,0 +1,47 @@
+.experience {
+  margin-bottom: 30px;
+  h4 {
+    font-size: 13px;
+    line-height: 1.1em;
+    position: relative;
+    float: left;
+    margin: 0 0 4px;
+  }
+  .skillContainer {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #fea621;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 10px;
+    margin-bottom: 8px;
+    width: 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: #fea621;
+    }
+  }
+  .skillValue {
+    font-size: 11px;
+    line-height: 1.1em;
+    position: relative;
+    float: right;
+    margin: 0 0 4px;
+    color: #aaa;
+  }
+  .skillPercentage {
+    background-color: #fea621;
+    border: 2px solid #fff;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    height: 8px;
+    padding: 0;
+  }
+}
