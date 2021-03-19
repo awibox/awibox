@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Github should render correctly 1`] = `
+<div
+  className="github"
+>
+  <img
+    align="center"
+    alt="GitHub Stats"
+    src="https://github-readme-stats.vercel.app/api?username=awibox&show_icons=true&hide_title=true¬&icon_color=fea621&title_color=fea621&hide_border=true&include_all_commits=true&count_private=true"
+  />
+</div>
+`;
