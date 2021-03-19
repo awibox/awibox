@@ -5,7 +5,7 @@ exports[`Certificates should render correctly 1`] = `
   className="row"
 >
   <div
-    className="col-lg-6"
+    className="col-md-6"
     key="F510F1E6D375"
   >
     <div
@@ -33,7 +33,7 @@ exports[`Certificates should render correctly 1`] = `
           className="certiId"
         >
           <span>
-            Credential ID: 
+            ID: 
             <a
               href="https://www.hackerrank.com/certificates/F510F1E6D375"
             >
@@ -45,14 +45,17 @@ exports[`Certificates should render correctly 1`] = `
           className="certiDate"
         >
           <span>
+            Hacker Rank
+             (
             Apr 2020
+            )
           </span>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="col-lg-6"
+    className="col-md-6"
     key="8DABF8164735"
   >
     <div
@@ -80,7 +83,7 @@ exports[`Certificates should render correctly 1`] = `
           className="certiId"
         >
           <span>
-            Credential ID: 
+            ID: 
             <a
               href="https://www.hackerrank.com/certificates/8DABF8164735"
             >
@@ -92,7 +95,10 @@ exports[`Certificates should render correctly 1`] = `
           className="certiDate"
         >
           <span>
+            Hacker Rank
+             (
             Apr 2020
+            )
           </span>
         </div>
       </div>
