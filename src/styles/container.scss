@@ -78,8 +78,17 @@
   .contentArea {
     max-width: 100%;
   }
+  .scrollbar {
+    padding: 60px;
+  }
   .animatedSection {
     border-radius: 0;
     overflow: auto !important;
+    padding: 0;
+    &:before,
+    &:after {
+      display: none;
+    }
   }
 }
+
