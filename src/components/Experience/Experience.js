@@ -21,7 +21,7 @@ const Experience = ({ data }) => (
 );
 
 Experience.propTypes = {
-  data: ImmutablePropTypes.list,
+  data: ImmutablePropTypes.list.isRequired,
 };
 
 export default Experience;
