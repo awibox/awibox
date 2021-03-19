@@ -1,4 +1,4 @@
-import { GET_WORK_DATA, GET_WORK_SKILLS, GET_WORK_BOOKS } from 'actions/types';
+import { GET_WORK_DATA, GET_WORK_SKILLS } from 'actions/types';
 import { List } from 'immutable';
 import reducer from './profileReducer';
 
@@ -17,19 +17,6 @@ describe('profile reducer', () => {
     { name: 'CSS' },
     { name: 'Git' },
     { name: 'HTML5' },
-  ]);
-
-  const mockWorkBooks = List([
-    {
-      name: 'Refactoring: Improving the Design of Existing Code',
-      author: 'Martin Fowler',
-      link: 'https://martinfowler.com/books/refactoring.html',
-    },
-    {
-      name: 'Working Effectively with Legacy Code',
-      author: 'Michael Feathers',
-      link: 'https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052',
-    },
   ]);
 
   it('should return the initial state', () => {
@@ -51,15 +38,6 @@ describe('profile reducer', () => {
     };
     expect(reducer({}, successAction)).toEqual({
       workSkills: List(mockWorkSkills),
-    });
-  });
-  it('should handle GET_WORK_BOOKS', () => {
-    const successAction = {
-      type: GET_WORK_BOOKS,
-      payload: mockWorkBooks,
-    };
-    expect(reducer({}, successAction)).toEqual({
-      workBooks: List(mockWorkBooks),
     });
   });
 });

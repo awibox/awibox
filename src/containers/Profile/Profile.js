@@ -8,7 +8,6 @@ import Loader from 'react-promise-loader';
 import {
   getWorkDataAction,
   getWorkSkillsAction,
-  getWorkBooksAction,
   getWorkCertificatesAction,
 } from 'actions/profileActions';
 // Components
@@ -18,7 +17,6 @@ import Github from 'components/Github/Github';
 import {
   getWorkDataSelector,
   getWorkSkillsSelector,
-  getWorkBooksSelector,
   getWorkCertificatesSelector,
 } from 'selectors/profileSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
@@ -34,13 +32,11 @@ class ProfileContainer extends Component {
   static propTypes = {
     getWorkDataAction: PropTypes.func.isRequired,
     getWorkSkillsAction: PropTypes.func.isRequired,
-    getWorkBooksAction: PropTypes.func.isRequired,
     getWorkCertificatesAction: PropTypes.func.isRequired,
     getAuthorDataAction: PropTypes.func.isRequired,
     AuthorInfo: ImmutablePropTypes.map,
     workData: ImmutablePropTypes.list,
     workSkills: ImmutablePropTypes.list,
-    workBooks: ImmutablePropTypes.list,
     workCertificates: ImmutablePropTypes.list,
     errors: PropTypes.shape({
       message: PropTypes.string,
@@ -50,7 +46,6 @@ class ProfileContainer extends Component {
   static defaultProps = {
     workData: List([]),
     workSkills: List([]),
-    workBooks: List([]),
     workCertificates: List([]),
     AuthorInfo: Map({
       avatar: '',
@@ -60,7 +55,6 @@ class ProfileContainer extends Component {
   componentDidMount() {
     this.props.getWorkDataAction();
     this.props.getWorkSkillsAction();
-    this.props.getWorkBooksAction();
     this.props.getWorkCertificatesAction();
   }
 
@@ -68,7 +62,6 @@ class ProfileContainer extends Component {
     const {
       workData,
       workSkills,
-      // workBooks,
       workCertificates,
       AuthorInfo,
       errors,
@@ -123,7 +116,6 @@ class ProfileContainer extends Component {
 const mapStateToProps = (state) => ({
   workData: getWorkDataSelector(state),
   workSkills: getWorkSkillsSelector(state),
-  workBooks: getWorkBooksSelector(state),
   workCertificates: getWorkCertificatesSelector(state),
   errors: getErrorsSelector(state),
   AuthorInfo: getAuthorInfoSelector(state),
@@ -132,7 +124,6 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = {
   getWorkDataAction,
   getWorkSkillsAction,
-  getWorkBooksAction,
   getWorkCertificatesAction,
   getAuthorDataAction,
 };
