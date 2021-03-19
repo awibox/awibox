@@ -21,7 +21,6 @@ const Experience = (props) => (
   </div>
 );
 
-
 Experience.propTypes = {
   data: ImmutablePropTypes.list,
   className: PropTypes.string,
