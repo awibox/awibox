@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Certificates should render correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-6"
+    key="F510F1E6D375"
+  >
+    <div
+      className="certificateItem clearfix"
+    >
+      <div
+        className="certiLogo"
+      >
+        <img
+          alt="Hacker Rank"
+          src="img/hacker-rank.jpeg"
+        />
+      </div>
+      <div
+        className="certiContent"
+      >
+        <div
+          className="certiTitle"
+        >
+          <h4>
+            JavaScript
+          </h4>
+        </div>
+        <div
+          className="certiId"
+        >
+          <span>
+            ID: 
+            <a
+              href="https://www.hackerrank.com/certificates/F510F1E6D375"
+            >
+              F510F1E6D375
+            </a>
+          </span>
+        </div>
+        <div
+          className="certiDate"
+        >
+          <span>
+            Hacker Rank
+             (
+            Apr 2020
+            )
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="col-md-6"
+    key="8DABF8164735"
+  >
+    <div
+      className="certificateItem clearfix"
+    >
+      <div
+        className="certiLogo"
+      >
+        <img
+          alt="Hacker Rank"
+          src="img/hacker-rank.jpeg"
+        />
+      </div>
+      <div
+        className="certiContent"
+      >
+        <div
+          className="certiTitle"
+        >
+          <h4>
+            React
+          </h4>
+        </div>
+        <div
+          className="certiId"
+        >
+          <span>
+            ID: 
+            <a
+              href="https://www.hackerrank.com/certificates/8DABF8164735"
+            >
+              8DABF8164735
+            </a>
+          </span>
+        </div>
+        <div
+          className="certiDate"
+        >
+          <span>
+            Hacker Rank
+             (
+            Apr 2020
+            )
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
