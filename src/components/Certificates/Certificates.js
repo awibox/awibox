@@ -10,7 +10,7 @@ const Certificates = (props) => {
   return (
     <div className="row">
       {data.map((item) => (
-        <div key={item.id} className="col-lg-6">
+        <div key={item.id} className="col-md-6">
           <div className={cn(styles.certificateItem, 'clearfix')}>
             <div className={styles.certiLogo}>
               <img src={item.logo} alt={item.company} />
