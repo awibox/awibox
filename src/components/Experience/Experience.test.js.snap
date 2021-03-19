@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience should render correctly 1`] = `
+<div
+  className="experience row"
+>
+  <div
+    className="col-md-6"
+    key="React"
+  >
+    <div
+      className="skill clearfix"
+    >
+      <h4>
+        React
+      </h4>
+      <div
+        className="skillValue"
+      >
+        4
+         
+        years
+      </div>
+    </div>
+    <div
+      className="skillContainer"
+    >
+      <div
+        className="skillPercentage"
+        style={
+          Object {
+            "width": "85%",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="col-md-6"
+    key="Angular"
+  >
+    <div
+      className="skill clearfix"
+    >
+      <h4>
+        Angular
+      </h4>
+      <div
+        className="skillValue"
+      >
+        7
+         
+        years
+      </div>
+    </div>
+    <div
+      className="skillContainer"
+    >
+      <div
+        className="skillPercentage"
+        style={
+          Object {
+            "width": "75%",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="col-md-6"
+    key="TypeScript"
+  >
+    <div
+      className="skill clearfix"
+    >
+      <h4>
+        TypeScript
+      </h4>
+      <div
+        className="skillValue"
+      >
+        6
+         
+        years
+      </div>
+    </div>
+    <div
+      className="skillContainer"
+    >
+      <div
+        className="skillPercentage"
+        style={
+          Object {
+            "width": "70%",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
