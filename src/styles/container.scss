@@ -91,4 +91,8 @@
     }
   }
 }
-
+@media only screen and (max-width: 350px) {
+  .scrollbar {
+    padding: 40px;
+  }
+}
