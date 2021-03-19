@@ -4,4 +4,13 @@
   margin-left: -25px;
   justify-content: space-between;
   display: flex;
+  flex-flow: wrap;
+}
+
+.stats {
+  max-width: 465px;
+}
+
+.languages {
+  max-width: 335px;
 }
