@@ -166,6 +166,13 @@ export const workCertificates = () => [
   },
 ];
 
+export const workExperience = () => [
+  {
+    name: 'JavaScript',
+    years: 9,
+  },
+];
+
 export const workSkills = () => [
   { name: 'JavaScript' },
   { name: 'CSS' },
