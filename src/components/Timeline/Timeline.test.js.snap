@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline should render correctly 1`] = `
+<div
+  className="timeline clearfix"
+>
+  <div
+    className="timelineItem clearfix"
+    key="Com1"
+  >
+    <div
+      className="leftPart"
+    >
+      <h5
+        className="itemPeriod"
+      >
+        Com1
+      </h5>
+      <span
+        className="itemCompany"
+      >
+        2019 - Current
+      </span>
+    </div>
+    <div
+      className="divider"
+    />
+    <div
+      className="rightPart"
+    >
+      <h4
+        className="itemTitle"
+      >
+        Lead Software Engineer
+      </h4>
+      Text
+    </div>
+  </div>
+  <div
+    className="timelineItem clearfix"
+    key="Com2"
+  >
+    <div
+      className="leftPart"
+    >
+      <h5
+        className="itemPeriod"
+      >
+        Com2
+      </h5>
+      <span
+        className="itemCompany"
+      >
+        2010 - 2018
+      </span>
+    </div>
+    <div
+      className="divider"
+    />
+    <div
+      className="rightPart"
+    >
+      <h4
+        className="itemTitle"
+      >
+        Lead Software Engineer
+      </h4>
+      Text
+    </div>
+  </div>
+</div>
+`;
