@@ -10,7 +10,7 @@ const Certificates = (props) => {
   return (
     <div className="row">
       {data.map((item) => (
-        <div key={item.id} className="col-lg-6">
+        <div key={item.id} className="col-md-6">
           <div className={cn(styles.certificateItem, 'clearfix')}>
             <div className={styles.certiLogo}>
               <img src={item.logo} alt={item.company} />
@@ -20,14 +20,11 @@ const Certificates = (props) => {
                 <h4>{item.name}</h4>
               </div>
               <div className={styles.certiId}>
-                <span>Credential ID: <a href={item.link + item.id}>{item.id}</a></span>
+                <span>ID: <a href={item.link + item.id}>{item.id}</a></span>
               </div>
               <div className={styles.certiDate}>
-                <span>{item.date}</span>
+                <span>{item.company} ({item.date})</span>
               </div>
-              {/* <div className={styles.certiCompany}> */}
-              {/*  <span>{item.company}</span> */}
-              {/* </div> */}
             </div>
           </div>
         </div>
