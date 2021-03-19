@@ -53,3 +53,15 @@
   color: #777;
   opacity: .7;
 }
+
+@media screen and (max-width: 1350px) and (min-width: 1024px), (max-width: 415px) {
+  .certificateItem {
+    line-height: 20px;
+  }
+  .certiLogo {
+    width: 80px;
+  }
+  .certiId {
+    font-size: .85em;
+  }
+}
