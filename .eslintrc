@@ -29,7 +29,8 @@
           "__REDUX_DEVTOOLS_EXTENSION__"
         ]
       }
-    ]
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "settings": {
     "import/resolver": {
