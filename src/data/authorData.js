@@ -21,12 +21,6 @@ const author = () => ({
       color: '#0077B5',
     },
     {
-      name: 'facebook',
-      icon: 'facebook-f',
-      link: 'https://facebook.com/awiboxpw',
-      color: '#4267b2',
-    },
-    {
       name: 'instagram',
       icon: 'instagram',
       link: 'https://www.instagram.com/awibox/',
