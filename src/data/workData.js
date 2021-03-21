@@ -8,8 +8,9 @@ export const workData = () => [
     location: 'Saint Petersburg (Russia)',
     content: (
       <>
-        <div>I&apos;m a team lead on a project of public services.<br />
-          My team developed a new version of the form player from scratch.</div>
+        <div>Team leader on a project of public services. Our team has developed a new version
+          of the form player from scratch. The first version was put into production in 3 months.
+        </div>
         <ul>
           <li>Built a client-side architecture (delivery as an npm package)</li>
           <li>Integrated automatic code verification (linters, tests, static code analysis)</li>
@@ -17,9 +18,6 @@ export const workData = () => [
           <li>Involving team members in product improvement</li>
           <li>Interviewed candidates for developer position</li>
         </ul>
-        <div>
-          The first version of the product went into production in 3 months.
-        </div>
       </>),
   },
   {
