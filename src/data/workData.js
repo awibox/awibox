@@ -8,14 +8,18 @@ export const workData = () => [
     location: 'Saint Petersburg (Russia)',
     content: (
       <>
-        <div>I&apos;m a team lead on a project of public services.
-          My team is developing a new version of the form player from scratch.</div>
+        <div>I&apos;m a team lead on a project of public services.<br />
+          My team developed a new version of the form player from scratch.</div>
         <ul>
-          <li>Building a client-side architecture.</li>
-          <li>Integration of automatic code verification</li>
-          <li>The process of code review</li>
-          <li>Delivery as an npm package</li>
+          <li>Built a client-side architecture (delivery as an npm package)</li>
+          <li>Integrated automatic code verification (linters, tests, static code analysis)</li>
+          <li>Configured the code review process</li>
+          <li>Involving team members in product improvement</li>
+          <li>Interviewed candidates for developer position</li>
         </ul>
+        <div>
+          The first version of the product went into production in 3 months.
+        </div>
       </>),
   },
   {
@@ -108,7 +112,7 @@ export const workData = () => [
     location: 'Kazan (Russia)',
     content: (
       <>
-        <div>I created websites using CMS such as Wordpress,
+        <div>I have created websites using CMS such as Wordpress,
           Joomla, NetCat, 1C Bitrix.
         </div>
       </>),
@@ -166,39 +170,57 @@ export const workCertificates = () => [
   },
 ];
 
+export const workExperience = () => [
+  {
+    name: 'HTML',
+    years: 13,
+    percentage: 100,
+  },
+  {
+    name: 'CSS',
+    years: 13,
+    percentage: 100,
+  },
+  {
+    name: 'JavaScript',
+    years: 13,
+    percentage: 100,
+  },
+  {
+    name: 'React',
+    years: 4,
+    percentage: 85,
+  },
+  {
+    name: 'Angular',
+    years: 7,
+    percentage: 75,
+  },
+  {
+    name: 'TypeScript',
+    years: 6,
+    percentage: 70,
+  },
+  {
+    name: 'Node JS',
+    years: 2,
+    percentage: 40,
+  },
+  {
+    name: 'Python',
+    years: 1,
+    percentage: 25,
+  },
+];
+
 export const workSkills = () => [
-  { name: 'JavaScript' },
-  { name: 'CSS' },
   { name: 'Git' },
-  { name: 'HTML5' },
-  { name: 'React' },
   { name: 'Redux' },
   { name: 'Immutable.js' },
-  { name: 'Angular' },
-  { name: 'Backbone' },
-  { name: 'Knockout' },
-  { name: 'Sencha Touch' },
-  { name: 'TypeScript' },
   { name: 'Webpack' },
-  { name: 'Babel.js' },
-  { name: 'Reselect' },
   { name: 'Jest' },
-  { name: 'Karma' },
-  { name: 'Enzyme' },
-  { name: 'Node.js' },
   { name: 'Express' },
   { name: 'MongoDB' },
-  { name: 'Photoshop' },
-  { name: 'Handlebars' },
-  { name: 'Mustache' },
-  { name: 'Twig' },
-  { name: 'SketchUp' },
   { name: 'Docker' },
-  { name: 'SCSS' },
-  { name: 'LESS' },
-  { name: 'Stylus' },
   { name: 'CSS-modules' },
-  { name: 'PropTypes' },
-  { name: 'Async/Await' },
-  { name: 'EventLoop' },
 ];
