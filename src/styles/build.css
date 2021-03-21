@@ -255,6 +255,20 @@ input[type="submit"]:focus {
     animation-fill-mode: both;
 }
 
+.lm-animated-bg {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: -28px;
+    left: -28px;
+    right: -28px;
+    bottom: -28px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 @media only screen and (max-width: 1280px) {
     .page {
         padding-left: 30px;
@@ -271,5 +285,8 @@ input[type="submit"]:focus {
         margin: 0;
         border-radius: 0;
         min-height: 100%;
+    }
+    .lm-animated-bg {
+        display: none;
     }
 }
