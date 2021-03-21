@@ -8,14 +8,18 @@ export const workData = () => [
     location: 'Saint Petersburg (Russia)',
     content: (
       <>
-        <div>I&apos;m a team lead on a project of public services.
-          My team is developing a new version of the form player from scratch.</div>
+        <div>I&apos;m a team lead on a project of public services.<br />
+          My team developed a new version of the form player from scratch.</div>
         <ul>
-          <li>Building a client-side architecture.</li>
-          <li>Integration of automatic code verification</li>
-          <li>The process of code review</li>
-          <li>Delivery as an npm package</li>
+          <li>Built a client-side architecture (delivery as an npm package)</li>
+          <li>Integrated automatic code verification (linters, tests, static code analysis)</li>
+          <li>Configured the code review process</li>
+          <li>Involving team members in product improvement</li>
+          <li>Interviewed candidates for developer position</li>
         </ul>
+        <div>
+          The first version of the product went into production in 3 months.
+        </div>
       </>),
   },
   {
@@ -108,7 +112,7 @@ export const workData = () => [
     location: 'Kazan (Russia)',
     content: (
       <>
-        <div>I created websites using CMS such as Wordpress,
+        <div>I have created websites using CMS such as Wordpress,
           Joomla, NetCat, 1C Bitrix.
         </div>
       </>),
