@@ -6,7 +6,7 @@ const author = () => ({
   position: 'Software Engineer',
   location: 'Russia, Saint Petersburg',
   email: 'me@awb.pw',
-  cv: '',
+  cv: '/Resume-Andrei-Arkhipov.pdf',
   services: [
     {
       name: 'github',
