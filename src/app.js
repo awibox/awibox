@@ -41,6 +41,17 @@ class App extends Component {
 
   componentDidMount() {
     this.props.getAuthorDataAction();
+    document.addEventListener('mousemove', (e) => {
+      const newValueX = (23 / window.innerWidth) * (e.pageX - (window.innerWidth / 2)) * -1;
+      const newValueY = (23 / window.innerHeight) * (e.pageY - (window.innerHeight / 2)) * -1;
+      const background = document.getElementsByClassName('lm-animated-bg');
+      const backgroundClasses = background[0].classList;
+      backgroundClasses.add('transition');
+      background[0].style.backgroundPosition = `calc( 50% + ${newValueX}px ) calc( 50% + ${newValueY}px )`;
+      setTimeout(() => {
+        backgroundClasses.remove('transition');
+      }, 300);
+    });
   }
 
   render() {
