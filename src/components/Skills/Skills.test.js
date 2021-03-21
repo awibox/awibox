@@ -9,7 +9,7 @@ const mockSkills = List([
   { name: 'css' },
 ]);
 
-describe('Card', () => {
+describe('Skills', () => {
   it('should render correctly', () => {
     const component = shallow(<Skills data={mockSkills} />);
     expect(component).toMatchSnapshot();

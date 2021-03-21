@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should render correctly 1`] = `
+exports[`Skills should render correctly 1`] = `
 <ul
   className="skills"
 >
