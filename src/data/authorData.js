@@ -4,7 +4,7 @@ const author = () => ({
   avatar: 'https://avatars1.githubusercontent.com/u/1931010?s=460&v=4',
   name: 'Andrei Arkhipov',
   position: 'Software Engineer',
-  location: 'Russia, Saint Petersburg',
+  location: 'Prague, Czech Republic',
   email: 'me@awb.pw',
   cv: '/Resume-Andrei-Arkhipov.pdf',
   services: [
