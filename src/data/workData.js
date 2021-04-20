@@ -120,7 +120,7 @@ export const workData = () => [
 export const workCertificates = () => [
   {
     name: 'JavaScript',
-    id: 'F510F1E6D375',
+    id: 'f367aee15f76',
     date: 'Apr 2020',
     company: 'Hacker Rank',
     logo: 'img/hacker-rank.jpeg',
@@ -138,6 +138,14 @@ export const workCertificates = () => [
     name: 'Angular',
     id: '80c57f2c0068',
     date: 'Mar 2021',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'Node.js',
+    id: '89c699cbbd9a',
+    date: 'Apr 2021',
     company: 'Hacker Rank',
     logo: 'img/hacker-rank.jpeg',
     link: 'https://www.hackerrank.com/certificates/',
