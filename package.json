@@ -20,7 +20,7 @@
   ],
   "author": "awibox",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "classnames": "^2.2.6",
     "immutable": "^4.0.0-rc.12",
     "prop-types": "^15.7.2",
