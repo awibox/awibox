@@ -3,7 +3,7 @@ import { Map } from 'immutable';
 
 const initialState = {};
 
-const profileReducer = (state = initialState, action) => {
+const authorReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case GET_AUTHOR_DATA:
       return {
@@ -15,4 +15,4 @@ const profileReducer = (state = initialState, action) => {
   }
 };
 
-export default profileReducer;
+export default authorReducer;
