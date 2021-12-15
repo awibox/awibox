@@ -49,13 +49,17 @@ export default class NavBar extends Component {
         <div className={styles.navDesktopMenu}>
           {this.renderLinks()}
         </div>
-        <div className={classNames(styles.navMobile,
-          { [styles.navMobileActive]: this.state.openNavMenu })}
+        <div className={classNames(
+          styles.navMobile,
+          { [styles.navMobileActive]: this.state.openNavMenu },
+        )}
              onClick={this.toggleMobileMenu}>
           <i className="fa fa-list"></i>
         </div>
-        <div className={classNames(styles.navMobileMenu,
-          { [styles.show]: this.state.openNavMenu })}>
+        <div className={classNames(
+          styles.navMobileMenu,
+          { [styles.show]: this.state.openNavMenu },
+        )}>
           {this.renderLinks()}
         </div>
       </div>
