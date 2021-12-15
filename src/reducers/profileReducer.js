@@ -8,7 +8,7 @@ import { List } from 'immutable';
 
 const initialState = {};
 
-const profileReducer = (state = initialState, action) => {
+const profileReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case GET_WORK_DATA:
       return {
