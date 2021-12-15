@@ -6,7 +6,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 // Components
 import Header from 'components/Header/Header';
-import CookieConsent from 'react-cookie-consent-notification';
 // Styles
 import styles from 'styles/container.scss';
 // Router
@@ -68,20 +67,6 @@ class App extends Component {
             </section>
           </div>
         </div>
-        <CookieConsent
-          background={'#0079c1'}
-          bottomPosition={false}
-          buttonText={'I agree'}
-          buttonBackground={'#fff'}
-          buttonColor={'#000'}
-          buttonFontSize={14}
-          color={'#fff'}
-          consentFunction={this.checkStatus}
-          padding={20}
-        >
-          This website uses cookies for analytical purposes.
-          Please read our <a href={'/cookie-policy'} style={{ color: '#fff' }}>Cookie Policy</a> and confirm your consent to the use of cookies.
-        </CookieConsent>
       </BrowserRouter>
     );
   }
