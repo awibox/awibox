@@ -24,13 +24,13 @@ jobs:
         env:
           CI: true
       - name: Deploy to production
-        uses: awb-pw/deploy-to-github-pages-action@master
+        uses: awibox/deploy-to-github-pages-action@master
         env:
-          AUTHOR: awb-pw
-          GITHUB_PAGE_NAME: awb-pw.github.io
+          AUTHOR: awibox
+          GITHUB_PAGE_NAME: awibox.github.io
           PA_TOKEN: ${{ secrets.PA_TOKEN }}
           BUILD_PATH: public
-          USERNAME: awibox
+          USERNAME: 1931010+awibox@users.noreply.github.com
           EMAIL: andrei@awb.pw
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@1.1.3
