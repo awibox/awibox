@@ -30,8 +30,8 @@ jobs:
           GITHUB_PAGE_NAME: awibox.github.io
           PA_TOKEN: ${{ secrets.PA_TOKEN }}
           BUILD_PATH: public
-          USERNAME: 1931010+awibox@users.noreply.github.com
-          EMAIL: andrei@awb.pw
+          USERNAME: awibox
+          EMAIL: 1931010+awibox@users.noreply.github.com
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@master
         with:
