@@ -78,27 +78,9 @@ class ProfileContainer extends Component {
       <>
         <Title>About <span>me</span></Title>
         <div className="row">
-          <div className="col-xs-12 col-md-7">
+          <div className="col-xs-12">
             <div className={styles.description}>
               {AuthorInfo.get('aboutMe')}
-            </div>
-          </div>
-          <div className="col-xs-12 col-md-5">
-            <div className={styles.infoList}>
-              <ul>
-                <li>
-                  <span className={styles.title}>Name</span>
-                  <span className="value">{AuthorInfo.get('name')}</span>
-                </li>
-                <li>
-                  <span className={styles.title}>Location</span>
-                  <span className="value">{AuthorInfo.get('location')}</span>
-                </li>
-                <li>
-                  <span className={styles.title}>E-mail</span>
-                  <span className="value">{AuthorInfo.get('email')}</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
