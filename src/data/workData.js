@@ -179,43 +179,37 @@ export const workCertificates = () => [
 export const workExperience = () => [
   {
     name: 'HTML',
-    years: 13,
-    percentage: 100,
+    startYear: 2007,
   },
   {
     name: 'CSS',
-    years: 13,
-    percentage: 100,
+    startYear: 2007,
   },
   {
     name: 'JavaScript',
-    years: 13,
-    percentage: 100,
-  },
-  {
-    name: 'React',
-    years: 4,
-    percentage: 85,
-  },
-  {
-    name: 'Angular',
-    years: 7,
-    percentage: 75,
+    startYear: 2007,
   },
   {
     name: 'TypeScript',
-    years: 6,
-    percentage: 70,
+    startYear: 2014,
+  },
+  {
+    name: 'React',
+    startYear: 2017,
+  },
+  {
+    name: 'Angular',
+    startYear: 2015,
+    endYear: 2019,
   },
   {
     name: 'Node JS',
-    years: 2,
-    percentage: 40,
+    startYear: 2018,
   },
   {
     name: 'Python',
-    years: 1,
-    percentage: 25,
+    startYear: 2019,
+    endYear: 2021,
   },
 ];
 

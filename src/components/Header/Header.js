@@ -33,7 +33,9 @@ const Header = (props) => {
         <div className={styles.headerButtons}>
           {data.get('cv') ? <a href={data.get('cv')} rel="noopener noreferrer" target="_blank" className={cn('btn-primary', styles.btnPrimary)}>Download CV</a> : ''}
         </div>
-        <div className={styles.copyrights}>© 2020 All rights reserved.</div>
+        <div className={styles.copyrights}>
+          © 2020-{new Date().getFullYear()} All rights reserved.
+        </div>
       </header>
       <div className={cn(styles.menuToggle, { [styles.open]: showHeader })}
            onClick={() => setHeaderState(!showHeader)}>
