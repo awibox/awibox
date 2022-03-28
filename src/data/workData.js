@@ -2,10 +2,20 @@ import React from 'react';
 
 export const workData = () => [
   {
+    date: '2021 - current',
+    title: 'Senior Software Engineer',
+    label: 'Conrad',
+    content: (
+      <>
+        <div>
+          Refactoring and support of the e-commerce platform
+        </div>
+      </>),
+  },
+  {
     date: '2019 - 2021',
     title: 'Lead Software Engineer',
     label: 'Luxoft',
-    location: 'Saint Petersburg (Russia)',
     content: (
       <>
         <div>Team leader on a project of public services. Our team has developed a new version
@@ -24,7 +34,6 @@ export const workData = () => [
     date: '2018 - 2019',
     title: 'Senior Software Engineer',
     label: 'Tutu.ru',
-    location: 'Moscow (Russia)',
     content: (
       <>
         <div>I developed bus selling section (single page application with React) on high-load (with
@@ -44,10 +53,9 @@ export const workData = () => [
       </>),
   },
   {
-    date: '2016 - 2018',
+    date: '2017 - 2018',
     title: 'Lead Software Developer',
     label: 'CUSTIS',
-    location: 'Moscow (Russia)',
     content: (
       <>
         <div>
@@ -67,10 +75,23 @@ export const workData = () => [
       </>),
   },
   {
+    date: '2016 - 2017',
+    title: 'Frontend Developer',
+    label: 'Atlas',
+    content: (
+      <>
+        <div>
+          It was a startup representing the freemium model of a cellular operator.
+          I created a web application to manage a
+          personal user account as the single frontend developer.
+          Unfortunately, the startup didn&apos;t take off, but I got invaluable experience.
+        </div>
+      </>),
+  },
+  {
     date: '2013 - 2016',
     title: 'Senior Software Engineer',
     label: 'Rutube',
-    location: 'Moscow (Russia)',
     content: (
       <>
         <div>Participated in the development of projects:</div>
@@ -92,7 +113,6 @@ export const workData = () => [
     date: '2012 - 2013',
     title: 'Web Developer',
     label: 'BARS GROUP',
-    location: 'Kazan (Russia)',
     content: (
       <>
         <div>I developed front-end part of projects for public services such as:</div>
@@ -107,7 +127,6 @@ export const workData = () => [
     date: '2007 - 2012',
     title: 'Web Developer',
     label: 'Freelance',
-    location: 'Kazan (Russia)',
     content: (
       <>
         <div>I have created websites using CMS such as Wordpress,
