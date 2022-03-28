@@ -63,7 +63,9 @@ exports[`Header should render correctly 1`] = `
     <div
       className="copyrights"
     >
-      © 2020 All rights reserved.
+      © 2020-
+      2022
+       All rights reserved.
     </div>
   </header>
   <div
