@@ -27,13 +27,13 @@ const author = () => ({
     },
   ],
   aboutMe: (
-  <div>
-    I&apos;m a Software Engineer with over 13 years of experience in various industries such as
-    public services, travel, education, finance and video streaming services.
-    Proficient in JavaScript, TypeScript, React, Angular 2+, Node.js (Express, Next.js).
-    Experienced in building high-load single page applications and npm packages from scratch.
-    Skilled in developing complex adaptive interfaces, configuring CI workflow and
-    solving non-trivial problem. HackerRank certified. Well-versed in Scrum and Agile.
-  </div>),
+    <div>
+      I&apos;m a Software Engineer with over 14 years of experience in various industries such as
+      public services, travel, education, e-commerce, finance and video streaming services.
+      Proficient in JavaScript, TypeScript, React, Angular 2+, Node.js (Express.js, Next.js).
+      Experienced in building high-load single page applications and npm packages from scratch.
+      Skilled in developing complex adaptive interfaces, configuring CI workflow and solving
+      non-trivial problem. Well-versed in Agile methodologies.
+    </div>),
 });
 export default author;

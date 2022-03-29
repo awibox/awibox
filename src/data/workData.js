@@ -8,8 +8,16 @@ export const workData = () => [
     content: (
       <>
         <div>
-          Refactoring and support of the e-commerce platform
+          Refactoring and support of the e-commerce platform:
         </div>
+        <ul>
+          <li>Refactoring React components with the transition from JS to TypeScript</li>
+          <li>Refactoring the frontend build with migration from Gulp to Webpack</li>
+          <li>Creating plugins for Webpack</li>
+          <li>Tracking and logging user actions for GTM</li>
+          <li>Improving the interface on the product detail page</li>
+          <li>Improving the adaptability of the interface for both mobile and print versions</li>
+        </ul>
       </>),
   },
   {
@@ -18,16 +26,20 @@ export const workData = () => [
     label: 'Luxoft',
     content: (
       <>
-        <div>Team leader on a project of public services. Our team has developed a new version
-          of the form player from scratch. The first version was put into production in 3 months.
+        <div>Team leader on a high-load project of public services.
+          Our team has developed a new version of the form player from scratch.
         </div>
         <ul>
-          <li>Built a client-side architecture (delivery as an npm package)</li>
+          <li>Built a client-side architecture</li>
+          <li>Configured CI workflow (Gitlab)</li>
           <li>Integrated automatic code verification (linters, tests, static code analysis)</li>
           <li>Configured the code review process</li>
-          <li>Involving team members in product improvement</li>
+          <li>Involving team members in product improvement (growth team)</li>
+          <li>Conducted 1-2-1 meetings with developers</li>
           <li>Interviewed candidates for developer position</li>
+          <li>Delivery as an npm package</li>
         </ul>
+        <div>The first version was put into production in 3 months.</div>
       </>),
   },
   {
@@ -239,13 +251,14 @@ export const workExperience = () => [
 ];
 
 export const workSkills = () => [
-  { name: 'Git' },
-  { name: 'Redux' },
+  { name: 'JavaScript' },
+  { name: 'React.js' },
+  { name: 'Redux.js' },
+  { name: 'Node.js' },
   { name: 'Immutable.js' },
+  { name: 'Git' },
   { name: 'Webpack' },
   { name: 'Jest' },
-  { name: 'Express' },
-  { name: 'MongoDB' },
-  { name: 'Docker' },
-  { name: 'CSS-modules' },
+  { name: 'Bash' },
+  { name: 'Angular' },
 ];
