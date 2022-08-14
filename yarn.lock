@@ -6650,10 +6650,10 @@ imagemin@^7.0.1:
     p-pipe "^3.0.0"
     replace-ext "^1.0.0"
 
-immutable@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.0.0.tgz#b86f78de6adef3608395efb269a91462797e2c23"
-  integrity sha512-zIE9hX70qew5qTUjSS7wi1iwj/l7+m54KWU247nhM3v806UdGj1yDndXj+IOYxxtW9zyLI+xqFNZjTuDaLUqFw==
+immutable@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.1.0.tgz#f795787f0db780183307b9eb2091fcac1f6fafef"
+  integrity sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -10343,10 +10343,10 @@ react-is@^17.0.2:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-promise-loader@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.1.2.tgz#3e1af6b69f4096c00385e910704fd91e2df5cbb2"
-  integrity sha512-HEfUoa1uIEU/ClwSeXqmyX/Vi0O8Cc3AgeRuIWtXdu/j3VLlM1xnf6xJldO4POIqn7sMisVziBjWVpyilCPORQ==
+react-promise-loader@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.2.0.tgz#ac46d0d98f82b3faa9ee72eb1bafb6fba5d1df26"
+  integrity sha512-fCgk3T7pPf9dBJCkfyyWygS6TP86MDws1NXZ6PRm1K3NjWW8vZoBqiaSK/IZI46euWIc75mQ9lvkVtjCAlXBUQ==
   dependencies:
     prop-types "^15.7.2"
 
