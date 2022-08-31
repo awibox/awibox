@@ -2,7 +2,7 @@ import React from 'react';
 
 export const workData = () => [
   {
-    date: '2021 - current',
+    date: '2021 - 2022',
     title: 'Senior Software Engineer',
     label: 'Conrad',
     content: (
