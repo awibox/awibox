@@ -36,6 +36,8 @@ exports[`Certificates should render correctly 1`] = `
             ID: 
             <a
               href="https://www.hackerrank.com/certificates/F510F1E6D375"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
             >
               F510F1E6D375
             </a>
@@ -86,6 +88,8 @@ exports[`Certificates should render correctly 1`] = `
             ID: 
             <a
               href="https://www.hackerrank.com/certificates/8DABF8164735"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
             >
               8DABF8164735
             </a>

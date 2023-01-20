@@ -22,7 +22,7 @@ const Header = (props) => {
             <ul>
               {data.get('services') && data.get('services').map((item) => (
                 <li key={item.name}>
-                  <a href={item.link} target='_blank' rel='noopener noreferrer'>
+                  <a href={item.link} rel="nofollow noopener noreferrer" target='_blank'>
                     <i className={`fab fa-${item.icon}`}/>
                   </a>
                 </li>
