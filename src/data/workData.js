@@ -2,6 +2,25 @@ import React from 'react';
 
 export const workData = () => [
   {
+    date: '2022 - 2023',
+    title: 'Developer',
+    label: (<a href='https://subscribo.app/' target='_blank' rel="noreferrer">Subscribo</a>),
+    content: (
+      <>
+        <div>
+          Developed an iOS application from scratch to release in the AppStore:
+        </div>
+        <ul>
+          <li>Application architecture</li>
+          <li>Integration with Firebase</li>
+          <li>Performance optimization</li>
+          <li>Data caching</li>
+          <li>Integration of push notifications</li>
+          <li>In-app purchases</li>
+        </ul>
+      </>),
+  },
+  {
     date: '2021 - 2022',
     title: 'Senior Software Engineer',
     label: 'Conrad',
@@ -255,7 +274,7 @@ export const workExperience = () => [
   {
     name: 'Angular',
     startYear: 2015,
-    endYear: 2019,
+    endYear: 2021,
   },
   {
     name: 'Node JS',
@@ -266,11 +285,16 @@ export const workExperience = () => [
     startYear: 2019,
     endYear: 2021,
   },
+  {
+    name: 'React Native',
+    startYear: 2022,
+  },
 ];
 
 export const workSkills = () => [
   { name: 'JavaScript' },
   { name: 'React.js' },
+  { name: 'React Native' },
   { name: 'Redux.js' },
   { name: 'Node.js' },
   { name: 'Immutable.js' },
@@ -279,4 +303,5 @@ export const workSkills = () => [
   { name: 'Jest' },
   { name: 'Bash' },
   { name: 'Angular' },
+  { name: 'Python' },
 ];
