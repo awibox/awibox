@@ -11,7 +11,7 @@ const Timeline = (props) => {
       {data.map((item) => (
         <div key={item.label} className={cn(styles.timelineItem, 'clearfix')}>
           <div className={styles.leftPart}>
-            <h5 className={styles.itemPeriod}>{item.label}</h5>
+            <div className={styles.itemPeriod}>{item.label}</div>
             <span className={styles.itemCompany}>{item.date}</span>
           </div>
           <div className={styles.divider}></div>

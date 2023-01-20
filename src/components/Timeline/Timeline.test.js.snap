@@ -11,11 +11,11 @@ exports[`Timeline should render correctly 1`] = `
     <div
       className="leftPart"
     >
-      <h5
+      <div
         className="itemPeriod"
       >
         Com1
-      </h5>
+      </div>
       <span
         className="itemCompany"
       >
@@ -43,11 +43,11 @@ exports[`Timeline should render correctly 1`] = `
     <div
       className="leftPart"
     >
-      <h5
+      <div
         className="itemPeriod"
       >
         Com2
-      </h5>
+      </div>
       <span
         className="itemCompany"
       >

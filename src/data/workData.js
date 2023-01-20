@@ -4,7 +4,7 @@ export const workData = () => [
   {
     date: '2022 - 2023',
     title: 'Developer',
-    label: (<a href='https://subscribo.app/' target='_blank' rel="noreferrer">Subscribo</a>),
+    label: 'Subscribo',
     content: (
       <>
         <div>
@@ -18,6 +18,9 @@ export const workData = () => [
           <li>Integration of push notifications</li>
           <li>In-app purchases</li>
         </ul>
+        <div>
+          Subscription manager <a href='https://subscribo.app/'>Subscribo</a> helps you to track all your recurring expenses in one place.
+        </div>
       </>),
   },
   {

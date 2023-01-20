@@ -19,10 +19,12 @@ exports[`Header should render correctly 1`] = `
       <div
         className="headerTitles"
       >
-        <h2 />
-        <h4>
+        <h1 />
+        <div
+          className="desc"
+        >
           Test position
-        </h4>
+        </div>
       </div>
       <div
         className="socialLinks"
