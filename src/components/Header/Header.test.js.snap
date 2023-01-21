@@ -19,10 +19,12 @@ exports[`Header should render correctly 1`] = `
       <div
         className="headerTitles"
       >
-        <h2 />
-        <h4>
+        <h1 />
+        <div
+          className="desc"
+        >
           Test position
-        </h4>
+        </div>
       </div>
       <div
         className="socialLinks"
@@ -33,7 +35,7 @@ exports[`Header should render correctly 1`] = `
           >
             <a
               href="https://github.com/"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               target="_blank"
             >
               <i
@@ -46,7 +48,7 @@ exports[`Header should render correctly 1`] = `
           >
             <a
               href="https://linkedin.com/"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               target="_blank"
             >
               <i
@@ -64,7 +66,7 @@ exports[`Header should render correctly 1`] = `
       className="copyrights"
     >
       © 2020-
-      2022
+      2023
        All rights reserved.
     </div>
   </header>

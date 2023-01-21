@@ -2,6 +2,28 @@ import React from 'react';
 
 export const workData = () => [
   {
+    date: '2022 - 2023',
+    title: 'Developer',
+    label: 'Subscribo',
+    content: (
+      <>
+        <div>
+          Developed an iOS application from scratch to release in the AppStore:
+        </div>
+        <ul>
+          <li>Application architecture</li>
+          <li>Integration with Firebase</li>
+          <li>Performance optimization</li>
+          <li>Data caching</li>
+          <li>Integration of push notifications</li>
+          <li>In-app purchases</li>
+        </ul>
+        <div>
+          Subscription manager <a href='https://subscribo.app/'>Subscribo</a> helps you to track all your recurring expenses in one place.
+        </div>
+      </>),
+  },
+  {
     date: '2021 - 2022',
     title: 'Senior Software Engineer',
     label: 'Conrad',
@@ -150,16 +172,40 @@ export const workData = () => [
 
 export const workCertificates = () => [
   {
-    name: 'JavaScript',
+    name: 'JavaScript (Intermediate)',
     id: 'f367aee15f76',
-    date: 'Apr 2020',
+    date: 'Apr 2021',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'Angular (Intermediate)',
+    id: 'b751cd49b879',
+    date: 'Aug 2022',
     company: 'Hacker Rank',
     logo: 'img/hacker-rank.jpeg',
     link: 'https://www.hackerrank.com/certificates/',
   },
   {
     name: 'React',
-    id: '8DABF8164735',
+    id: '8dabf8164735',
+    date: 'Apr 2020',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'Node.js',
+    id: '89c699cbbd9a',
+    date: 'Apr 2021',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'JavaScript',
+    id: 'f510f1e6d375',
     date: 'Apr 2020',
     company: 'Hacker Rank',
     logo: 'img/hacker-rank.jpeg',
@@ -174,16 +220,8 @@ export const workCertificates = () => [
     link: 'https://www.hackerrank.com/certificates/',
   },
   {
-    name: 'Node.js',
-    id: '89c699cbbd9a',
-    date: 'Apr 2021',
-    company: 'Hacker Rank',
-    logo: 'img/hacker-rank.jpeg',
-    link: 'https://www.hackerrank.com/certificates/',
-  },
-  {
     name: 'Problem Solving',
-    id: 'D18174E870B3',
+    id: 'd18174e870b3',
     date: 'Apr 2020',
     company: 'Hacker Rank',
     logo: 'img/hacker-rank.jpeg',
@@ -199,8 +237,16 @@ export const workCertificates = () => [
   },
   {
     name: 'Python',
-    id: '9D32D3FBF1E6',
+    id: '9d32d3fbf1e6',
     date: 'Apr 2020',
+    company: 'Hacker Rank',
+    logo: 'img/hacker-rank.jpeg',
+    link: 'https://www.hackerrank.com/certificates/',
+  },
+  {
+    name: 'SQL',
+    id: '65c63dfdb0df',
+    date: 'Aug 2022',
     company: 'Hacker Rank',
     logo: 'img/hacker-rank.jpeg',
     link: 'https://www.hackerrank.com/certificates/',
@@ -231,7 +277,7 @@ export const workExperience = () => [
   {
     name: 'Angular',
     startYear: 2015,
-    endYear: 2019,
+    endYear: 2021,
   },
   {
     name: 'Node JS',
@@ -242,11 +288,16 @@ export const workExperience = () => [
     startYear: 2019,
     endYear: 2021,
   },
+  {
+    name: 'React Native',
+    startYear: 2022,
+  },
 ];
 
 export const workSkills = () => [
   { name: 'JavaScript' },
   { name: 'React.js' },
+  { name: 'React Native' },
   { name: 'Redux.js' },
   { name: 'Node.js' },
   { name: 'Immutable.js' },
@@ -255,4 +306,5 @@ export const workSkills = () => [
   { name: 'Jest' },
   { name: 'Bash' },
   { name: 'Angular' },
+  { name: 'Python' },
 ];

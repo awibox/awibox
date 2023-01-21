@@ -15,14 +15,14 @@ const Header = (props) => {
             <img src={data.get('avatar')} alt={data.get('name')} />
           </div>
           <div className={styles.headerTitles}>
-            <h2>{data.get('name')}</h2>
-            <h4>{data.get('position')}</h4>
+            <h1>{data.get('name')}</h1>
+            <div className={styles.desc}>{data.get('position')}</div>
           </div>
           <div className={styles.socialLinks}>
             <ul>
               {data.get('services') && data.get('services').map((item) => (
                 <li key={item.name}>
-                  <a href={item.link} target='_blank' rel='noopener noreferrer'>
+                  <a href={item.link} rel="nofollow noopener noreferrer" target='_blank'>
                     <i className={`fab fa-${item.icon}`}/>
                   </a>
                 </li>
