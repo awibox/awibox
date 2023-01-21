@@ -8,19 +8,19 @@ const author = () => ({
   cv: '/Resume-Andrei-Arkhipov.pdf',
   services: [
     {
-      name: 'github',
+      name: 'Github',
       icon: 'github',
       link: 'https://github.com/awibox',
       color: '#24292e',
     },
     {
-      name: 'linkedin',
+      name: 'LinkedIn',
       icon: 'linkedin-in',
       link: 'https://linkedin.com/in/awibox',
       color: '#0077B5',
     },
     {
-      name: 'instagram',
+      name: 'Instagram',
       icon: 'instagram',
       link: 'https://www.instagram.com/awibox/',
       color: 'rgb(38, 38, 38)',

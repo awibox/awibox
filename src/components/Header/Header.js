@@ -12,7 +12,7 @@ const Header = (props) => {
       <header id="site_header" className={cn(styles.header, { [styles.menuHide]: !showHeader })}>
         <div className="header-content">
           <div className={styles.headerPhoto}>
-            <img src={data.get('avatar')} alt={data.get('name')} />
+            <img width={180} height={180} src={data.get('avatar')} alt={data.get('name')} />
           </div>
           <div className={styles.headerTitles}>
             <h1>{data.get('name')}</h1>
@@ -22,7 +22,7 @@ const Header = (props) => {
             <ul>
               {data.get('services') && data.get('services').map((item) => (
                 <li key={item.name}>
-                  <a href={item.link} rel="nofollow noopener noreferrer" target='_blank'>
+                  <a href={item.link} aria-label={item.name} title={item.name} rel="nofollow noopener noreferrer" target='_blank'>
                     <i className={`fab fa-${item.icon}`}/>
                   </a>
                 </li>

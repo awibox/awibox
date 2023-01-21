@@ -16,7 +16,9 @@ exports[`Certificates should render correctly 1`] = `
       >
         <img
           alt="Hacker Rank"
+          height={60}
           src="img/hacker-rank.jpeg"
+          width={60}
         />
       </div>
       <div
@@ -35,9 +37,11 @@ exports[`Certificates should render correctly 1`] = `
           <span>
             ID: 
             <a
+              aria-label="F510F1E6D375"
               href="https://www.hackerrank.com/certificates/F510F1E6D375"
               rel="nofollow noopener noreferrer"
               target="_blank"
+              title="F510F1E6D375"
             >
               F510F1E6D375
             </a>
@@ -68,7 +72,9 @@ exports[`Certificates should render correctly 1`] = `
       >
         <img
           alt="Hacker Rank"
+          height={60}
           src="img/hacker-rank.jpeg"
+          width={60}
         />
       </div>
       <div
@@ -87,9 +93,11 @@ exports[`Certificates should render correctly 1`] = `
           <span>
             ID: 
             <a
+              aria-label="8DABF8164735"
               href="https://www.hackerrank.com/certificates/8DABF8164735"
               rel="nofollow noopener noreferrer"
               target="_blank"
+              title="8DABF8164735"
             >
               8DABF8164735
             </a>
