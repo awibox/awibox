@@ -13,7 +13,7 @@ const Certificates = (props) => {
         <div key={item.id} className="col-md-6">
           <div className={cn(styles.certificateItem, 'clearfix')}>
             <div className={styles.certiLogo}>
-              <img width={60} height={60} src={item.logo} alt={item.company} />
+              <img width={80} height={80} src={item.logo} alt={item.company} />
             </div>
             <div className={styles.certiContent}>
               <div className={styles.certiTitle}>
