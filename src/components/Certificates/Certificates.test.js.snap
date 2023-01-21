@@ -16,9 +16,9 @@ exports[`Certificates should render correctly 1`] = `
       >
         <img
           alt="Hacker Rank"
-          height={60}
+          height={80}
           src="img/hacker-rank.jpeg"
-          width={60}
+          width={80}
         />
       </div>
       <div
@@ -72,9 +72,9 @@ exports[`Certificates should render correctly 1`] = `
       >
         <img
           alt="Hacker Rank"
-          height={60}
+          height={80}
           src="img/hacker-rank.jpeg"
-          width={60}
+          width={80}
         />
       </div>
       <div
