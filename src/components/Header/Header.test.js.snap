@@ -13,7 +13,9 @@ exports[`Header should render correctly 1`] = `
         className="headerPhoto"
       >
         <img
+          height={180}
           src="https://avatars1.githubusercontent.com/u/1931010?s=460&v=4"
+          width={180}
         />
       </div>
       <div
@@ -34,9 +36,11 @@ exports[`Header should render correctly 1`] = `
             key="github"
           >
             <a
+              aria-label="github"
               href="https://github.com/"
               rel="nofollow noopener noreferrer"
               target="_blank"
+              title="github"
             >
               <i
                 className="fab fa-github"
@@ -47,9 +51,11 @@ exports[`Header should render correctly 1`] = `
             key="linkedin"
           >
             <a
+              aria-label="linkedin"
               href="https://linkedin.com/"
               rel="nofollow noopener noreferrer"
               target="_blank"
+              title="linkedin"
             >
               <i
                 className="fab fa-linkedin-square"
